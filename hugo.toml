@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://jitachi.up.railway.app/'
 languageCode = 'en-us'
-title = 'Jitachi Test Site'
+title = 'Jitachi Debug'
 theme = 'ananke'
