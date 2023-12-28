@@ -1,3 +1,6 @@
+ /* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+ *, *::before, *::after {box-sizing: border-box;}* {margin: 0;}body {line-height: 1.5;-webkit-font-smoothing: antialiased;}img, picture, video, canvas, svg {display: block;max-width: 100%;}input, button, textarea, select {font: inherit;}p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}#root, #__next {isolation: isolate;}
+
 @font-face {
   font-family: "Recife Text";
   src: url("../type/recife-text/RecifeTextWeb-Regular.eot");
@@ -8,14 +11,53 @@
   font-weight: 500;
   font-style: normal;
 }
+@font-face {
+  font-family: "Recife Text";
+  src: url("../type/recife-text/RecifeTextWeb-Bold.eot");
+  src: url("../type/recife-text/RecifeTextWeb-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../type/recife-text/RecifeTextWeb-Bold.woff2") format("woff2"),
+       url("../type/recife-text/RecifeTextWeb-Bold.woff") format("woff"),
+       url("../type/recife-text/RecifeTextWeb-Bold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../type/messina-sans/MessinaSansWeb-Regular.eot");
+  src: url("../type/messina-sans/MessinaSansWeb-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../type/messina-sans/MessinaSansWeb-Regular.woff2") format("woff2"),
+       url("../type/messina-sans/MessinaSansWeb-Regular.woff") format("woff"),
+       url("../type/messina-sans/MessinaSansWeb-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
 
 body {
   max-width: 800px;
   margin: 16px auto 0;
   font-family: "Recife Text";
-  font-size: 32px;
-  line-height: 1.45;
-  background-color: black;
+  font-size: 20px;
+  line-height: 1.55;
+}
+
+article h3 a {
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -.025em;
+  color: black;
+}
+
+.logo {
+  text-decoration: none;
+  color: black;
+  font-family: "Messina sans";
+  font-size: 18px;
+}
+
+article time {
+  font-family: "Messina sans";
+  opacity: .5;
+  font-size: 18px;
 }
 
 header, main {
