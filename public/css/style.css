@@ -1,0 +1,27 @@
+@font-face {
+  font-family: "Recife Text";
+  src: url("../type/recife-text/RecifeTextWeb-Regular.eot");
+  src: url("../type/recife-text/RecifeTextWeb-Regular.eot?#iefix") format("embedded-opentype"),
+       url("../type/recife-text/RecifeTextWeb-Regular.woff2") format("woff2"),
+       url("../type/recife-text/RecifeTextWeb-Regular.woff") format("woff"),
+       url("../type/recife-text/RecifeTextWeb-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  max-width: 800px;
+  margin: 16px auto 0;
+  font-family: "Recife Text";
+  font-size: 32px;
+  line-height: 1.45;
+  background-color: black;
+}
+
+header, main {
+  margin-bottom: 96px;
+}
+
+article {
+  margin-bottom: 48px;
+}
