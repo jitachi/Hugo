@@ -1,7 +1,7 @@
 +++
 title = 'Test'
 date = 2023-11-07T19:24:35-06:00
-draft = true
+draft = false
 +++
 
 ## Here's an H2

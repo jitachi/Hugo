@@ -9,6 +9,14 @@
     <lastBuildDate>Tue, 07 Nov 2023 19:24:35 -0600</lastBuildDate>
     <atom:link href="https://jitachi.up.railway.app/index.xml" rel="self" type="application/rss+xml" />
     <item>
+      <title>Test</title>
+      <link>https://jitachi.up.railway.app/posts/test/</link>
+      <pubDate>Tue, 07 Nov 2023 19:24:35 -0600</pubDate>
+      <guid>https://jitachi.up.railway.app/posts/test/</guid>
+      <description>Here&amp;rsquo;s an H2 This is some paragraph text, it shouldn&amp;rsquo;t be anything flashy or too distracting but a long form of text that can be read comfortably. This is some paragraph text, it shouldn&amp;rsquo;t be anything flashy or too distracting but a long form of text that can be read comfortably.This is some paragraph text&amp;hellip;
+it shouldn&amp;rsquo;t be anything flashy or too distracting but a long form of text that can be read comfortably.</description>
+    </item>
+    <item>
       <title>testing hugo</title>
       <link>https://jitachi.up.railway.app/posts/testing-hugo/</link>
       <pubDate>Tue, 07 Nov 2023 19:24:35 -0600</pubDate>
