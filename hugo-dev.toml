@@ -1,0 +1,4 @@
+baseURL = 'https://hugo-staging.up.railway.app/'
+languageCode = 'en-us'
+title = 'Jitachi Development'
+theme = 'blank'
