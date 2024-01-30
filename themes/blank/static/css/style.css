@@ -31,25 +31,40 @@
   font-weight: 400;
   font-style: normal;
 }
+@font-face {
+  font-family: "Messina Sans";
+  src: url("../type/messina-sans/MessinaSansWeb-Bold.eot");
+  src: url("../type/messina-sans/MessinaSansWeb-Bold.eot?#iefix") format("embedded-opentype"),
+       url("../type/messina-sans/MessinaSansWeb-Bold.woff2") format("woff2"),
+       url("../type/messina-sans/MessinaSansWeb-Bold.woff") format("woff"),
+       url("../type/messina-sans/MessinaSansWeb-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 
 body {
-  max-width: 800px;
+  max-width: 1320px;
   margin: 16px auto 0;
   font-family: "Recife Text";
   font-size: 20px;
   line-height: 1.55;
+  background-color: #16161D;
+  color: white;
+}
+
+a {
+  color: white;
 }
 
 article h3 a {
   font-weight: 600;
   text-decoration: none;
   letter-spacing: -.025em;
-  color: black;
 }
 
 .logo {
   text-decoration: none;
-  color: black;
   font-family: "Messina sans";
   font-size: 18px;
 }
@@ -61,9 +76,30 @@ article time {
 }
 
 header, main {
-  margin-bottom: 96px;
+  margin-bottom: 160px;
 }
 
 article {
   margin-bottom: 32px;
+}
+
+.long-form h1 {
+  color: red;
+}
+
+.long-form p {
+  padding-bottom: 24px;
+}
+
+.post-top {
+  margin-bottom: 24px;
+}
+
+.hero {
+  font-family: "Messina sans";
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 112.5%;
+  letter-spacing: -.03em;
+  margin-bottom: 160px;
 }
