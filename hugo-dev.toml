@@ -8,5 +8,5 @@ sectionPagesMenu = 'main'
  [[menu.Main]]
   identifier = "about"
   name = "About"
-  url = "/about"
+  url = "/about/"
   weight = 1
