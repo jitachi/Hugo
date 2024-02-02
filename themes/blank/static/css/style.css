@@ -45,7 +45,8 @@
 
 body {
   max-width: 1320px;
-  margin: 16px auto 0;
+  margin: 0 auto;
+  padding: 64px;
   font-family: "Recife Text";
   font-size: 20px;
   line-height: 1.55;
@@ -63,7 +64,22 @@ article h3 a {
   letter-spacing: -.025em;
 }
 
-.logo {
+header {
+  display: flex;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  padding: 8px 16px;
+  background-color: hsla(0, 0%, 100%, .1);
+  border-radius: 100px;
+}
+
+.logo, nav li a {
   text-decoration: none;
   font-family: "Messina sans";
   font-size: 18px;

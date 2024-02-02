@@ -1,5 +1,7 @@
 {{ define "main" }}
-	<main>
+	
+  <main>
+    {{ partial "hero" . }}
 		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
 		{{ range $paginator.Pages }}
 			{{ .Render "summary" }}
