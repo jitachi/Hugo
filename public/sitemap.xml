@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jitachi.up.railway.app/</loc>
+    <loc>https://hugo-staging.up.railway.app/</loc>
     <lastmod>2023-11-07T19:24:35-06:00</lastmod>
   </url><url>
-    <loc>https://jitachi.up.railway.app/posts/</loc>
+    <loc>https://hugo-staging.up.railway.app/posts/</loc>
     <lastmod>2023-11-07T19:24:35-06:00</lastmod>
   </url><url>
-    <loc>https://jitachi.up.railway.app/posts/test/</loc>
+    <loc>https://hugo-staging.up.railway.app/posts/test/</loc>
     <lastmod>2023-11-07T19:24:35-06:00</lastmod>
   </url><url>
-    <loc>https://jitachi.up.railway.app/posts/testing-hugo/</loc>
+    <loc>https://hugo-staging.up.railway.app/posts/testing-hugo/</loc>
     <lastmod>2023-11-07T19:24:35-06:00</lastmod>
   </url><url>
-    <loc>https://jitachi.up.railway.app/about/</loc>
+    <loc>https://hugo-staging.up.railway.app/about/</loc>
   </url><url>
-    <loc>https://jitachi.up.railway.app/categories/</loc>
+    <loc>https://hugo-staging.up.railway.app/categories/</loc>
   </url><url>
-    <loc>https://jitachi.up.railway.app/tags/</loc>
+    <loc>https://hugo-staging.up.railway.app/tags/</loc>
   </url>
 </urlset>
