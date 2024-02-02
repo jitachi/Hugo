@@ -2,6 +2,7 @@ baseURL = 'https://hugo-staging.up.railway.app/'
 languageCode = 'en-us'
 title = 'Jitachi Development'
 theme = 'blank'
+sectionPagesMenu = 'main'
 
 [Menu]
  [[menu.Main]]
