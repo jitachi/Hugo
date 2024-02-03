@@ -19,5 +19,7 @@
     <loc>https://hugo-staging.up.railway.app/categories/</loc>
   </url><url>
     <loc>https://hugo-staging.up.railway.app/tags/</loc>
+  </url><url>
+    <loc>https://hugo-staging.up.railway.app/work/</loc>
   </url>
 </urlset>
