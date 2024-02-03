@@ -3,9 +3,10 @@ languageCode = 'en-us'
 title = 'Jitachi Garcia'
 theme = 'blank'
 
-[Menu]
- [[menu.Main]]
-  identifier = "about"
-  name = "About"
-  url = "/about"
-  weight = 2
+[Menu]  
+  [[menu.main]]
+      name = "about hugo"
+      pre = "<i class='fa fa-heart'></i>"
+      weight = -110
+      identifier = "about"
+      url = "/about/"
