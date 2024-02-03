@@ -2,11 +2,3 @@ baseURL = 'https://jitachi.up.railway.app/'
 languageCode = 'en-us'
 title = 'Jitachi Garcia'
 theme = 'blank'
-
-[Menu]  
-  [[menu.main]]
-      name = "about hugo"
-      pre = "<i class='fa fa-heart'></i>"
-      weight = -110
-      identifier = "about"
-      url = "/about/"

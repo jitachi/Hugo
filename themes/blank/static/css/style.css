@@ -68,11 +68,20 @@ header {
   display: flex;
 }
 
-nav li {
+ ul.site-nav {
+   display: flex;
+ }
+
+.site-nav li {
   list-style: none;
+  margin-right: 8px;
 }
 
-nav li a {
+.site-nav li a.active {
+  background-color: blue;
+}
+
+.site-nav li a {
   text-decoration: none;
   padding: 8px 16px;
   background-color: hsla(0, 0%, 100%, .1);
