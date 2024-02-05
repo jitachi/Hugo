@@ -6,3 +6,5 @@ menu: main
 ---
 
 Hello, I'm  Jitachi. Friendly software designer from México.
+
+<p class="large">This is a test</p>

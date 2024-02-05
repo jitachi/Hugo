@@ -42,12 +42,11 @@
   font-style: normal;
 }
 
-
 body {
   max-width: 1320px;
   margin: 0 auto;
   padding: 64px;
-  font-family: "Recife Text";
+  font-family: "Messina Sans";
   font-size: 20px;
   line-height: 1.55;
   background-color: #16161D;
@@ -58,40 +57,47 @@ a {
   color: white;
 }
 
-article h3 a {
-  font-weight: 600;
-  text-decoration: none;
-  letter-spacing: -.025em;
-}
-
 header {
   display: flex;
+  align-items: center;
+}
+
+.logo, .site-nav li a {
+  text-decoration: none;
+  font-family: "Messina sans";
+  font-size: 16px;
+}
+
+.profile {
+  border-radius: 16px;
+  height: 32px;
+  border: 1px solid white;
 }
 
  ul.site-nav {
    display: flex;
+   padding-inline-start: 0px;
  }
 
 .site-nav li {
   list-style: none;
-  margin-right: 8px;
-}
-
-.site-nav li a.active {
-  background-color: blue;
+  margin-left: 8px;
 }
 
 .site-nav li a {
   text-decoration: none;
   padding: 8px 16px;
-  background-color: hsla(0, 0%, 100%, .1);
+  background-color: hsla(0, 0%, 100%, .075);
   border-radius: 100px;
+  transition: all .125s ease-out;
 }
-
-.logo, nav li a {
-  text-decoration: none;
-  font-family: "Messina sans";
-  font-size: 18px;
+.site-nav li a:hover {
+  background-color: hsla(0, 0%, 100%, .75);
+  color: #16161D;
+}
+.site-nav li a.active {
+  background-color: hsla(0, 0%, 100%, .75);
+  color: #16161D;
 }
 
 article time {
@@ -104,12 +110,28 @@ header, main {
   margin-bottom: 160px;
 }
 
+/* Homepage Listing */
+
 article {
   margin-bottom: 32px;
+  padding-top: 32px;
+  border-top: solid 1px hsla(0, 100%, 100%, .1);
+  display: flex;
 }
 
-.long-form h1 {
-  color: red;
+article .meta {
+  min-width: 180px;
+}
+
+article h3 a {
+  font-family: "Messina sans";
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: -.025em;
+}
+
+article img {
+  margin-top: 24px;
 }
 
 .long-form p {
@@ -120,11 +142,27 @@ article {
   margin-bottom: 24px;
 }
 
-.hero {
+.long-form p {
+  max-width: 70ch;
+}
+
+.hero, .long-form h1 {
   font-family: "Messina sans";
   font-size: 80px;
   font-weight: 700;
   line-height: 112.5%;
   letter-spacing: -.03em;
   margin-bottom: 160px;
+}
+
+.long-form h1 {
+  margin-bottom: 64px;
+}
+
+.long-form p img {
+  max-width: 100%;
+}
+
+p.large {
+  font-size: 48px;
 }

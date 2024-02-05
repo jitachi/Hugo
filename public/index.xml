@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jitachi Development</title>
+    <title>Home on Jitachi Development</title>
     <link>https://hugo-staging.up.railway.app/</link>
-    <description>Recent content on Jitachi Development</description>
+    <description>Recent content in Home on Jitachi Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 07 Nov 2023 19:24:35 -0600</lastBuildDate>
@@ -34,7 +34,7 @@
       <link>https://hugo-staging.up.railway.app/work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://hugo-staging.up.railway.app/work/</guid>
-      <description>This is a work page.</description>
+      <description>Railway Rainforest Postman Kong Before DevTools, I did a bunch of other things:</description>
     </item>
   </channel>
 </rss>
