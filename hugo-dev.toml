@@ -2,3 +2,8 @@ baseURL = 'https://hugo-staging.up.railway.app/'
 languageCode = 'en-us'
 title = 'Jitachi Development'
 theme = 'blank'
+
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
+[markup.goldmark.renderer]
+  unsafe = true
