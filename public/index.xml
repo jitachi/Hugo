@@ -1,41 +1,50 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Jitachi Development</title>
-    <link>https://hugo-staging.up.railway.app/</link>
-    <description>Recent content in Home on Jitachi Development</description>
+    <title>Home on Jitachi Garcia</title>
+    <link>https://jitachi.up.railway.app/</link>
+    <description>Recent content in Home on Jitachi Garcia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Feb 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://hugo-staging.up.railway.app/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jitachi.up.railway.app/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GTI MK7 Build</title>
+      <link>https://jitachi.up.railway.app/posts/gti-mk7-build/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.up.railway.app/posts/gti-mk7-build/</guid>
+      <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
+    </item>
     <item>
       <title>Styleguide</title>
-      <link>https://hugo-staging.up.railway.app/posts/styleguide/</link>
+      <link>https://jitachi.up.railway.app/posts/styleguide/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://hugo-staging.up.railway.app/posts/styleguide/</guid>
+      <guid>https://jitachi.up.railway.app/posts/styleguide/</guid>
       <description>Local styles for a happier development</description>
     </item>
     <item>
       <title>testing hugo</title>
-      <link>https://hugo-staging.up.railway.app/posts/testing-hugo/</link>
+      <link>https://jitachi.up.railway.app/posts/testing-hugo/</link>
       <pubDate>Tue, 07 Nov 2023 19:24:35 -0600</pubDate>
-      <guid>https://hugo-staging.up.railway.app/posts/testing-hugo/</guid>
+      <guid>https://jitachi.up.railway.app/posts/testing-hugo/</guid>
       <description>This is a summary from the front matter</description>
     </item>
     <item>
       <title>About</title>
-      <link>https://hugo-staging.up.railway.app/about/</link>
+      <link>https://jitachi.up.railway.app/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugo-staging.up.railway.app/about/</guid>
+      <guid>https://jitachi.up.railway.app/about/</guid>
       <description>Hello, I&amp;rsquo;m Jitachi. Friendly software designer from México.
 This is a test</description>
     </item>
     <item>
       <title>Work</title>
-      <link>https://hugo-staging.up.railway.app/work/</link>
+      <link>https://jitachi.up.railway.app/work/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://hugo-staging.up.railway.app/work/</guid>
-      <description>Railway Rainforest Kong Insomnia Galileo Gelato Marketplace Before DevTools, I did a bunch of other things:</description>
+      <guid>https://jitachi.up.railway.app/work/</guid>
+      <description>Railway I work at Railway since 2021, almost 3 years this year. I work at Railway since 2021, almost 3 years this year. I work at Railway since 2021, almost 3 years this year. I work at Railway since 2021, almost 3 years this year. I work at Railway since 2021, almost 3 years this year.
+Rainforest Rainforest as a visual QA platform. I helped building the editor.
+Kong Insomnia I work at Railway since 2021, almost 3 years this year.</description>
     </item>
   </channel>
 </rss>

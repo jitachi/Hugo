@@ -1,11 +1,12 @@
 :root {
   
   --font-base:           calc(.75rem + .625vw);                  /* 21.2px  */ 
+  
   --font-size-display:   calc(2rem + 3vw);
-  --font-size-large:     calc(var(--font-size-medium) * 1.125); /* 23.85px */ 
-  --font-size-larger:    calc(var(--font-size-large) * 1.375);   /* 26.50px */
-  --font-size-largest:   calc(var(--font-size-larger) * 1.5);  
   --font-size-huge:      calc(var(--font-size-largest) * 1.5);
+  --font-size-largest:   calc(var(--font-size-larger) * 1.5);  
+  --font-size-larger:    calc(var(--font-size-large) * 1.375);   /* 26.50px */
+  --font-size-large:     calc(var(--font-size-medium) * 1.25); /* 23.85px */ 
   --font-size-medium:    calc(var(--font-base) * 1);            /* 21.2px  */ 
   --font-size-small:     calc(var(--font-base) * 0.875);
   --font-size-smaller:   calc(var(--font-size-small) * 0.875);
