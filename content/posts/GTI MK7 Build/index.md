@@ -12,17 +12,42 @@ summary = "One time I decided to build my _dream_ car"
 #### Performance Upgrades
 It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.
 
-###### Engine Mods
 - APR Engine (ECU) Tune Stage 1
 - APR Transmission (TCU) Tune Stage 1
 - NGK Performance Spark Plugs
-###### Turbo Mods
 - Racingline R600 Closed Intake
 - Racingline Turbo inlet pipe & hoses
 - APR Turbo muffler delete
 - Integrated Engineering Performance Intercooler
 
+<div class="flex">
+<div class="col-left">
+
+![image alt test](images/r600-intake.jpg)
+
+</div>  
+<div class="col-right">
+
+![image alt test](images/racingline-inlet.jpg)
+
+</div>
+</div>
+<div class="flex">
+<div class="col-left">
+
+![image alt test](images/ngk.png)
+
+</div>  
+<div class="col-right">
+
+![image alt test](images/ie-intercooler.jpg)
+
+</div>
+</div>
+
 These two things took the car from 220HP stock to whooping 316HP. Allegedly, never have taken it to a Dyno. It seems a great idea until you face...ahem, WHEELHOP!
+
+---
 
 #### Handling Upgrades
 - KW Street Comfort Coilovers
@@ -71,9 +96,3 @@ This is a block
 How about some mono style?
 How about some mono style?
 ```
-
-This is an image
-
-is this not supported?
-
-![image alt test](images/img-pro-engineer.jpg)

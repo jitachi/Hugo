@@ -1,10 +1,10 @@
 ---
 title: "About"
-Description: "Making the Complex Simple and Easy to Understand!"
+Description: "Ugh!"
 layout: 'about'
 menu: main
 ---
 
-Hello, I'm  Jitachi. Friendly software designer from México.
+<p class="large">I am Jitachi, a product designer made of curiosity, stubbornness, and a hint of foolishness, per Professor Utonium's words.</p>
 
-<p class="large">This is a test</p>
+![image alt test](images/jitachi.jpg)
