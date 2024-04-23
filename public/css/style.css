@@ -66,7 +66,6 @@ time {
 
 header, main { margin-bottom: 160px; }
 
-
 /* Homepage Listing */
 
 article {
@@ -92,14 +91,18 @@ article img {
 /* Single Page */
 
 .page-title {
-  margin-bottom: 128px;
+  margin-bottom: 64px;
+}
+
+.page-title h1 {
+  margin-bottom: 16px;
 }
 
 .hero, .long-form h1 { margin-bottom: 160px; }
 
 hr {
   border: none;
-  border-top: 2px dotted #999;
+  border-top: 1px solid hsla(0, 100%, 100%, .15);
   color: #999;
   background-color: transparent;
   height: 1px;
@@ -116,12 +119,13 @@ hr {
 .long-form p,
 .long-form ul,
 .long-form ol,
+.long-form img,
 .long-form pre {
   margin-left: auto;
   margin-right: auto;
   max-width: 800px;
-  letter-spacing: -0.0125em;
-  margin-bottom: .5em;
+  /* letter-spacing: -0.0125em; */
+  /* margin-bottom: 1rem; */
 }
 
 h1 {
@@ -133,56 +137,107 @@ h1 {
 
 .long-form h2 {
   font-size: var(--font-size-larger);
+  margin-bottom: .675em;
 }
 .long-form h3 {
   font-size: var(--font-size-larger);
+  margin-top: 48px;
+  margin-bottom: 20px;
 }
 
 .long-form h4 {
   font-size: var(--font-size-large);
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+
+.long-form p {
+  font-family: 'Recife Text';
+  line-height: 1.65;
+  letter-spacing: 0;
+  margin-bottom: 16px;
+  opacity: .9;
 }
 
 .long-form h5 {
   font-size: var(--font-size-small);
+  margin-top: 28px;
+  margin-bottom: 12px;
 }
 
 .long-form h6 {
   font-size: var(--font-size-smaller);
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .0375em;
+  margin-top: 24px;
+  margin-bottom: 8px;
 }
 
-.long-form p {
-  line-height: 1.65;
-  padding-bottom: 24px;
-  font-family: 'Recife Text';
-  letter-spacing: 0;
+.long-form ul, .long-form ol {
+  margin-top: 16px;
+  margin-bottom: 16px;
 }
-
-.long-form ul {
-  margin-bottom: 32px;
-}
-.long-form ul li {
+.long-form ul li, .long-form li, .long-form li ul, .long-form li ol
+{
+  margin-top: 4px;
   margin-bottom: 4px;
 }
 
-.long-form img {
-  border-radius: 8px;
-  margin-top: 48px;
-  margin-bottom: 32px;
-}
-
-p.large {
+.long-form p.large {
   font-size: var(--font-size-large);
   font-family: var(--font-family-sans);
+  line-height: 145%;
+  margin-bottom: 24px;
 }
+
 p.small {
-  font-size: var(--font-size-smaller);
+  font-size: var(--font-size-small);
   font-family: var(--font-family-sans);
   letter-spacing: .0125em;
 }
 
+.long-form blockquote p {
+  font-family: var(--font-family-sans);
+  line-height: var(--line-height-md);
+  font-size: var(--font-size-large);
+  max-width: 800px;
+  padding-left: 24px;
+  border-left: 3px solid white;
+  margin: 32px auto;
+}
+
 .long-form img {
   max-width: 100%;
-  margin-bottom: 48px;
+  border-radius: 8px;
+  margin: 48px 0px;
+}
+
+.long-form p code {
+  background-color: hsla(0, 100%, 100%, .12);
+  padding: 6px 8px;
+  border-radius: 8px;
+  font-size: 87.5%;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+
+.long-form pre code {
+  background-color: none; 
+}
+
+pre {
+  background-color: hsla(0, 100%, 100%, .05);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 87.5%;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-left, .col-right {
+  width: calc(50% - 8px);
 }
