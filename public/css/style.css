@@ -161,8 +161,8 @@ h1 {
 
 .long-form h5 {
   font-size: var(--font-size-small);
-  margin-top: 28px;
-  margin-bottom: 12px;
+  margin-top: 48px;
+  margin-bottom: 24px;
 }
 
 .long-form h6 {
@@ -170,8 +170,8 @@ h1 {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: .0375em;
-  margin-top: 24px;
-  margin-bottom: 8px;
+  margin-top: 48px;
+  margin-bottom: 20px;
 }
 
 .long-form ul, .long-form ol {
@@ -191,10 +191,19 @@ h1 {
   margin-bottom: 24px;
 }
 
+p.sans {
+  font-family: var(--font-family-sans);
+}
+
 p.small {
   font-size: var(--font-size-small);
   font-family: var(--font-family-sans);
   letter-spacing: .0125em;
+}
+
+p.row {
+  padding-top: 16px;
+  border-top: 1px solid hsla(0, 100%, 100%, .2);
 }
 
 .long-form blockquote p {
@@ -210,7 +219,7 @@ p.small {
 .long-form img {
   max-width: 100%;
   border-radius: 8px;
-  margin: 48px 0px;
+  margin: 40px 0px;
 }
 
 .long-form p code {
@@ -224,6 +233,12 @@ p.small {
 
 .long-form pre code {
   background-color: none; 
+}
+
+.long-form .inline-img {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 pre {
