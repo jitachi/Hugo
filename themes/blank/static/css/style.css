@@ -187,7 +187,8 @@ h1 {
 .long-form p.large {
   font-size: var(--font-size-large);
   font-family: var(--font-family-sans);
-  margin-bottom: 1.5em;
+  line-height: 145%;
+  margin-bottom: 24px;
 }
 
 p.small {
@@ -209,7 +210,7 @@ p.small {
 .long-form img {
   max-width: 100%;
   border-radius: 8px;
-  margin: 32px 0px;
+  margin: 48px 0px;
 }
 
 .long-form p code {
