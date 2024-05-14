@@ -12,3 +12,4 @@ theme = 'blank'
 
 [markup.goldmark.renderer]
   unsafe = true
+  
