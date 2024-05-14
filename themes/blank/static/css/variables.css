@@ -1,0 +1,43 @@
+:root {
+  
+  --font-base:           24px;                 
+  
+  --font-size-display:   calc(var(--font-base) * 3.5);  /* page-title */  
+  --font-size-huge:      calc(var(--font-base) * 3.0);  /* h1 */
+  --font-size-largest:   calc(var(--font-base) * 2.4);  /* h2 */
+  --font-size-larger:    calc(var(--font-base) * 1.8);  /* h3 */
+  --font-size-large:     calc(var(--font-base) * 1.4);  /* h4 */
+  
+  --font-size-medium:    calc(var(--font-base) * 1);    /* p  */
+  
+  --font-size-small:     calc(var(--font-base) * 0.875);
+  --font-size-smaller:   calc(var(--font-base) * 0.75);
+  
+  --font-size-bigtext:   calc(var(--font-size-largest) * 1.75);
+  
+  --line-height-xs: 1.125;
+  --line-height-sm: 1.25;
+  --line-height-md: 1.5;
+  --line-height-lg: 1.65;
+  
+  --font-family-serif: "Recife Text", serif;
+  --font-family-sans: "Messina Sans", sans-serif;
+  --font-family-mono: "IBM Plex Mono", SF Mono, SFMono-Regular, ui-monospace, Menlo, Consolas, monospace;
+  
+  --size-text: 820px;
+  
+  --color-foreground: white;
+  --color-background: #12121A;
+  --color-secondary:  hsla(0, 100%, 100%, .5);
+  --color-tertiary:   hsla(0, 100%, 100%, .3);
+  
+  --sp-xxs:   calc(var(--font-base) * .375); 
+  --sp-xs:   calc(var(--font-base) * .5);
+  --sp-md:   calc(var(--font-size) * 1);
+  --sp-sm:   calc(var(--font-size) * .75);
+  --sp-lg:   calc(var(--font-size) * 1.5);
+  --sp-xl:   calc(var(--font-size) * 2);
+  --sp-xxl:  calc(var(--font-size) * 3);
+  --sp-xxxl: calc(var(--font-size) * 5);
+
+}

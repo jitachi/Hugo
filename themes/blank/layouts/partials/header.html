@@ -1,14 +1,17 @@
 <header>
-	<a class="logo" href="{{ .Site.BaseURL }}">
-    {{ .Site.Title }}
+	<a class="logo h-stack" href="{{ .Site.BaseURL }}">
+    <img class="profile" src="{{ .Site.BaseURL }}img/avatar.png">
+    <!-- {{ .Site.Title }} -->
   </a>
-	{{ with .Site.Menus.main }}
-	<nav>
-		<ul>
-			{{ range . }}
-			<li><a href="{{ .URL | relURL }}">{{ .Name }}</a></li>
-			{{ end }}
-		</ul>
-	</nav>
-	{{ end }}
+
+  <ul class="site-nav">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}  
+    <li >
+      <a class="{{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+  </ul>
+
+
 </header>

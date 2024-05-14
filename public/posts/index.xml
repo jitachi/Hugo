@@ -6,22 +6,28 @@
     <description>Recent content in Posts on Jitachi Development</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 07 Nov 2023 19:24:35 -0600</lastBuildDate>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://hugo-staging.up.railway.app/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Test</title>
-      <link>https://hugo-staging.up.railway.app/posts/test/</link>
-      <pubDate>Tue, 07 Nov 2023 19:24:35 -0600</pubDate>
-      <guid>https://hugo-staging.up.railway.app/posts/test/</guid>
-      <description>Here&amp;rsquo;s an H2 This is some paragraph text, it shouldn&amp;rsquo;t be anything flashy or too distracting but a long form of text that can be read comfortably. This is some paragraph text, it shouldn&amp;rsquo;t be anything flashy or too distracting but a long form of text that can be read comfortably.This is some paragraph text&amp;hellip;
-it shouldn&amp;rsquo;t be anything flashy or too distracting but a long form of text that can be read comfortably.</description>
+      <title>GTI MK7 Build</title>
+      <link>https://hugo-staging.up.railway.app/posts/gti-mk7-build/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://hugo-staging.up.railway.app/posts/gti-mk7-build/</guid>
+      <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
+    </item>
+    <item>
+      <title>Styleguide</title>
+      <link>https://hugo-staging.up.railway.app/posts/styleguide/</link>
+      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
+      <guid>https://hugo-staging.up.railway.app/posts/styleguide/</guid>
+      <description>Local styles for a happier development</description>
     </item>
     <item>
       <title>testing hugo</title>
       <link>https://hugo-staging.up.railway.app/posts/testing-hugo/</link>
       <pubDate>Tue, 07 Nov 2023 19:24:35 -0600</pubDate>
       <guid>https://hugo-staging.up.railway.app/posts/testing-hugo/</guid>
-      <description>this is an entirely different thing </description>
+      <description>This is a summary from the front matter</description>
     </item>
   </channel>
 </rss>

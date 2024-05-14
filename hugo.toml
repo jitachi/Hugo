@@ -2,3 +2,13 @@ baseURL = 'https://jitachi.up.railway.app/'
 languageCode = 'en-us'
 title = 'Jitachi Garcia'
 theme = 'blank'
+
+[markup.goldmark.parser]
+  wrapStandAloneImageWithinParagraph = false
+
+[markup.goldmark.parser.attribute]
+  block = true
+  title = true
+
+[markup.goldmark.renderer]
+  unsafe = true

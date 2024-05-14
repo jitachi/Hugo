@@ -1,13 +1,23 @@
 <article>
-	<h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-	<time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "02.01.2006 15:04" }}</time>
-	{{ range .Params.tags }}
-	<a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-	{{ end }}
-	<div>
-		{{ .Summary }}
-		{{ if .Truncated }}
-			<a href="{{ .Permalink }}">Read more...</a>
-		{{ end }}
-	</div>
+  
+  <div class="meta">
+	  <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
+  </div>
+  
+  <div class="content">
+    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+    {{ range .Params.tags }}
+	  <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
+	  {{ end }}
+    <div>
+		  {{ .Summary }}
+		  {{ if .Truncated }}
+			  <a href="{{ .Permalink }}">Read more...</a>
+		  {{ end }}
+	  </div>
+    {{ with .Resources.GetMatch .Params.featured_image }}
+      <img alt="..." class="..." src="{{ .RelPermalink }}" />
+    {{ end }}
+  </div>
+  
 </article>
