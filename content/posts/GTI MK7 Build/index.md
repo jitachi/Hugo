@@ -1,7 +1,7 @@
 +++
 title = 'GTI MK7 Build'
 date = 2024-03-05
-draft = false
+draft = true
 summary = "One time I decided to build my _dream_ car"
 +++
 
@@ -10,6 +10,7 @@ summary = "One time I decided to build my _dream_ car"
 ![image alt test](images/gti.jpg)
 
 #### Performance Upgrades
+
 It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.
 
 - APR Engine (ECU) Tune Stage 1
@@ -50,6 +51,7 @@ These two things took the car from 220HP stock to whooping 316HP. Allegedly, nev
 ---
 
 #### Handling Upgrades
+
 - KW Street Comfort Coilovers
 - H&R Anti-sway bars (26mm front/24mm back, solid)
 - Brembo GT 4-piston Brakes
@@ -60,6 +62,7 @@ These two things took the car from 220HP stock to whooping 316HP. Allegedly, nev
 ![image alt test](images/wheels.jpg)
 
 #### Interior Upgrades
+
 - Hexcarbon Custom Steering Wheel (Napa/Perforated Leather)
 - OEM Digital Cockpit
 - OEM 7.5” Entertainment System
@@ -76,13 +79,14 @@ These two things took the car from 220HP stock to whooping 316HP. Allegedly, nev
 ###### Unordered list:
 
 - List level 01
-    - Inner list item A
-    - Inner list item B
-    - Inner list item C
+  - Inner list item A
+  - Inner list item B
+  - Inner list item C
 - List level 02
 - List level 03
 
 Ordered list:
+
 1. This is the item number 01
 
 > Blockquote
