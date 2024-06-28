@@ -5,7 +5,7 @@ draft = false
 summary = "One time I decided to build my _dream_ car"
 +++
 
-<p class="large">We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills.</p>
+<!-- <p class="large">We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills.</p> -->
 
 ![image alt test](images/gti.jpg)
 

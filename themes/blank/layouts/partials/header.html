@@ -1,17 +1,17 @@
-<header class="flex items-center gap-2">
+<header class="flex items-center gap-3">
 	<a class="logo" href="{{ .Site.BaseURL }}">
-    <img class="w-8 rounded-full border border-white" src="{{ .Site.BaseURL }}img/avatar.png">
+    <img class="w-9 min-w-9 rounded-full border border-white" src="{{ .Site.BaseURL }}img/avatar.png">
     <!-- {{ .Site.Title }} -->
   </a>
 
-  <ul class="flex gap-2">
+  <div class="flex gap-3">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}  
-    <li>
-      <a class="p-2 px-4 text-base bg-white bg-opacity-5 hover:bg-opacity-25 transition ease-in-out duration-100 rounded-full {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
-    </li>
+    
+      <a class="p-2 px-4 text-base bg-white bg-opacity-5 hover:bg-opacity-25 transition ease-in-out duration-200 rounded-full {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+    
     {{ end }}
-  </ul>
+  </div>
 
 
 </header>
