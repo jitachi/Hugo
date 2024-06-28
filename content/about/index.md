@@ -1,7 +1,7 @@
 ---
 title: "About"
 Description: "Ugh!"
-layout: 'about'
+layout: "about"
 menu: main
 ---
 
@@ -10,15 +10,12 @@ menu: main
 ![image alt](images/jitachi.jpg)
 {.inline-img}
 
-I grew up with ultra strong and relentless kids traveling on clouds with monkey tails that would make them go nuts. Of course I had a great example of what was expected from me.
-
-I had to ~~go monkey nuts~~ be great.
-
-#### Work Experience
+<!-- #### Work Experience
 
 <p class="row sans"> Founding Designer at Railway / <span class="subtle"> 2021 - (Current) </span></p>
 <p class="row sans"> Senior Designer at Rainforest / 2020 - 2021 </p>
 <p class="row sans"> Founding Designer at Kong, Inc / 2015 - 2020 </p>
 
 #### Misc
-I like Japan.
+
+I like Japan. -->
