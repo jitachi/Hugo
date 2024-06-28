@@ -16,7 +16,7 @@ body {
 
 a { color: white; }
 
-header {
+/* header {
   display: flex;
   align-items: center;
 }
@@ -53,10 +53,12 @@ header {
   background-color: hsla(0, 0%, 100%, .75);
   color: #16161D;
 }
-.site-nav li a.active {
+*/
+
+header li a.active {
   background-color: hsla(0, 0%, 100%, .75);
   color: #16161D;
-}
+} 
 
 time {
   font-family: "Messina sans";
@@ -248,10 +250,10 @@ pre {
   font-size: 87.5%;
 }
 
-.flex {
+/* .flex {
   display: flex;
   justify-content: space-between;
-}
+} */
 
 .col-left, .col-right {
   width: calc(50% - 8px);

@@ -1,12 +1,12 @@
 :root {
   
-  --font-base:           24px;                 
+  --font-base:           20px;                 
   
-  --font-size-display:   calc(var(--font-base) * 3.5);  /* page-title */  
+  --font-size-display:   calc(var(--font-base) * 4.5);  /* page-title */  
   --font-size-huge:      calc(var(--font-base) * 3.0);  /* h1 */
-  --font-size-largest:   calc(var(--font-base) * 2.4);  /* h2 */
-  --font-size-larger:    calc(var(--font-base) * 1.8);  /* h3 */
-  --font-size-large:     calc(var(--font-base) * 1.4);  /* h4 */
+  --font-size-largest:   calc(var(--font-base) * 2.5);  /* h2 */
+  --font-size-larger:    calc(var(--font-base) * 2);  /* h3 */
+  --font-size-large:     calc(var(--font-base) * 1.5);  /* h4 */
   
   --font-size-medium:    calc(var(--font-base) * 1);    /* p  */
   
