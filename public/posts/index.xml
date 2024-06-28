@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Jitachi Garcia</title>
-    <link>https://jitachi.up.railway.app/posts/</link>
+    <link>https://jitachi.com/posts/</link>
     <description>Recent content in Posts on Jitachi Garcia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jitachi.up.railway.app/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://jitachi.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>GTI MK7 Build</title>
-      <link>https://jitachi.up.railway.app/posts/gti-mk7-build/</link>
+      <link>https://jitachi.com/posts/gti-mk7-build/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.up.railway.app/posts/gti-mk7-build/</guid>
+      <guid>https://jitachi.com/posts/gti-mk7-build/</guid>
       <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
     </item>
     <item>
       <title>Styleguide</title>
-      <link>https://jitachi.up.railway.app/posts/styleguide/</link>
+      <link>https://jitachi.com/posts/styleguide/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.up.railway.app/posts/styleguide/</guid>
+      <guid>https://jitachi.com/posts/styleguide/</guid>
       <description>Local styles for a happier development</description>
     </item>
   </channel>
