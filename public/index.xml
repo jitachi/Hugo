@@ -6,14 +6,21 @@
     <description>Recent content in Home on Jitachi Garcia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jitachi.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>GTI MK7 Build</title>
-      <link>https://jitachi.com/posts/gti-mk7-build/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/gti-mk7-build/</guid>
-      <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
+      <title>Changing habits and identity rebalance</title>
+      <link>https://jitachi.com/posts/04-atomic-habits/</link>
+      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/04-atomic-habits/</guid>
+      <description>I decided to change my output, started with this book and I think it worked (?)</description>
+    </item>
+    <item>
+      <title>My mechanical keebs journey</title>
+      <link>https://jitachi.com/posts/mech-keyboards/</link>
+      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/mech-keyboards/</guid>
+      <description>The rabbit hole of building a keyboard</description>
     </item>
     <item>
       <title>Styleguide</title>
@@ -27,7 +34,10 @@
       <link>https://jitachi.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://jitachi.com/about/</guid>
-      <description>I am Jitachi, a product designer made of curiosity, stubbornness, and a hint of foolishness, per Professor Utonium&#39;s words.</description>
+      <description>I am Jitachi, a product designer made of curiosity, stubbornness, and a hint of foolishness, per Professor Utonium&#39;s words.
+Now Since 2021, I&amp;rsquo;ve been poured my heart and soul into Railway —a modern software deployment and observability platform—as the founding designer.
+Before Senior Designer at Rainforest / 2020 - 2021
+Founding Designer at Kong, Inc / 2015 - 2020</description>
     </item>
     <item>
       <title>Work</title>
