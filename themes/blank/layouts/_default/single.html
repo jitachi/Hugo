@@ -1,8 +1,10 @@
 {{ define "main" }}
 	<main>
       <div class="page-title">
-        <h1>{{ .Title }}</h1>
-        <p class="meta"><time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "Jan 2, 2006" }}</time></p>
+        <div class="text-xl mb-6 opacity-45">
+			<time class="mono" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">{{ .Date.Format "2006.01.02" }}</time>
+		</div>
+		<h1>{{ .Title }}</h1>
       </div>
 		<div class="long-form">
 			{{ .Content }}

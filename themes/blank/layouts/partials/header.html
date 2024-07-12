@@ -1,10 +1,10 @@
-<header class="flex items-center gap-3">
+<header class="flex items-center gap-2">
 	<a class="logo" href="{{ .Site.BaseURL }}">
     <img class="w-9 min-w-9 rounded-full border border-white" src="{{ .Site.BaseURL }}img/avatar.png">
     <!-- {{ .Site.Title }} -->
   </a>
 
-  <div class="flex gap-3">
+  <div class="flex gap-2">
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}  
     

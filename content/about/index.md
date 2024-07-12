@@ -10,12 +10,14 @@ menu: main
 ![image alt](images/jitachi.jpg)
 {.inline-img}
 
-<!-- #### Work Experience
+###### Now
 
-<p class="row sans"> Founding Designer at Railway / <span class="subtle"> 2021 - (Current) </span></p>
-<p class="row sans"> Senior Designer at Rainforest / 2020 - 2021 </p>
-<p class="row sans"> Founding Designer at Kong, Inc / 2015 - 2020 </p>
+Since 2021, I've been poured my heart and soul into [Railway](https://railway.app) —a modern software deployment and observability platform—as the _founding designer_.
 
-#### Misc
+---
 
-I like Japan. -->
+###### Before
+
+Senior Designer at Rainforest / 2020 - 2021
+
+Founding Designer at Kong, Inc / 2015 - 2020

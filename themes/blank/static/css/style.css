@@ -1,7 +1,46 @@
-@import url('type.css');
-@import url('variables.css');
+@import url("type.css");
+@import url("variables.css");
 
- /* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */ *, *::before, *::after {box-sizing: border-box;}* {margin: 0;}body {line-height: 1.5;-webkit-font-smoothing: antialiased;}img, picture, video, canvas, svg {display: block;max-width: 100%;}input, button, textarea, select {font: inherit;}p, h1, h2, h3, h4, h5, h6 {overflow-wrap: break-word;}#root, #__next {isolation: isolate;}
+/* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
 
 body {
   max-width: 1320px;
@@ -10,63 +49,34 @@ body {
   font-family: var(--font-family-sans);
   font-size: var(--font-base);
   line-height: 1.55;
-  background-color: #16161D;
+  background-color: #16161d;
   color: white;
 }
 
-a { color: white; }
-
-/* header {
-  display: flex;
-  align-items: center;
+a {
+  color: white;
 }
 
-.logo, .site-nav li a {
-  text-decoration: none;
-  font-size: 16px;
+*/ header a.active {
+  background-color: hsla(0, 0%, 100%, 0.25);
+  color: #fff;
 }
 
-.profile {
-  border-radius: 16px;
-  height: 32px;
-  min-width: 32px;
-  border: 1px solid white;
-  display: block;
+.mono {
+  font-family: "Jetbrains Mono";
 }
 
- ul.site-nav {
-   display: flex;
-   padding-inline-start: 0px;
- }
-.site-nav li {
-  list-style: none;
-  margin-left: 8px;
-}
-.site-nav li a {
-  text-decoration: none;
-  padding: 8px 16px;
-  background-color: hsla(0, 0%, 100%, .075);
-  border-radius: 100px;
-  transition: all .125s ease-out;
-}
-.site-nav li a:hover {
-  background-color: hsla(0, 0%, 100%, .75);
-  color: #16161D;
-}
-*/
+/* time {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+} */
 
-header a.active {
-  background-color: hsla(0, 0%, 100%, .75);
-  color: #16161D;
-} 
-
-time {
-  font-family: "Messina sans";
-  opacity: .5;
-  font-size: 18px;
+header,
+main,
+.hero,
+.long-form h1 {
+  margin-bottom: calc(10vw + 4rem);
 }
-
-header, main, .hero, .long-form h1 { margin-bottom: calc(10vw + 4rem); }
 
 /* Homepage Listing */
 
@@ -97,17 +107,39 @@ article img {
 }
 
 .page-title h1 {
+  font-size: clamp(2rem, 5vw + 1rem, 8rem);
+  max-width: 20ch;
   margin-bottom: 16px;
 }
 
 hr {
   border: none;
-  border-top: 1px solid hsla(0, 100%, 100%, .15);
+  border-top: 1px solid hsla(0, 100%, 100%, 0.15);
   color: #999;
   background-color: transparent;
   height: 1px;
   margin: 48px auto;
   max-width: 800px;
+}
+
+h3 {
+  font-size: var(--font-size-larger);
+}
+
+h4 {
+  font-size: var(--font-size-large);
+  font-weight: 700;
+}
+
+h5 {
+  font-size: var(--font-size-small);
+  font-weight: 700;
+}
+
+h6 {
+  font-size: var(--font-size-smaller);
+  font-weight: 800;
+  text-transform: uppercase;
 }
 
 .long-form h1,
@@ -132,13 +164,13 @@ h1 {
   font-size: clamp(2rem, 4vw + 1rem, 5rem);
   font-weight: 700;
   line-height: 112.5%;
-  letter-spacing: -.0375em;
+  letter-spacing: -0.0375em;
   max-width: 26ch;
 }
 
 .long-form h2 {
   font-size: var(--font-size-larger);
-  margin-bottom: .675em;
+  margin-bottom: 0.675em;
 }
 .long-form h3 {
   font-size: var(--font-size-larger);
@@ -153,34 +185,39 @@ h1 {
 }
 
 .long-form p {
-  font-family: 'Recife Text';
+  font-family: "Recife Text";
   line-height: 1.65;
   letter-spacing: 0;
   margin-bottom: 16px;
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .long-form h5 {
   font-size: var(--font-size-small);
   margin-top: 48px;
   margin-bottom: 24px;
+  font-weight: 600;
+  opacity: 0.45;
 }
 
 .long-form h6 {
   font-size: var(--font-size-smaller);
-  font-weight: 700;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: .0375em;
+  letter-spacing: 0.0375em;
   margin-top: 48px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
 }
 
-.long-form ul, .long-form ol {
+.long-form ul,
+.long-form ol {
   margin-top: 16px;
   margin-bottom: 16px;
 }
-.long-form ul li, .long-form li, .long-form li ul, .long-form li ol
-{
+.long-form ul li,
+.long-form li,
+.long-form li ul,
+.long-form li ol {
   margin-top: 4px;
   margin-bottom: 4px;
 }
@@ -192,7 +229,7 @@ h1 {
 .long-form p.large {
   font-size: var(--font-size-large);
   font-family: var(--font-family-sans);
-  line-height: 145%;
+  line-height: 160%;
   margin-bottom: 24px;
 }
 
@@ -203,12 +240,12 @@ p.sans {
 p.small {
   font-size: var(--font-size-small);
   font-family: var(--font-family-sans);
-  letter-spacing: .0125em;
+  letter-spacing: 0.0125em;
 }
 
 p.row {
   padding-top: 16px;
-  border-top: 1px solid hsla(0, 100%, 100%, .2);
+  border-top: 1px solid hsla(0, 100%, 100%, 0.2);
 }
 
 .long-form blockquote p {
@@ -228,7 +265,7 @@ p.row {
 }
 
 .long-form p code {
-  background-color: hsla(0, 100%, 100%, .12);
+  background-color: hsla(0, 100%, 100%, 0.12);
   padding: 6px 8px;
   border-radius: 8px;
   font-size: 87.5%;
@@ -237,17 +274,18 @@ p.row {
 }
 
 .long-form pre code {
-  background-color: none; 
+  background-color: none;
 }
 
 .long-form .inline-img {
+  width: 100%;
   max-width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
 
 pre {
-  background-color: hsla(0, 100%, 100%, .05);
+  background-color: hsla(0, 100%, 100%, 0.05);
   padding: 12px 20px;
   border-radius: 8px;
   font-size: 87.5%;
@@ -258,6 +296,11 @@ pre {
   justify-content: space-between;
 } */
 
-.col-left, .col-right {
+.col-left,
+.col-right {
   width: calc(50% - 8px);
+}
+
+em {
+  font-style: italic;
 }
