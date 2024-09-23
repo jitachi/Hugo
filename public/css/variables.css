@@ -1,5 +1,5 @@
 :root {
-  --font-base: calc(16px + 0.5vw);
+  --font-base: calc(16px + 0.375vw);
 
   --font-size-display: calc(var(--font-base) * 4.5); /* page-title */
   --font-size-huge: calc(var(--font-base) * 3); /* h1 */

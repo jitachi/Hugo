@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Photos on Jitachi Garcia</title>
+    <link>https://jitachi.com/photos/</link>
+    <description>Recent content in Photos on Jitachi Garcia</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://jitachi.com/photos/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Photo 02</title>
+      <link>https://jitachi.com/photos/01-photo/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/photos/01-photo/</guid>
+      <description>The only decent API Tool</description>
+    </item>
+    <item>
+      <title>Rainforest</title>
+      <link>https://jitachi.com/photos/02-photo/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/photos/02-photo/</guid>
+      <description>Senior Product Designer ft Software QA</description>
+    </item>
+    <item>
+      <title>testy test</title>
+      <link>https://jitachi.com/photos/03-photo/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/photos/03-photo/</guid>
+      <description>Senior Product Designer ft Software QA</description>
+    </item>
+  </channel>
+</rss>

@@ -6,27 +6,69 @@
     <description>Recent content in Home on Jitachi Garcia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jitachi.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Changing habits and identity rebalance</title>
-      <link>https://jitachi.com/posts/04-atomic-habits/</link>
-      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/04-atomic-habits/</guid>
-      <description>I decided to change my output, started with this book and I think it worked (?)</description>
+      <title>Plaholder post</title>
+      <link>https://jitachi.com/posts/03-placeholder/</link>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/03-placeholder/</guid>
+      <description>Placeholder text</description>
     </item>
     <item>
-      <title>My mechanical keebs journey</title>
-      <link>https://jitachi.com/posts/mech-keyboards/</link>
-      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/mech-keyboards/</guid>
-      <description>The rabbit hole of building a keyboard</description>
+      <title>GTI MK7 Build</title>
+      <link>https://jitachi.com/posts/02-gti-mk7-build/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/02-gti-mk7-build/</guid>
+      <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
+    </item>
+    <item>
+      <title>Insomnia</title>
+      <link>https://jitachi.com/work/01-insomnia/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/work/01-insomnia/</guid>
+      <description>The only decent API Tool</description>
+    </item>
+    <item>
+      <title>Photo 02</title>
+      <link>https://jitachi.com/photos/01-photo/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/photos/01-photo/</guid>
+      <description>The only decent API Tool</description>
+    </item>
+    <item>
+      <title>Railway</title>
+      <link>https://jitachi.com/work/03-railway/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/work/03-railway/</guid>
+      <description>Choo choo</description>
+    </item>
+    <item>
+      <title>Rainforest</title>
+      <link>https://jitachi.com/photos/02-photo/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/photos/02-photo/</guid>
+      <description>Senior Product Designer ft Software QA</description>
+    </item>
+    <item>
+      <title>Rainforest</title>
+      <link>https://jitachi.com/work/02-rainforest/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/work/02-rainforest/</guid>
+      <description>Senior Product Designer ft Software QA</description>
+    </item>
+    <item>
+      <title>testy test</title>
+      <link>https://jitachi.com/photos/03-photo/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/photos/03-photo/</guid>
+      <description>Senior Product Designer ft Software QA</description>
     </item>
     <item>
       <title>Styleguide</title>
-      <link>https://jitachi.com/posts/styleguide/</link>
+      <link>https://jitachi.com/posts/01-styleguide/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/styleguide/</guid>
+      <guid>https://jitachi.com/posts/01-styleguide/</guid>
       <description>Local styles for a happier development</description>
     </item>
     <item>
@@ -35,16 +77,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://jitachi.com/about/</guid>
       <description>I am Jitachi, a product designer made of curiosity, stubbornness, and a hint of foolishness, per Professor Utonium&#39;s words.
-Now Since 2021, I&amp;rsquo;ve been poured my heart and soul into Railway —a modern software deployment and observability platform—as the founding designer.
-Before Senior Designer at Rainforest / 2020 - 2021
-Founding Designer at Kong, Inc / 2015 - 2020</description>
-    </item>
-    <item>
-      <title>Work</title>
-      <link>https://jitachi.com/work/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/work/</guid>
-      <description> </description>
+Currently Founding Designer at Railway Since 2021, I&amp;rsquo;ve been poured my heart and soul into Railway —a modern software deployment and observability platform—as the founding designer.
+Before Sr Product Designer at Rainforest Automated Software QA 2019-2021 Founding Designer at Kong Enterprise-grade API Tooling 2019-2021 Product Designer at Corpfolder Mexico-specific Accountability Software 2019-2021 Interaction Designer at Freshout RIP.</description>
     </item>
   </channel>
 </rss>

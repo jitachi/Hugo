@@ -1,4 +1,4 @@
-<header class="flex items-center gap-2">
+<header class="flex items-center gap-2 p-[8vw] md:py-[4vw]">
 	<a class="logo" href="{{ .Site.BaseURL }}">
     <img class="w-9 min-w-9 rounded-full border border-white" src="{{ .Site.BaseURL }}img/avatar.png">
     <!-- {{ .Site.Title }} -->
@@ -8,7 +8,7 @@
     {{ $currentPage := . }}
     {{ range .Site.Menus.main }}  
     
-      <a class="p-2 px-4 text-base bg-white bg-opacity-5 hover:bg-opacity-25 transition ease-in-out duration-200 rounded-full {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
+      <a class="p-2 px-4 text-base bg-white bg-opacity-5 hover:bg-opacity-25 transition ease-in-out duration-200 rounded-full {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }} active{{ end }}" href="{{ .URL }}" title="{{ .Title }}">{{ .Name }}</a>
     
     {{ end }}
   </div>

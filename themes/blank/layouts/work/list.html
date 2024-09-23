@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<ul class="px-[8vw] pt-[8vw]">
+  {{ range where .Pages "Section" "work" }}
+  <li class="mb-24">
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <p class="opacity-45 mb-8 max-w-xl">
+      {{ .Summary }} {{ if .Truncated }}
+      <a href="{{ .Permalink }}">Read more...</a>
+      {{ end }}
+    </p>
+    <div
+      class="flex content-center justify-center p-32 bg-gray-800 overflow-hidden"
+    >
+      {{ with .Resources.GetMatch .Params.featured_image }}
+      <img class="max-w-screen-xl" alt="..." src="{{ .RelPermalink }}" />
+      {{ end }}
+    </div>
+  </li>
+  {{ end }}
+</ul>
+
+{{ end }}

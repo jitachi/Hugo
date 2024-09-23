@@ -1,12 +1,15 @@
 {{ define "main" }}
-	
   <main>
     {{ partial "hero" . }}
-		{{ $paginator := .Paginate (where .Site.RegularPages "Type" "in" .Site.Params.mainSections) }}
-		{{ range $paginator.Pages }}
-			{{ .Render "summary" }}
-		{{ end }}
-		<!-- {{ partial "pagination.html" . }} -->
-	</main>
-<!-- {{ partial "sidebar.html" . }} -->
+
+
+    <ul id="grid-posts" class="md:grid md:grid-cols-2 xl:grid-cols-3 gap-2">
+      {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+      {{ range $paginator.Pages }}
+
+        {{ .Render "summary" }}
+
+      {{ end }}
+    </ul>
+  </main>
 {{ end }}

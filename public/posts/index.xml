@@ -1,32 +1,32 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Jitachi Garcia</title>
+    <title>Home on Jitachi Garcia</title>
     <link>https://jitachi.com/posts/</link>
-    <description>Recent content in Posts on Jitachi Garcia</description>
+    <description>Recent content in Home on Jitachi Garcia</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 05 Jul 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jitachi.com/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Changing habits and identity rebalance</title>
-      <link>https://jitachi.com/posts/04-atomic-habits/</link>
-      <pubDate>Fri, 05 Jul 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/04-atomic-habits/</guid>
-      <description>I decided to change my output, started with this book and I think it worked (?)</description>
+      <title>Plaholder post</title>
+      <link>https://jitachi.com/posts/03-placeholder/</link>
+      <pubDate>Thu, 05 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/03-placeholder/</guid>
+      <description>Placeholder text</description>
     </item>
     <item>
-      <title>My mechanical keebs journey</title>
-      <link>https://jitachi.com/posts/mech-keyboards/</link>
-      <pubDate>Mon, 24 Jun 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/mech-keyboards/</guid>
-      <description>The rabbit hole of building a keyboard</description>
+      <title>GTI MK7 Build</title>
+      <link>https://jitachi.com/posts/02-gti-mk7-build/</link>
+      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/02-gti-mk7-build/</guid>
+      <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
     </item>
     <item>
       <title>Styleguide</title>
-      <link>https://jitachi.com/posts/styleguide/</link>
+      <link>https://jitachi.com/posts/01-styleguide/</link>
       <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/styleguide/</guid>
+      <guid>https://jitachi.com/posts/01-styleguide/</guid>
       <description>Local styles for a happier development</description>
     </item>
   </channel>
