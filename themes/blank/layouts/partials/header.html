@@ -24,7 +24,7 @@
     </div>
   </div>
 
-  <div class="js-toggle-wrapper">
+  <!-- <div class="js-toggle-wrapper">
     <div class="js-toggle">
       <div class="js-toggle-track">
         <div class="js-toggle-track-check">
@@ -66,21 +66,24 @@
     this.classList.add("js-toggle--focus");
     //If dark mode is selected
     if (this.classList.contains("js-toggle--checked")) {
-      body.classList.add("dark-mode");
+      body.classList.add("light-mode");
       //Save user preference in storage
-      localStorage.setItem("darkMode", "true");
+      localStorage.setItem("lightMode", "true");
     } else {
-      body.classList.remove("dark-mode");
+      body.classList.remove("light-mode");
       setTimeout(function () {
-        localStorage.removeItem("darkMode");
+        localStorage.removeItem("lightMode");
       }, 100);
     }
   });
 
   //Check Storage. Keep user preference on page reload
-  if (localStorage.getItem("darkMode")) {
+  if (localStorage.getItem("lightMode")) {
     //body.classList.add('dark-mode');
     switcher.classList.add("js-toggle--checked");
-    body.classList.add("dark-mode");
+    body.classList.add("light-mode");
   }
-</script>
+</script> -->
+
+  {{ partial "theme-switcher.html" }}
+</header>
