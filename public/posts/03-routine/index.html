@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Routine</title>
+	
+	
+	
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="/css/style.css">
+	
+</head>
+<body>
+	<header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
+  <div class="flex items-center gap-2">
+    <a class="logo" href="https://jitachi.com/">
+      <img
+        class="w-9 min-w-9 rounded-full border border-white"
+        src="https://jitachi.com/img/avatar.png"
+      />
+      
+    </a>
+
+    <div class="flex gap-2">
+      
+      
+        <a
+          class="p-2 px-4 text-base bg-white bg-opacity-5 hover:bg-opacity-25 transition ease-in-out duration-200 rounded-full 
+        "
+          href="/about/"
+          title="About"
+          >About</a
+        >
+      
+    </div>
+  </div>
+
+  
+
+  
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+
+<button id="theme-toggle">
+  <i id="sun-icon" class="fas fa-sun" style="display: none;"></i>
+  <i id="moon-icon" class="fas fa-moon"></i>
+</button>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const themeToggleBtn = document.getElementById("theme-toggle");
+    const sunIcon = document.getElementById("sun-icon");
+    const moonIcon = document.getElementById("moon-icon");
+    let currentTheme = localStorage.getItem("theme") || "auto"; 
+
+    
+    const systemDarkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    
+    function setTheme(theme) {
+      if (theme === "dark") {
+        document.body.classList.add("dark");
+        document.body.classList.remove("light");
+        sunIcon.style.display = "inline"; 
+        moonIcon.style.display = "none"; 
+      } else if (theme === "light") {
+        document.body.classList.add("light");
+        document.body.classList.remove("dark");
+        sunIcon.style.display = "none"; 
+        moonIcon.style.display = "inline"; 
+      } else if (theme === "auto") {
+        if (systemDarkQuery.matches) {
+          document.body.classList.add("dark");
+          document.body.classList.remove("light");
+          sunIcon.style.display = "inline"; 
+          moonIcon.style.display = "none"; 
+        } else {
+          document.body.classList.add("light");
+          document.body.classList.remove("dark");
+          sunIcon.style.display = "none"; 
+          moonIcon.style.display = "inline"; 
+        }
+      }
+    }
+
+    
+    setTheme(currentTheme);
+
+    
+    themeToggleBtn.addEventListener("click", () => {
+      currentTheme = localStorage.getItem("theme") || "auto";
+
+      if (currentTheme === "light" || currentTheme === "auto") {
+        localStorage.setItem("theme", "dark");
+        setTheme("dark");
+      } else if (currentTheme === "dark") {
+        localStorage.setItem("theme", "light");
+        setTheme("light");
+      }
+    });
+
+    
+    systemDarkQuery.addEventListener("change", (e) => {
+      currentTheme = localStorage.getItem("theme") || "auto";
+
+      
+      if (currentTheme === "auto") {
+        setTheme("auto");
+      }
+    });
+  });
+</script>
+
+</header>
+
+	
+	<main class="px-[8vw] pt-[4vw]">
+      <div class="page-title mb-[4vw]">
+        <div class="text-xl mb-6 opacity-45">
+			<time class="mono" datetime="2024-10-25T00:00:00">2024.10.25</time>
+		</div>
+		<h1>Routine</h1>
+      </div>
+		<div class="long-form">
+			<p class="large">For the last months, I've felt like not doing enough, days were a drag and simply, everything was hard. There's an episode in Spongebob Squarepants where Bob forgets how to prepare a Krabby Patty; pretty much that's how I felt: I've done for over 10 years and I'm struggling.</p>
+<img src="images/spongebob.png" alt="image alt test" class="inline-img"><p>I feel like going nowhere. What I&rsquo;m doing in my days (or I think I&rsquo;m doing) is not getting me closer to where I want to go.</p>
+<p>(I) Maybe I should consider creating a routine but no, that&rsquo;s not for me, I like to have my days open so I can do infinite stuff instead of sticking to what a calendar says.</p>
+<p>(II) I don&rsquo;t like to plan things, I like to adapt to how the day&rsquo;s going and flow with it.</p>
+<p>We&rsquo;re what we do. We&rsquo;re our habits. Yes, I read Atomic Habits recently, and that made me think of what I am, how am I doing it, and basically, who I am.</p>
+<p>I don&rsquo;t have attention. Look a fluffy dog!</p>
+<p>This week I decided to make a routine and give it a try. Today is 5:38am, is the third day, and here&rsquo;s how my routine looks like:</p>
+<h5 id="615-645-reading-a-book">6:15-6:45 Reading a Book</h5>
+<p>I want to make learning a habit. Also, I find the <em>task</em> of reading a bit difficult, after a few minutes, its easy for me to start thinking in things, to drift apart from the lecture so, the constant practice of reading helps me to keep myself focused in one activity. I try to read at least 20 pages every day.</p>
+<h5 id="645-710-prepare--dog">6:45-7:10 Prepare + Dog</h5>
+<p>Get dressed to take daughter to school AND take the dog out. Nothing too complex here, nothing to think about. The other day I decided I would <em>always</em> wear a Railway hoodie and sweat pants when taking my daughter to school.</p>
+<h5 id="710-800-school-ride">7:10-8:00 School ride</h5>
+<p>Love driving. This is just an early opportunity to do it. After dropping my daughter at school, we drive for a little, just enjoying the streets before they get dense with traffic.</p>
+<h5 id="800-900-exercise">8:00-9:00 Exercise</h5>
+<p>I try to not be a couch potato. I know I&rsquo;m a nerd and I spend all my day in front of a computer and I&rsquo;ve accumulated a few extra kilos around my waistline. Plus, I want to run 5K casually, any day of the week, this is what I&rsquo;m working towards to.
+Also, I&rsquo;m terrible at doing something in a paced fashion, I like to go intense, suffer, and then quit to later regret it. This time I&rsquo;m trying to break the cycle.</p>
+<blockquote>
+<p>If I have the opportunity to think about it and somehow avoid doing it, guess what? I&rsquo;m not going to do it—path of least resistance—BUT if its <em>already there</em> before I start thinking about it, I&rsquo;ll just start doing it.</p>
+</blockquote>
+<h5 id="900-930-breakfast">9:00-9:30 Breakfast</h5>
+<p>Self-explanatory. We all need food in the morning.</p>
+<p><em>work day starts at 9:30</em></p>
+<h5 id="930-1000-discord-catchup--planning">9:30-10:00 Discord Catchup / Planning</h5>
+<p>First thing of the day: see what happened while you were away, guestimate what are you going to do during the day</p>
+<h5 id="1000-1200-hard-rocks-i">10:00-12:00 Hard rocks (I)</h5>
+<p>The most important thing in the day. If I don&rsquo;t do anything else, I should feel fine knowing I made progress.</p>
+<h5 id="1200100-thinking-walk">12:00—1:00 Thinking Walk</h5>
+<p>BREAK, take time to decompress and let your subconscious digest the information you absorbed and let it marinate for a bit on it. Once you get back you&rsquo;ll have a better idea.</p>
+<h5 id="100-300-hard-rocks-ii">1:00-3:00 Hard Rocks (II)</h5>
+<p>2-hour continuation of the first block.</p>
+<p><strong>3:00-4:00 Lunch + Family catchup</strong>
+Yup, I like lunch.</p>
+<p><strong>4:00-6:00 Playtime</strong>
+Here&rsquo;s what I put things that aren&rsquo;t the most important thing I could do, stakes are low, and this is my play time to keep my creative practice alive.</p>
+<p>6:00 - 6:30 Journaling
+Stop all the work, start writing how your day was. What parts you liked, what parts you didn&rsquo;t, the struggles, all of that.</p>
+<p>6:30 - 7:00 Wrap-o-clock
+Posting an update in our Discord channel named &ldquo;daily-wraps&rdquo; means I&rsquo;ve finished my work day and I disconnect.</p>
+<p>7:00 - 8:00 Personal time (I)
+Basically, time for side projects, writing, or just consuming internet unproductively.</p>
+<p>8:00 - 8:30 Dinner
+8:30 - 8:45 Take dog out
+8:45 - 10:00 Personal Time (II)</p>
+<h2 id="how-is-this-tied-to-my-goals">How is this tied to my goals</h2>
+<h2 id="finality">Finality</h2>
+
+		</div>
+		
+	</main>
+  
+
+	
+</body>
+</html>

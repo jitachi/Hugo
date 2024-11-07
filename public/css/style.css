@@ -49,8 +49,8 @@ body {
   font-family: var(--font-family-sans);
   font-size: var(--font-base);
   line-height: 1.55;
-  background-color: #16161d;
-  color: white;
+  background: var(--color-background);
+  color: var(--color-foreground);
 }
 
 a {
@@ -303,7 +303,7 @@ h5 + h4 {
   margin-bottom: 0px;
 }
 
-.js-toggle-wrapper {
+/* .js-toggle-wrapper {
   display: table;
 }
 
@@ -404,8 +404,63 @@ h5 + h4 {
   box-shadow: 0px 0px 5px 5px rgb(255, 167, 196);
 }
 
-body.dark-mode,
-body.dark-mode main * {
-  background: rgb(45, 45, 45);
-  color: #f5f5f5;
+body.light-mode,
+body.light-mode main * {
+  --color-background: #0eb64c;
+  --color-foreground: black;
+} */
+
+/* body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  body {
+    background-color: red;
+    color: #ffffff;
+  }
+} */
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  transition:
+    background-color 0.5s ease,
+    color 0.25s ease;
+}
+
+/* Dark mode based on system preference */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
+  }
+}
+
+/* Manual light and dark modes */
+body.light {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+/* Add basic styles for the icons */
+#theme-toggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+
+#theme-toggle i {
+  transition: opacity 0.3s ease; /* Smooth icon transitions */
 }
