@@ -451,6 +451,8 @@ body.light {
 body.dark {
   background-color: #000000;
   color: #ffffff;
+  --color-foreground: blue;
+  --color-background: red;
 }
 
 /* Add basic styles for the icons */

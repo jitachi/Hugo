@@ -3,7 +3,8 @@
     {{ partial "hero" . }}
 
 
-    <ul id="grid-posts" class="md:grid md:grid-cols-2 xl:grid-cols-3 gap-2">
+    <!-- <ul id="grid-posts" class="md:grid md:grid-cols-2 xl:grid-cols-3 gap-2"> -->
+    <ul class="gap-2">
       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
       {{ range $paginator.Pages }}
 
