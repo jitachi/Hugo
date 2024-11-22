@@ -24,19 +24,19 @@ I don't have attention. Look a fluffy dog!
 
 This week I decided to make a routine and give it a try. Today is 5:38am, is the third day, and here's how my routine looks like:
 
-##### 6:15-6:45 Reading a Book
+#### 6:15-6:45 Reading a Book
 
 I want to make learning a habit. Also, I find the _task_ of reading a bit difficult, after a few minutes, its easy for me to start thinking in things, to drift apart from the lecture so, the constant practice of reading helps me to keep myself focused in one activity. I try to read at least 20 pages every day.
 
-##### 6:45-7:10 Prepare + Dog
+#### 6:45-7:10 Prepare + Dog
 
 Get dressed to take daughter to school AND take the dog out. Nothing too complex here, nothing to think about. The other day I decided I would _always_ wear a Railway hoodie and sweat pants when taking my daughter to school.
 
-##### 7:10-8:00 School ride
+#### 7:10-8:00 School ride
 
 Love driving. This is just an early opportunity to do it. After dropping my daughter at school, we drive for a little, just enjoying the streets before they get dense with traffic.
 
-##### 8:00-9:00 Exercise
+#### 8:00-9:00 Exercise
 
 I try to not be a couch potato. I know I'm a nerd and I spend all my day in front of a computer and I've accumulated a few extra kilos around my waistline. Plus, I want to run 5K casually, any day of the week, this is what I'm working towards to.
 Also, I'm terrible at doing something in a paced fashion, I like to go intense, suffer, and then quit to later regret it. This time I'm trying to break the cycle.
