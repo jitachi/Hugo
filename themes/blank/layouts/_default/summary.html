@@ -13,7 +13,7 @@
         <!-- {{ range .Params.tags }}
           <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
         {{ end }} -->
-        <p class="opacity-45 mb-4 max-w-xl">
+        <p class="opacity-45 mb-8 max-w-xl">
           {{ .Summary }}
           {{ if .Truncated }}
             <a href="{{ .Permalink }}">Read more...</a>
@@ -21,7 +21,7 @@
         </p>
         <div class="overflow-hidden transition-all rounded-md">
           {{ with .Resources.GetMatch .Params.featured_image }}
-            <img alt="..." src="{{ .RelPermalink }}" />
+            <img alt="..." src="{{ .RelPermalink }}"/>
           {{ end }}
         </div>
       </div>
