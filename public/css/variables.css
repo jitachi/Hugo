@@ -33,6 +33,7 @@
     Menlo, Consolas, monospace;
 
   --size-text: 820px;
+  --content-width: 800px;
 
   --color-foreground: white;
   --color-background: #12121a;

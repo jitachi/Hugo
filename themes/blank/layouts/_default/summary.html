@@ -5,13 +5,11 @@
     >
       <!-- <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#16161d]"></div> -->
 
-      <div class="mx-auto min-w-[640px]">
+      <div class="mx-auto min-w-[var(--content-width)]">
         <p class="mt-4 mb-1 opacity-45 text-base">
-          <time
-            class="mono text-sm"
-            datetime="{{ .Date.Format "2006-01-02T15:04:05" }}"
-            >{{ .Date.Format "Jan 2, 2006" }}</time
-          >
+          <time class="mono text-sm" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+              {{ .Date.Format "Jan 2, 2006" }}
+          </time>
         </p>
 
         <h3 class="mb-1 tracking-tight group-hover:underline">{{ .Title }}</h5>
@@ -24,7 +22,7 @@
             <a href="{{ .Permalink }}">Read more...</a>
           {{ end }}
         </p>
-        <div class="overflow-hidden transition-all rounded-md max-w-[600px]">
+        <div class="overflow-hidden transition-all rounded-md max-w-[var(--content-width)]">
           {{ with .Resources.GetMatch .Params.featured_image }}
             <img alt="..." src="{{ .RelPermalink }}" />
           {{ end }}

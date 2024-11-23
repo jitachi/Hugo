@@ -1,7 +1,7 @@
 +++
 title = 'Routine'
 date = 2024-10-25
-draft = false
+draft = true
 summary = "One time I decided to build my _dream_ car"
 featured_image = "images/gti.jpg"
 section = "posts"

@@ -47,9 +47,8 @@ article img {
 
 h1 {
   font-size: clamp(2rem, 6vw + 1rem, 6.25rem);
-  margin-bottom: 16px;
   font-weight: 700;
-  line-height: 112.5%;
+  line-height: 100%;
   letter-spacing: -0.0375em;
 }
 
@@ -95,14 +94,14 @@ h6 {
 .long-form pre {
   margin-left: auto;
   margin-right: auto;
-  max-width: 800px;
+  max-width: var(--content-width);
   /* letter-spacing: -0.0125em; */
   /* margin-bottom: 1rem; */
 }
 
 .page-title h1 {
-  /* font-size: clamp(2rem, 4vw + 1rem, 5rem); */
   max-width: 20ch;
+  margin-left: -.05em;
 }
 
 .long-form h2 {
@@ -130,7 +129,7 @@ h6 {
   font-family: var(--font-family-sans);
   letter-spacing: -0.00625em;
   margin-bottom: 1em;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 .long-form h5 {
@@ -219,7 +218,7 @@ p.row {
 
 .long-form .inline-img {
   width: 100%;
-  max-width: 800px;
+  max-width: var(--content-width);
   margin-left: auto;
   margin-right: auto;
 }
@@ -276,7 +275,7 @@ body.light {
   --color-background: white;
   --color-bg-lightest:   hsla(0, 100%, 0%, 0.05);
   --color-bg-light:      hsla(0, 100%, 0%, 0.1);
-  --color-border-light:  hsla(0, 100%, 0%, 0.1);
+  --color-border-light:  hsla(0, 100%, 0%, 0.08);
 }
 
 body.dark {
@@ -284,7 +283,7 @@ body.dark {
   --color-background: #12121a;
   --color-bg-lightest:   hsla(0, 100%, 100%, 0.05);
   --color-bg-light:      hsla(0, 100%, 100%, 0.1);
-  --color-border-light:  hsla(0, 100%, 100%, 0.1);
+  --color-border-light:  hsla(0, 100%, 100%, 0.05);
 }
 
 /* Add basic styles for the icons */
