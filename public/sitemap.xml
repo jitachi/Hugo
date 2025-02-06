@@ -2,7 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://jitachi.com/posts/04-hard-working-people/</loc>
+    <lastmod>2024-10-25T00:00:00+00:00</lastmod>
+  </url><url>
     <loc>https://jitachi.com/</loc>
+    <lastmod>2024-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jitachi.com/posts/</loc>
+    <lastmod>2024-10-25T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://jitachi.com/posts/02-gti-mk7-build/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jitachi.com/work/01-insomnia/</loc>
@@ -31,9 +40,6 @@
   </url><url>
     <loc>https://jitachi.com/work/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://jitachi.com/posts/</loc>
-    <lastmod>2024-02-05T00:00:00+00:00</lastmod>
   </url><url>
     <loc>https://jitachi.com/posts/01-styleguide/</loc>
     <lastmod>2024-02-05T00:00:00+00:00</lastmod>
