@@ -11,7 +11,6 @@ section = "posts"
   This is a banner to cover my ass or to call your attention. Thanks.
 </div>
 
-
 <p class="large">Paragraph Large. Intended for the introduction of the text, intents to not be overwhelming for a nice introduction. Text length no longer than 4 lines in desktop viewport. around 200-215 Characters. Like this one.</p>
 
 ## Heading 2 - This is a heading 2

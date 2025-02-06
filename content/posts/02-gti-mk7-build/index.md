@@ -1,7 +1,7 @@
 +++
 title = 'GTI MK7 Build'
 date = 2024-03-05
-draft = true
+draft = false
 summary = "One time I decided to build my _dream_ car"
 featured_image = "images/gti.jpg"
 section = "posts"

@@ -1,30 +1,39 @@
-<li class="border-t border-[var(--color-border-light)]">
+<li class="">
   <a href="{{ .Permalink }}">
-    <article class="flex flex-col p-[8vw]  hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96">
+    <article class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96">
 
-      <div class="mx-auto max-w-[var(--content-width)]">
-        <p class="mt-4 mb-1 opacity-45 text-base">
-          <time class="mono text-sm" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
-              {{ .Date.Format "Jan 2, 2006" }}
-          </time>
-        </p>
+        <div class="md:flex gap-8 items-start border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] "> 
+          
+          <p class="opacity-45 text-[85%] md:pb-0 md:mt-1 lg:pb-0 pb-2">
+            <time class="mono" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+                {{ .Date.Format "01.02.06" }}
+            </time>
+          </p>
 
-        <h3 class="mb-1 tracking-tight group-hover:underline">{{ .Title }}</h5>
-        <!-- {{ range .Params.tags }}
-          <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a>
-        {{ end }} -->
-        <p class="opacity-45 mb-8 max-w-xl">
+          <div class="lg:flex">
+          <p class="tracking-tight group-hover:underline mr-4">
+            {{ .Title }}
+          </p>
+          
+          <p class="opacity-45">
           {{ .Summary }}
           {{ if .Truncated }}
             <a href="{{ .Permalink }}">Read more...</a>
           {{ end }}
-        </p>
-        <div class="overflow-hidden transition-all rounded-md">
+          </p>
+        </div>
+          
+        </div>
+
+        
+
+        <!-- <div class="overflow-hidden transition-all rounded-md">
           {{ with .Resources.GetMatch .Params.featured_image }}
             <img alt="..." src="{{ .RelPermalink }}"/>
           {{ end }}
-        </div>
-      </div>
+        </div> -->
+
+      
     </article>
   </a>
 </li>
