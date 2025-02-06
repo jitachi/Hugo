@@ -158,12 +158,14 @@ em { font-style: italic; }
 .long-form li ul,
 .long-form li ol {
   /* margin-top: 4px; */
-  margin-bottom: 8px;
+  margin-bottom: 16px;
 }
 
 .long-form li {
-  list-style-position: inside;
+  list-style-position: outside;
   list-style-type: square;
+  margin-left: 24px;
+  line-height: 1.5;
 }
 
 .long-form blockquote p {
@@ -243,7 +245,7 @@ body {
 /* Manual light and dark modes */
 body.light {
   --color-foreground: black;
-  --color-background: white;
+  --color-background: hsla(230, 25%, 90%, 1);
   --color-bg-lightest:   hsla(0, 100%, 0%, 0.05);
   --color-bg-light:      hsla(0, 100%, 0%, 0.1);
   --color-border-light:  hsla(0, 100%, 0%, 0.08);
