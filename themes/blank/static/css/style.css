@@ -163,10 +163,17 @@ em { font-style: italic; }
 
 .long-form li {
   list-style-position: outside;
-  list-style-type: square;
-  margin-left: 24px;
+  list-style-type: circle;
+  margin-left: 32px;
+  padding-left: 4px;
   line-height: 1.5;
 }
+
+/* .long-form li::before {
+  content: "⚬";
+  margin-right: 16px;
+  font-size: 20px;
+} */
 
 .long-form blockquote p {
   font-family: var(--font-family-sans);
@@ -253,7 +260,7 @@ body.light {
 
 body.dark {
   --color-foreground: white;
-  --color-background: #12121a;
+  --color-background: #2e2e45;
   --color-bg-lightest:   hsla(0, 100%, 100%, 0.05);
   --color-bg-light:      hsla(0, 100%, 100%, 0.1);
   --color-border-light:  hsla(0, 100%, 100%, 0.05);

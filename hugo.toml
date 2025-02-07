@@ -1,6 +1,6 @@
 baseURL = 'https://jitachi.com/'
 languageCode = 'en-us'
-title = 'Jitachi Garcia'
+title = 'Jitachi'
 theme = 'blank'
 
 [markup.goldmark.parser]
