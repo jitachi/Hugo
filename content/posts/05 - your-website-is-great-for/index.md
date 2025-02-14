@@ -6,7 +6,9 @@ summary = "a simple list of reasons to publish on your website"
 section = "posts"
 +++
 
-<ul class="serif text-2xl">
+I find it hard to work on my website. Treating it as a chore or part of my work (basically PR) makes it complicated for it to evolve. For that reason, I decided to list a number of reasons, excuses, and justifications to make writing feel more trivial.</p>
+
+<ul class="mt-12 text-xl">
     <li> Collecting thoughts you don’t want to hold anymore but don’t want to forget </li>    
     <li>Tell that story you think is funny or interesting</li>
     <li>Write notes to yourself</li>

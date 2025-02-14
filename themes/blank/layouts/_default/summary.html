@@ -2,16 +2,16 @@
   <a href="{{ .Permalink }}">
     <article class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96">
 
-        <div class="md:flex gap-8 items-start border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] "> 
+        <div class="md:flex gap-8 items-start border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] md:items-baseline"> 
           
-          <p class="opacity-45 text-[85%] md:pb-0 md:mt-1 lg:pb-0 pb-2">
+          <p class="opacity-45 text-[75%] md:pb-0 lg:pb-0 pb-2">
             <time class="mono" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
                 {{ .Date.Format "01.02.06" }}
             </time>
           </p>
 
           <div class="lg:flex">
-          <p class="tracking-tight group-hover:underline mr-4">
+          <p class="tracking-[-0.0125em] group-hover:underline mr-3 font-semibold">
             {{ .Title }}
           </p>
           

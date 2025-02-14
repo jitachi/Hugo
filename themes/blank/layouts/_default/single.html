@@ -1,16 +1,20 @@
 {{ define "main" }}
-	<main class="px-[8vw] pt-[8vw]">
+	<main class="px-[8vw] pt-[2vw] relative">
       
-		<div class="page-title mb-[8vw] mx-auto max-w-[--content-width]">
+		<div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
+			<p class="text-4xl font-semibold tracking-tight mb-2">{{ .Title }}</p>
 			<time class="mono text-sm opacity-45" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
 				{{ .Date.Format "Jan 2, 2006" }}
 			</time>
-			<p class="text-4xl tracking-tight pt-4">{{ .Title }}</p>			
       	</div>
 
 		<div class="long-form">
-			{{ .Content }}
+			
+				{{ .Content }}
+			
 		</div>
+		
+		
 		{{ with .Params.tags }}
 		<div>
 			<ul id="tags">

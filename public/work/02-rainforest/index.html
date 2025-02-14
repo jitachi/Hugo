@@ -3,15 +3,19 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Rainforest</title>
+	<title>Rainforest • Jitachi</title>
+
 	
 	
 	
 	
-	<link rel="stylesheet" href="/style.css">
-	
+	<link rel="stylesheet" href="/style.css">	
 	<link rel="stylesheet" href="/css/style.css">
-	
+
+	<link rel="shortcut icon" type="image/png" href="/favicon.svg">
+	<link rel="shortcut icon" sizes="192x192" href="/favicon.svg">
+	<link rel="apple-touch-icon" href="/favicon.svg">
+
 </head>
 <body>
 	<header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
@@ -54,8 +58,10 @@
 
 
 <button id="theme-toggle">
-  <i id="sun-icon" class="fas fa-sun" style="display: none;"></i>
-  <i id="moon-icon" class="fas fa-moon"></i>
+  
+  
+  <p id="sun-icon" class="text-lg opacity-40" style="display: none;">light</p>
+  <p id="moon-icon" class="text-lg opacity-40">dark</p>
 </button>
 
 <script>
@@ -126,17 +132,18 @@
 </header>
 
 	
-	<main class="px-[8vw] pt-[8vw]">
+	<main class="px-[8vw] pt-[2vw] relative">
       
-		<div class="page-title mb-[8vw] mx-auto max-w-[--content-width]">
+		<div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
+			<p class="text-4xl font-semibold tracking-tight mb-2">Rainforest</p>
 			<time class="mono text-sm opacity-45" datetime="2024-03-05T00:00:00">
 				Mar 5, 2024
 			</time>
-			<p class="text-4xl tracking-tight pt-4">Rainforest</p>			
       	</div>
 
 		<div class="long-form">
-			<!-- <p class="large">We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills.</p> -->
+			
+				<!-- <p class="large">We choose to go to the moon. We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills.</p> -->
 <img src="images/rainforest.png" alt="image alt test"><h4 id="performance-upgrades">Performance Upgrades</h4>
 <p>It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.</p>
 <ul>
@@ -149,12 +156,14 @@
 <li>Integrated Engineering Performance Intercooler</li>
 </ul>
 
+			
 		</div>
+		
+		
 		
 	</main>
   
 
-	
 </body>
 </html>
 
