@@ -157,6 +157,7 @@ em { font-style: italic; }
   letter-spacing: -0.00625em;
   margin-bottom: 1em;
   opacity: 0.8;
+  line-height: 1.75;
 }
 
 .long-form h5 {
@@ -277,7 +278,7 @@ body {
 /* Dark mode based on system preference */
 
 /* Manual light and dark modes */
-body.light {
+html.light {
   --color-foreground: black;
   --color-background: #E9E9F0;
   --color-bg-lightest:   hsla(0, 100%, 0%, 0.05);
@@ -285,7 +286,7 @@ body.light {
   --color-border-light:  hsla(0, 100%, 0%, 0.08);
 }
 
-body.dark {
+html.dark {
   --color-foreground: white;
   --color-background: #2e2e45;
   --color-bg-lightest:   hsla(0, 100%, 100%, 0.05);

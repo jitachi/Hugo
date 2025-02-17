@@ -18,66 +18,62 @@
 </button>
 
 <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const themeToggleBtn = document.getElementById("theme-toggle");
-    const sunIcon = document.getElementById("sun-icon");
-    const moonIcon = document.getElementById("moon-icon");
-    let currentTheme = localStorage.getItem("theme") || "auto"; // Default to auto if no preference is stored
+ document.addEventListener("DOMContentLoaded", function () {
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const sunIcon = document.getElementById("sun-icon");
+  const moonIcon = document.getElementById("moon-icon");
+  let currentTheme = localStorage.getItem("theme") || "auto"; 
 
-    // Function to detect the system theme
-    const systemDarkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+  const systemDarkQuery = window.matchMedia("(prefers-color-scheme: dark)");
 
-    // Function to apply the theme and update icons
-    function setTheme(theme) {
-      if (theme === "dark") {
-        document.body.classList.add("dark");
-        document.body.classList.remove("light");
-        sunIcon.style.display = "inline"; // Show sun for dark mode (indicates switch to light)
-        moonIcon.style.display = "none"; // Hide moon icon
-      } else if (theme === "light") {
-        document.body.classList.add("light");
-        document.body.classList.remove("dark");
-        sunIcon.style.display = "none"; // Hide sun icon
-        moonIcon.style.display = "inline"; // Show moon for light mode (indicates switch to dark)
-      } else if (theme === "auto") {
-        if (systemDarkQuery.matches) {
-          document.body.classList.add("dark");
-          document.body.classList.remove("light");
-          sunIcon.style.display = "inline"; // Show sun for dark mode (indicates switch to light)
-          moonIcon.style.display = "none"; // Hide moon icon
-        } else {
-          document.body.classList.add("light");
-          document.body.classList.remove("dark");
-          sunIcon.style.display = "none"; // Hide sun icon
-          moonIcon.style.display = "inline"; // Show moon for light mode (indicates switch to dark)
-        }
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      sunIcon.style.display = "inline";
+      moonIcon.style.display = "none";
+    } else if (theme === "light") {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+      sunIcon.style.display = "none";
+      moonIcon.style.display = "inline";
+    } else {
+      // "Auto" mode: Use system preference
+      if (systemDarkQuery.matches) {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+        sunIcon.style.display = "inline";
+        moonIcon.style.display = "none";
+      } else {
+        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
+        sunIcon.style.display = "none";
+        moonIcon.style.display = "inline";
       }
     }
+  }
 
-    // Apply the stored theme or system preference on page load
-    setTheme(currentTheme);
+  // ✅ Apply theme on page load
+  applyTheme(currentTheme);
 
-    // Theme toggle button logic for manual switching
-    themeToggleBtn.addEventListener("click", () => {
-      currentTheme = localStorage.getItem("theme") || "auto";
+  // ✅ Toggle theme when button is clicked
+  themeToggleBtn.addEventListener("click", () => {
+    let newTheme = localStorage.getItem("theme") || "auto";
 
-      if (currentTheme === "light" || currentTheme === "auto") {
-        localStorage.setItem("theme", "dark");
-        setTheme("dark");
-      } else if (currentTheme === "dark") {
-        localStorage.setItem("theme", "light");
-        setTheme("light");
-      }
-    });
-
-    // Listen for system preference changes and update the theme accordingly if set to 'auto'
-    systemDarkQuery.addEventListener("change", (e) => {
-      currentTheme = localStorage.getItem("theme") || "auto";
-
-      // Only apply the system theme if user preference is set to 'auto'
-      if (currentTheme === "auto") {
-        setTheme("auto");
-      }
-    });
+    if (newTheme === "light" || newTheme === "auto") {
+      localStorage.setItem("theme", "dark");
+      applyTheme("dark");
+    } else {
+      localStorage.setItem("theme", "light");
+      applyTheme("light");
+    }
   });
+
+  // ✅ Update theme automatically when system preference changes
+  systemDarkQuery.addEventListener("change", () => {
+    if (localStorage.getItem("theme") === "auto") {
+      applyTheme("auto");
+    }
+  });
+});
 </script>
