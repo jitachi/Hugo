@@ -1,8 +1,8 @@
 +++
-title = 'Your website is for...'
+title = 'Ugh, my website.'
 date = 2024-10-25
 draft = false
-summary = "a simple list of reasons to publish on your website"
+summary = "Stupid, stupid, website."
 section = "posts"
 +++
 

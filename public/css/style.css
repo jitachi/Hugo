@@ -34,6 +34,17 @@ header a.active {
   font-size: var(--font-size-large);
 }
 
+/* a.nav-item {
+  font-size: var(--font-base);
+  padding: 12px;
+  border: 5px solid transparent; /* Set a transparent border with desired width */
+  border-image: linear-gradient(to bottom, red, orange) 1; /* Apply the gradient, "1" indicates a single slice for the border */
+  border-radius: 50%;
+  border-radius: 24px;
+border: 1px solid rgba(255, 255, 255, 0.00);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.00) 100%);
+} */
+
 
 main,
 .long-form h1 {
