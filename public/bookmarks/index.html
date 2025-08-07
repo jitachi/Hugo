@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      
+        Bookmarks •
+      
+      Jitachi
+    </title>
+
+    
+    
+
+
+    <script>
+      (function () {
+        let theme = localStorage.getItem("theme") || "auto";
+        let systemDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+
+        if (theme === "dark" || (theme === "auto" && systemDark)) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.svg" />
+    <link rel="shortcut icon" sizes="192x192" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
+  <div class="flex items-center gap-3">
+    <a class="logo" href="https://jitachi.com/">
+      <img
+        class="w-9 min-w-9 rounded-full border border-white"
+        src="https://jitachi.com/img/avatar.png"
+      />
+      
+    </a>
+
+    <div class="flex gap-1">
+      
+      
+        <a
+          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
+        "
+          href="/about/"
+          title="About"
+          >About</a
+        >
+      
+        <a
+          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
+            active
+          
+        "
+          href="/bookmarks/"
+          title="Bookmarks"
+          >Bookmarks</a
+        >
+      
+        <a
+          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
+        "
+          href="/posts/"
+          title="Posts"
+          >Posts</a
+        >
+      
+    </div>
+  </div>
+
+  
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+/>
+
+
+<button id="theme-toggle">
+  
+  
+  <div id="sun-icon" class="text-lg opacity-40" style="display: none;">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></svg>
+
+  </div>
+  <div id="moon-icon" class="text-lg opacity-40">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-moon"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+  </div>
+</button>
+
+<script>
+ document.addEventListener("DOMContentLoaded", function () {
+  const themeToggleBtn = document.getElementById("theme-toggle");
+  const sunIcon = document.getElementById("sun-icon");
+  const moonIcon = document.getElementById("moon-icon");
+  let currentTheme = localStorage.getItem("theme") || "auto"; 
+
+  const systemDarkQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+  function applyTheme(theme) {
+    if (theme === "dark") {
+      document.documentElement.classList.add("dark");
+      document.documentElement.classList.remove("light");
+      sunIcon.style.display = "inline";
+      moonIcon.style.display = "none";
+    } else if (theme === "light") {
+      document.documentElement.classList.add("light");
+      document.documentElement.classList.remove("dark");
+      sunIcon.style.display = "none";
+      moonIcon.style.display = "inline";
+    } else {
+      
+      if (systemDarkQuery.matches) {
+        document.documentElement.classList.add("dark");
+        document.documentElement.classList.remove("light");
+        sunIcon.style.display = "inline";
+        moonIcon.style.display = "none";
+      } else {
+        document.documentElement.classList.add("light");
+        document.documentElement.classList.remove("dark");
+        sunIcon.style.display = "none";
+        moonIcon.style.display = "inline";
+      }
+    }
+  }
+
+  
+  applyTheme(currentTheme);
+
+  
+  themeToggleBtn.addEventListener("click", () => {
+    let newTheme = localStorage.getItem("theme") || "auto";
+
+    if (newTheme === "light" || newTheme === "auto") {
+      localStorage.setItem("theme", "dark");
+      applyTheme("dark");
+    } else {
+      localStorage.setItem("theme", "light");
+      applyTheme("light");
+    }
+  });
+
+  
+  systemDarkQuery.addEventListener("change", () => {
+    if (localStorage.getItem("theme") === "auto") {
+      applyTheme("auto");
+    }
+  });
+});
+</script>
+
+</header>
+
+    
+
+<ul class="gap-2 px-40">
+  
+  
+
+    
+    <li class="mb-24">
+      <a href="/bookmarks/03-routine/">Video Link</a>
+      <p class="opacity-45 mb-8 max-w-xl">
+        One time I decided to build my <em>dream</em> car 
+      </p>
+      
+      
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8U-gCTEYxCA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+  
+      
+    </li>
+
+  
+
+    
+    <li class="mb-24">
+      <a href="/bookmarks/02-gti-mk7-build/">GTI MK7 Build</a>
+      <p class="opacity-45 mb-8 max-w-xl">
+        One time I decided to build my <em>dream</em> car 
+      </p>
+      
+      
+<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/AF3XJT9YKpM" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
+</div>
+
+  
+      
+    </li>
+
+  
+</ul>
+
+
+  </body>
+</html>

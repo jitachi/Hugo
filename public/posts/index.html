@@ -1,36 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Home • Jitachi</title>
-	
-		
-		
-	
-		<script>
-			(function() {
-				let theme = localStorage.getItem("theme") || "auto";
-				let systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-				
-				if (theme === "dark" || (theme === "auto" && systemDark)) {
-					document.documentElement.classList.add("dark");
-				} else {
-					document.documentElement.classList.add("light");
-				}
-			})();
-		</script>
-	
-		
-		<link rel="stylesheet" href="/style.css">	
-		<link rel="stylesheet" href="/css/style.css">
-	
-		<link rel="shortcut icon" type="image/png" href="/favicon.svg">
-		<link rel="shortcut icon" sizes="192x192" href="/favicon.svg">
-		<link rel="apple-touch-icon" href="/favicon.svg">
-	</head>
-<body>
-	<header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      
+        Posts •
+      
+      Jitachi
+    </title>
+
+    
+    
+
+
+    <script>
+      (function () {
+        let theme = localStorage.getItem("theme") || "auto";
+        let systemDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+
+        if (theme === "dark" || (theme === "auto" && systemDark)) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.svg" />
+    <link rel="shortcut icon" sizes="192x192" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
   <div class="flex items-center gap-3">
     <a class="logo" href="https://jitachi.com/">
       <img
@@ -54,9 +62,19 @@
         <a
           class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
         "
-          href="/photos/"
-          title="Photos"
-          >Photos</a
+          href="/bookmarks/"
+          title="Bookmarks"
+          >Bookmarks</a
+        >
+      
+        <a
+          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
+            active
+          
+        "
+          href="/posts/"
+          title="Posts"
+          >Posts</a
         >
       
     </div>
@@ -144,110 +162,240 @@
 
 </header>
 
-	
-<main>
-  
-  <div>
     
-    <h1>Home</h1>
-     
-  </div>
+
+<ul class="gap-2">
+  
+  
+
+    <li class="">
+  <a href="https://jitachi.com/posts/04-railway-metal/">
+    <article
+      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+    >
+      <div
+        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      >
+        <p class="opacity-45 text-[75%] pb-2 shrink-0">
+          <time
+            class="mono"
+            datetime="2024-10-25T00:00:00"
+          >
+            10.25.24
+          </time>
+        </p>
+
+        <div class="flex gap-6 flex-1 min-w-0">
+          
+            <div class="shrink-0 w-24 h-24 overflow-hidden rounded-md">
+              
+                <img
+                  src="/posts/04-railway-metal/images/img-metal.png"
+                  alt="Railway Metal"
+                  class="w-full h-full object-cover"
+                />
+              
+            </div>
+          
+
+
+          <div class="flex-1 min-w-0">
+            <p class="group-hover:underline font-semibold text-4xl mb-4">
+              Railway Metal
+            </p>
+            
+              <p>For the release of our Metal regions, I decided to make a conmemorative tshirt, of course featuring a fake trash metal logo:</p>
+<figure><img src="/posts/04-railway-metal/images/img-metal.png"/>
+</figure>
+
+            
+          </div>
+        </div>
+      </div>
+    </article>
+  </a>
+</li>
+
+
+  
+
     <li class="">
   <a href="https://jitachi.com/posts/05-your-website-is-great-for/">
-    <article class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96">
+    <article
+      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+    >
+      <div
+        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      >
+        <p class="opacity-45 text-[75%] pb-2 shrink-0">
+          <time
+            class="mono"
+            datetime="2024-10-25T00:00:00"
+          >
+            10.25.24
+          </time>
+        </p>
 
-        <div class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-baseline overflow-x-hidden"> 
+        <div class="flex gap-6 flex-1 min-w-0">
           
-          <p class="opacity-45 text-[75%] pb-2">
-            <time class="mono" datetime="2024-10-25T00:00:00">
-                10.25.24
-            </time>
-          </p>
 
-          <div class="flex shrink-0">
-          <p class="tracking-[-0.0125em] group-hover:underline mr-3 font-semibold">
-            Ugh, my website.
-          </p>
-          
-          <p class="opacity-45">
-          Stupid, stupid, website.
-          
-          </p>
+
+          <div class="flex-1 min-w-0">
+            <p class="group-hover:underline font-semibold text-4xl mb-4">
+              Ugh, my website.
+            </p>
+            
+              <p class="long-form">Stupid, stupid, website.</p>
+            
+          </div>
         </div>
-          
-        </div>
-
-        
-
-        
-
-      
+      </div>
     </article>
   </a>
 </li>
-  <li class="">
-  <a href="https://jitachi.com/posts/01-styleguide/">
-    <article class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96">
 
-        <div class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-baseline overflow-x-hidden"> 
+
+  
+
+    <li class="">
+  <a href="https://jitachi.com/posts/06-video-test/">
+    <article
+      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+    >
+      <div
+        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      >
+        <p class="opacity-45 text-[75%] pb-2 shrink-0">
+          <time
+            class="mono"
+            datetime="2024-10-25T00:00:00"
+          >
+            10.25.24
+          </time>
+        </p>
+
+        <div class="flex gap-6 flex-1 min-w-0">
           
-          <p class="opacity-45 text-[75%] pb-2">
-            <time class="mono" datetime="2024-02-05T00:00:00">
-                02.05.24
-            </time>
-          </p>
 
-          <div class="flex shrink-0">
-          <p class="tracking-[-0.0125em] group-hover:underline mr-3 font-semibold">
-            Styleguide
-          </p>
-          
-          <p class="opacity-45">
-          Local styles for a happier development
-          
-          </p>
-        </div>
-          
-        </div>
 
-        
-
-        
-
-      
-    </article>
-  </a>
-</li>
-  <div>
-
-1 of 1
-
+          <div class="flex-1 min-w-0">
+            <p class="group-hover:underline font-semibold text-4xl mb-4">
+              Video Test
+            </p>
+            
+              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+  <iframe src="https://www.youtube.com/embed/8U-gCTEYxCA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
 </div>
 
-</main>
-<aside>
-	<div>
-		<div>
-			<h3>LATEST POSTS</h3>
-		</div>
-		<div>
-			<ul>
-				
-				<li><a href="/photos/01-photo/">Photo 02</a></li>
-				
-				<li><a href="/photos/02-photo/">Rainforest</a></li>
-				
-				<li><a href="/photos/03-photo-copy/">testy test</a></li>
-				
-				<li><a href="/photos/03-photo/">testy test</a></li>
-				
-			</ul>
-		</div>
-	</div>
-</aside>
- 
-</body>
+            
+          </div>
+        </div>
+      </div>
+    </article>
+  </a>
+</li>
+
+
+  
+
+    <li class="">
+  <a href="https://jitachi.com/posts/02-gti-mk7-build/">
+    <article
+      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+    >
+      <div
+        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      >
+        <p class="opacity-45 text-[75%] pb-2 shrink-0">
+          <time
+            class="mono"
+            datetime="2024-03-05T00:00:00"
+          >
+            03.05.24
+          </time>
+        </p>
+
+        <div class="flex gap-6 flex-1 min-w-0">
+          
+            <div class="shrink-0 w-24 h-24 overflow-hidden rounded-md">
+              
+                <img
+                  src="/posts/02-gti-mk7-build/images/gti.jpg"
+                  alt="GTI MK7 Build"
+                  class="w-full h-full object-cover"
+                />
+              
+            </div>
+          
+
+
+          <div class="flex-1 min-w-0">
+            <p class="group-hover:underline font-semibold text-4xl mb-4">
+              GTI MK7 Build
+            </p>
+            
+              Performance Upgrades APR Engine (ECU) Tune Stage 1 APR Transmission (TCU) Tune Stage 1 NGK Performance Spark Plugs Racingline R600 Closed Intake Racingline Turbo inlet pipe &amp; hoses APR Turbo muffler delete Integrated Engineering Performance Intercooler APR Engine (ECU) Tune Stage 1 The easiest way to get more power. If I could only do one mod, this would be it. The APR Engine tune takes your car from 220HP to 316HP (!
+
+            
+          </div>
+        </div>
+      </div>
+    </article>
+  </a>
+</li>
+
+
+  
+
+    <li class="">
+  <a href="https://jitachi.com/posts/01-styleguide/">
+    <article
+      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+    >
+      <div
+        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      >
+        <p class="opacity-45 text-[75%] pb-2 shrink-0">
+          <time
+            class="mono"
+            datetime="2024-02-05T00:00:00"
+          >
+            02.05.24
+          </time>
+        </p>
+
+        <div class="flex gap-6 flex-1 min-w-0">
+          
+            <div class="shrink-0 w-24 h-24 overflow-hidden rounded-md">
+              
+                <img
+                  src="/posts/posts/01-styleguide/cposts/01-styleguide/oposts/01-styleguide/nposts/01-styleguide/tposts/01-styleguide/eposts/01-styleguide/nposts/01-styleguide/tposts/01-styleguide//posts/01-styleguide/pposts/01-styleguide/oposts/01-styleguide/sposts/01-styleguide/tposts/01-styleguide/sposts/01-styleguide//posts/01-styleguide/images/img-pro-engineer.jpg_"
+                  alt="Styleguide"
+                  class="w-full h-full object-cover"
+                />
+              
+            </div>
+          
+
+
+          <div class="flex-1 min-w-0">
+            <p class="group-hover:underline font-semibold text-4xl mb-4">
+              Styleguide
+            </p>
+            
+              <p class="long-form">Local styles for a happier development</p>
+            
+          </div>
+        </div>
+      </div>
+    </article>
+  </a>
+</li>
+
+
+  
+</ul>
+
+
+  </body>
 </html>
-
-
-

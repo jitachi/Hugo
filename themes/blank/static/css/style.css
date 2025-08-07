@@ -23,7 +23,7 @@ header a.active {
   font-size: var(--font-size-smaller);
   letter-spacing: 0.0125em;
 }
-.large {
+.long-form p.large {
   font-size: var(--font-size-larger);
   font-family: var(--font-family-sans);
   line-height: 150%;
@@ -34,27 +34,25 @@ header a.active {
   font-size: var(--font-size-large);
 }
 
-/* a.nav-item {
-  font-size: var(--font-base);
-  padding: 12px;
-  border: 5px solid transparent; /* Set a transparent border with desired width */
-  border-image: linear-gradient(to bottom, red, orange) 1; /* Apply the gradient, "1" indicates a single slice for the border */
-  border-radius: 50%;
-  border-radius: 24px;
-border: 1px solid rgba(255, 255, 255, 0.00);
-background: linear-gradient(180deg, rgba(255, 255, 255, 0.75) 0%, rgba(255, 255, 255, 0.00) 100%);
-} */
-
 
 main,
 .long-form h1 {
   margin-bottom: calc(10vw + 4rem);
 }
 
-.hero h1 {
+.hero h1, .page-title h1 {
   font-weight: 600;
   letter-spacing: -.05em;
   font-size: clamp(1.5rem, 6vw + 1rem, 10rem);
+  margin-left: -.05em;
+}
+
+.hero h1 {
+  max-width: 20ch;
+}
+
+.page-title h1 {
+  font-size: clamp(1.5rem, 4vw + 1.25rem, 10rem);
 }
 
 .hero a {
@@ -126,11 +124,6 @@ em { font-style: italic; }
   /* margin-bottom: 1rem; */
 }
 
-.page-title h1 {
-  max-width: 20ch;
-  margin-left: -.05em;
-}
-
 .long-form h2 {
   font-size: var(--font-size-largest);
   letter-spacing: -0.00625em;
@@ -157,7 +150,7 @@ em { font-style: italic; }
   letter-spacing: -0.00625em;
   margin-bottom: 1em;
   opacity: 0.8;
-  line-height: 1.75;
+  line-height: 1.7;
 }
 
 .long-form h5 {

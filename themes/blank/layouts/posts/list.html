@@ -1,0 +1,12 @@
+{{ define "main" }}
+
+<ul class="gap-2">
+  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
+  {{ range $paginator.Pages }}
+
+    {{ .Render "summary" }}
+
+  {{ end }}
+</ul>
+
+{{ end }}

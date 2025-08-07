@@ -1,29 +1,44 @@
 {{ define "main" }}
-	<main class="px-[8vw] pt-[2vw] relative">
-      
-		<div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
-			<p class="text-4xl font-semibold tracking-tight mb-2">{{ .Title }}</p>
-			<time class="mono text-sm opacity-45" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
-				{{ .Date.Format "Jan 2, 2006" }}
-			</time>
-      	</div>
+  <main class="relative w-full flex justify-center">
+    <div class="w-full max-w-4xl">
+      <!-- <div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
+        <time class="mono text-base opacity-45" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+          {{ .Date.Format "01.02.06" }}
+        </time>
+        <p class="text-5xl font-semibold tracking-tight mb-4 mt-2">{{ .Title }}</p>
+      </div> -->
 
-		<div class="long-form">
-			
-				{{ .Content }}
-			
-		</div>
-		
-		
-		{{ with .Params.tags }}
-		<div>
-			<ul id="tags">
-				{{ range . }}
-				<li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-				{{ end }}
-			</ul>
-		</div>
-		{{ end }}
-	</main>
-  
+      <div class="page-title pb-[6vw] relative">
+        <time
+          class="mono text-[75%] opacity-45"
+          datetime="{{ .Date.Format "2006-01-02T15:04:05" }}"
+        >
+          {{ .Date.Format "Jan 02, 2006" }}
+        </time>
+
+        <h1 class="max-w-[20ch] mt-4">{{ .Title }}</h1>
+      </div>
+
+      <div
+        class="long-form"
+        style="margin-left: 0; margin-right: 0; max-width: none;"
+      >
+        {{ .Content }}
+      </div>
+
+      {{ with .Params.tags }}
+        <div>
+          <ul id="tags">
+            {{ range . }}
+              <li>
+                <a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}"
+                  >{{ . }}</a
+                >
+              </li>
+            {{ end }}
+          </ul>
+        </div>
+      {{ end }}
+    </div>
+  </main>
 {{ end }}

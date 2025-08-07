@@ -1,36 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Photos • Jitachi</title>
-	
-		
-		
-	
-		<script>
-			(function() {
-				let theme = localStorage.getItem("theme") || "auto";
-				let systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-				
-				if (theme === "dark" || (theme === "auto" && systemDark)) {
-					document.documentElement.classList.add("dark");
-				} else {
-					document.documentElement.classList.add("light");
-				}
-			})();
-		</script>
-	
-		
-		<link rel="stylesheet" href="/style.css">	
-		<link rel="stylesheet" href="/css/style.css">
-	
-		<link rel="shortcut icon" type="image/png" href="/favicon.svg">
-		<link rel="shortcut icon" sizes="192x192" href="/favicon.svg">
-		<link rel="apple-touch-icon" href="/favicon.svg">
-	</head>
-<body>
-	<header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      
+        Photos •
+      
+      Jitachi
+    </title>
+
+    
+    
+
+
+    <script>
+      (function () {
+        let theme = localStorage.getItem("theme") || "auto";
+        let systemDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+
+        if (theme === "dark" || (theme === "auto" && systemDark)) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.svg" />
+    <link rel="shortcut icon" sizes="192x192" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
   <div class="flex items-center gap-3">
     <a class="logo" href="https://jitachi.com/">
       <img
@@ -53,12 +61,18 @@
       
         <a
           class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
-            active
-          
         "
-          href="/photos/"
-          title="Photos"
-          >Photos</a
+          href="/bookmarks/"
+          title="Bookmarks"
+          >Bookmarks</a
+        >
+      
+        <a
+          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
+        "
+          href="/posts/"
+          title="Posts"
+          >Posts</a
         >
       
     </div>
@@ -146,7 +160,7 @@
 
 </header>
 
-	
+    
 <div class="px-[8vw] pt-[8vw]">
   <div class="mt-16">
     
@@ -214,8 +228,5 @@
   </ul>
 </div>
 
-</body>
+  </body>
 </html>
-
-
-

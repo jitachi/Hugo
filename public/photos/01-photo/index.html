@@ -1,36 +1,44 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-us">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Photo 02 • Jitachi</title>
-	
-		
-		
-	
-		<script>
-			(function() {
-				let theme = localStorage.getItem("theme") || "auto";
-				let systemDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-				
-				if (theme === "dark" || (theme === "auto" && systemDark)) {
-					document.documentElement.classList.add("dark");
-				} else {
-					document.documentElement.classList.add("light");
-				}
-			})();
-		</script>
-	
-		
-		<link rel="stylesheet" href="/style.css">	
-		<link rel="stylesheet" href="/css/style.css">
-	
-		<link rel="shortcut icon" type="image/png" href="/favicon.svg">
-		<link rel="shortcut icon" sizes="192x192" href="/favicon.svg">
-		<link rel="apple-touch-icon" href="/favicon.svg">
-	</head>
-<body>
-	<header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+      
+        Photo 02 •
+      
+      Jitachi
+    </title>
+
+    
+    
+
+
+    <script>
+      (function () {
+        let theme = localStorage.getItem("theme") || "auto";
+        let systemDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+
+        if (theme === "dark" || (theme === "auto" && systemDark)) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.add("light");
+        }
+      })();
+    </script>
+
+    <link rel="stylesheet" href="/css/style.css" />
+    
+    <link rel="stylesheet" href="/style.css" />
+
+    <link rel="shortcut icon" type="image/png" href="/favicon.svg" />
+    <link rel="shortcut icon" sizes="192x192" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+  </head>
+  <body>
+    <header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
   <div class="flex items-center gap-3">
     <a class="logo" href="https://jitachi.com/">
       <img
@@ -53,12 +61,18 @@
       
         <a
           class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
-            active
-          
         "
-          href="/photos/"
-          title="Photos"
-          >Photos</a
+          href="/bookmarks/"
+          title="Bookmarks"
+          >Bookmarks</a
+        >
+      
+        <a
+          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
+        "
+          href="/posts/"
+          title="Posts"
+          >Posts</a
         >
       
     </div>
@@ -146,29 +160,28 @@
 
 </header>
 
-	
-	<main class="px-[8vw] pt-[2vw] relative">
+    
+	<main class="px-[8vw] pt-[6vw] relative">
       
-		<div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
-			<p class="text-4xl font-semibold tracking-tight mb-2">Photo 02</p>
-			<time class="mono text-sm opacity-45" datetime="2024-03-05T00:00:00">
-				Mar 5, 2024
+				
+		
+		<div class="page-title pb-[6vw] relative">			
+			
+			<time class="mono text-[75%] opacity-45" datetime="2024-03-05T00:00:00">
+				Mar 05, 2024
 			</time>
+
+			<h1 class="max-w-[20ch] mt-4">Photo 02</h1>
+
       	</div>
 
 		<div class="long-form">
-			
-				<img src="images/L1020294.JPG" alt="image alt test">
-			
-		</div>
-		
+			<img src="images/L1020294.JPG" alt="image alt test">			
+		</div>		
 		
 		
 	</main>
   
 
-</body>
+  </body>
 </html>
-
-
-

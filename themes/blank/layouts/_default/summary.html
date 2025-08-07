@@ -1,39 +1,40 @@
 <li class="">
   <a href="{{ .Permalink }}">
-    <article class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96">
+    <article
+      class="hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96 max-w-[720px] mx-auto my-12 p-8"
+    >
+      <p
+        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
+      >
+        {{ .Title }}
+      </p>
 
-        <div class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-baseline overflow-x-hidden"> 
-          
-          <p class="opacity-45 text-[75%] pb-2">
-            <time class="mono" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
-                {{ .Date.Format "01.02.06" }}
-            </time>
-          </p>
+      {{ if .Params.summary }}
+        <p class="mb-8 max-w-[65ch] mx-auto">{{ .Summary }}</p>
+      {{ end }}
 
-          <div class="flex shrink-0">
-          <p class="tracking-[-0.0125em] group-hover:underline mr-3 font-semibold">
-            {{ .Title }}
-          </p>
-          
-          <p class="opacity-45">
-          {{ .Summary }}
-          {{ if .Truncated }}
-            <a href="{{ .Permalink }}">Read more...</a>
-          {{ end }}
-          </p>
-        </div>
-          
-        </div>
-
-        
-
-        <!-- <div class="overflow-hidden transition-all rounded-md">
+      {{ if and .Params.featured_image .Params.summary }}
+        <div class="overflow-hidden rounded-md h-full">
           {{ with .Resources.GetMatch .Params.featured_image }}
-            <img alt="..." src="{{ .RelPermalink }}"/>
+            <img
+              src="{{ .RelPermalink }}"
+              alt="{{ $.Title }}"
+              class="w-full h-full object-cover"
+            />
+          {{ else }}
+            <img
+              src="/posts/{{ .File.Dir | replace "content/posts/" "" }}{{ .Params.featured_image }}"
+              alt="{{ .Title }}"
+              class="w-full h-full object-cover"
+            />
           {{ end }}
-        </div> -->
-
-      
+        </div>
+      {{ end }}
+      <p class="opacity-45 text-[75%] pt-4 shrink-0">
+        <time class="mono" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+          {{ .Date.Format "01.02.06" }}
+        </time>
+      </p>
     </article>
   </a>
 </li>
