@@ -1,4 +1,4 @@
-baseURL = "{{ .Env.BASE_URL | default "https://jitachi.com" }}"
+baseURL = 'https://jitachi.com/'
 languageCode = 'en-us'
 title = 'Jitachi'
 theme = 'blank'
