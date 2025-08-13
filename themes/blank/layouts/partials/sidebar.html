@@ -15,12 +15,12 @@
 
     <!-- Navigation Menu -->
     <nav class="flex-1">
-      <ul class="space-y-1">
+      <ul>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           <li>
             <a
-              class="block py-3 pr-3 text-base transition ease-in-out duration-200 rounded-lg {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
+              class="block py-2 text-base transition ease-in-out duration-200 rounded-lg {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
                 font-semibold
               {{ end }}"
               href="{{ .URL }}"

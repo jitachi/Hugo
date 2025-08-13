@@ -54,5 +54,27 @@
         {{ block "main" . }}{{ end }}
       </div>
     </div>
+    <script>
+      // Simple page preloading for faster navigation
+      document.addEventListener("DOMContentLoaded", function () {
+        // Preload pages on hover
+        document.addEventListener("mouseover", function (e) {
+          if (
+            e.target.tagName === "A" &&
+            e.target.href &&
+            !e.target.href.includes("#")
+          ) {
+            const link = e.target.href;
+            if (!link.includes(window.location.origin)) return;
+
+            // Preload the page
+            const prefetchLink = document.createElement("link");
+            prefetchLink.rel = "prefetch";
+            prefetchLink.href = link;
+            document.head.appendChild(prefetchLink);
+          }
+        });
+      });
+    </script>
   </body>
 </html>

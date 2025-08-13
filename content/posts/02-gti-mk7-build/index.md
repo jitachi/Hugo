@@ -3,6 +3,7 @@ title = 'GTI MK7 Build'
 date = 2024-03-05
 draft = false
 featured_image = "images/gti.jpg"
+summary = "The story of how I have broken my car like 10 times, and how to gain power"
 section = "posts"
 +++
 
