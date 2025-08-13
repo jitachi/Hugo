@@ -39,47 +39,62 @@
     <link rel="apple-touch-icon" href="/favicon.svg" />
   </head>
   <body>
-    <header class="flex items-center justify-between p-[8vw] md:py-[4vw]">
-  <div class="flex items-center gap-3">
-    <a class="logo" href="https://jitachi.com/">
-      <img
-        class="w-9 min-w-9 rounded-full border border-white"
-        src="https://jitachi.com/img/avatar.png"
-      />
-      
-    </a>
-
-    <div class="flex gap-1">
-      
-      
-        <a
-          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
-        "
-          href="/about/"
-          title="About"
-          >About</a
-        >
-      
-        <a
-          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
-        "
-          href="/bookmarks/"
-          title="Bookmarks"
-          >Bookmarks</a
-        >
-      
-        <a
-          class="p-2 px-4 text-base bg-[var(--color-bg-lightest)] transition ease-in-out duration-200 rounded-full 
-        "
-          href="/posts/"
-          title="Posts"
-          >Posts</a
-        >
-      
+    <aside
+  class="fixed left-0 top-0 h-full w-64 p-6 z-50"
+  style="padding: clamp(32px, 4vw, 64px) 24px 24px clamp(32px, 4vw, 64px);"
+>
+  <div class="flex flex-col h-full">
+    
+    <div class="flex items-center gap-3 mb-8">
+      <a class="logo" href="https://jitachi.com/">
+        <img
+          class="w-9 min-w-9 rounded-full border border-white"
+          src="https://jitachi.com/img/avatar.png"
+        />
+      </a>
     </div>
-  </div>
 
-  
+    
+    <nav class="flex-1">
+      <ul>
+        
+        
+          <li>
+            <a
+              class="block py-2 text-base transition ease-in-out duration-200 rounded-lg "
+              href="/about/"
+              title="About"
+            >
+              About
+            </a>
+          </li>
+        
+          <li>
+            <a
+              class="block py-2 text-base transition ease-in-out duration-200 rounded-lg "
+              href="/bookmarks/"
+              title="Bookmarks"
+            >
+              Bookmarks
+            </a>
+          </li>
+        
+          <li>
+            <a
+              class="block py-2 text-base transition ease-in-out duration-200 rounded-lg "
+              href="/posts/"
+              title="Posts"
+            >
+              Posts
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+
+    
+    <div class="mt-auto">
+      
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -159,14 +174,30 @@
 });
 </script>
 
-</header>
+    </div>
+  </div>
+</aside>
 
-    
+    <div
+      class="w-full flex justify-center"
+      style="padding: clamp(32px, 4vw, 64px);"
+    >
+      
+      <div class="w-full">
+        
   <main>
-    <div class="hero p-[8vw]">
-  <h1 class="max-w-[16ch]">
-    Optimist.<br> Designer at <a href="https://railway.com">Railway</a>.
-  </h1>
+    <div class="hero w-full flex justify-center">
+  <div class="w-full max-w-[720px] mx-auto">
+    <div class="p-8">
+      <h1
+        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
+        style="margin-left: 0; letter-spacing: -0.05em; font-size: 2.25rem !important;"
+      >
+        Optimist.<br />
+        Designer at <a href="https://railway.com">Railway</a>.
+      </h1>
+    </div>
+  </div>
 </div>
 
 
@@ -180,47 +211,34 @@
         <li class="">
   <a href="https://jitachi.com/posts/04-railway-metal/">
     <article
-      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+      class="hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96 max-w-[720px] mx-auto my-12 p-8"
     >
-      <div
-        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      <p
+        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
       >
-        <p class="opacity-45 text-[75%] pb-2 shrink-0">
-          <time
-            class="mono"
-            datetime="2024-10-25T00:00:00"
-          >
-            10.25.24
-          </time>
-        </p>
+        Railway Metal
+      </p>
 
-        <div class="flex gap-6 flex-1 min-w-0">
+      
+        <p class="mb-8 max-w-[65ch] mx-auto">For the release of our Metal regions, I decided to make a conmemorative tshirt, of course featuring a fake trash metal logo</p>
+      
+
+      
+        <div class="overflow-hidden rounded-md h-full">
           
-            <div class="shrink-0 w-24 h-24 overflow-hidden rounded-md">
-              
-                <img
-                  src="/posts/04-railway-metal/images/img-metal.png"
-                  alt="Railway Metal"
-                  class="w-full h-full object-cover"
-                />
-              
-            </div>
+            <img
+              src="/posts/04-railway-metal/images/img-metal.png"
+              alt="Railway Metal"
+              class="w-full h-full object-cover"
+            />
           
-
-
-          <div class="flex-1 min-w-0">
-            <p class="group-hover:underline font-semibold text-4xl mb-4">
-              Railway Metal
-            </p>
-            
-              <p>For the release of our Metal regions, I decided to make a conmemorative tshirt, of course featuring a fake trash metal logo:</p>
-<figure><img src="/posts/04-railway-metal/images/img-metal.png"/>
-</figure>
-
-            
-          </div>
         </div>
-      </div>
+      
+      <p class="opacity-45 text-[75%] pt-4 shrink-0">
+        <time class="mono" datetime="2024-10-25T00:00:00">
+          10.25.24
+        </time>
+      </p>
     </article>
   </a>
 </li>
@@ -231,34 +249,24 @@
         <li class="">
   <a href="https://jitachi.com/posts/05-your-website-is-great-for/">
     <article
-      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+      class="hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96 max-w-[720px] mx-auto my-12 p-8"
     >
-      <div
-        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      <p
+        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
       >
-        <p class="opacity-45 text-[75%] pb-2 shrink-0">
-          <time
-            class="mono"
-            datetime="2024-10-25T00:00:00"
-          >
-            10.25.24
-          </time>
-        </p>
+        Ugh, my website.
+      </p>
 
-        <div class="flex gap-6 flex-1 min-w-0">
-          
+      
+        <p class="mb-8 max-w-[65ch] mx-auto">Stupid, stupid, website.</p>
+      
 
-
-          <div class="flex-1 min-w-0">
-            <p class="group-hover:underline font-semibold text-4xl mb-4">
-              Ugh, my website.
-            </p>
-            
-              <p class="long-form">Stupid, stupid, website.</p>
-            
-          </div>
-        </div>
-      </div>
+      
+      <p class="opacity-45 text-[75%] pt-4 shrink-0">
+        <time class="mono" datetime="2024-10-25T00:00:00">
+          10.25.24
+        </time>
+      </p>
     </article>
   </a>
 </li>
@@ -269,37 +277,22 @@
         <li class="">
   <a href="https://jitachi.com/posts/06-video-test/">
     <article
-      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+      class="hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96 max-w-[720px] mx-auto my-12 p-8"
     >
-      <div
-        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      <p
+        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
       >
-        <p class="opacity-45 text-[75%] pb-2 shrink-0">
-          <time
-            class="mono"
-            datetime="2024-10-25T00:00:00"
-          >
-            10.25.24
-          </time>
-        </p>
+        Video Test
+      </p>
 
-        <div class="flex gap-6 flex-1 min-w-0">
-          
+      
 
-
-          <div class="flex-1 min-w-0">
-            <p class="group-hover:underline font-semibold text-4xl mb-4">
-              Video Test
-            </p>
-            
-              <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe src="https://www.youtube.com/embed/8U-gCTEYxCA" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video"></iframe>
-</div>
-
-            
-          </div>
-        </div>
-      </div>
+      
+      <p class="opacity-45 text-[75%] pt-4 shrink-0">
+        <time class="mono" datetime="2024-10-25T00:00:00">
+          10.25.24
+        </time>
+      </p>
     </article>
   </a>
 </li>
@@ -310,45 +303,34 @@
         <li class="">
   <a href="https://jitachi.com/posts/02-gti-mk7-build/">
     <article
-      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+      class="hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96 max-w-[720px] mx-auto my-12 p-8"
     >
-      <div
-        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      <p
+        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
       >
-        <p class="opacity-45 text-[75%] pb-2 shrink-0">
-          <time
-            class="mono"
-            datetime="2024-03-05T00:00:00"
-          >
-            03.05.24
-          </time>
-        </p>
+        GTI MK7 Build
+      </p>
 
-        <div class="flex gap-6 flex-1 min-w-0">
+      
+        <p class="mb-8 max-w-[65ch] mx-auto">The story of how I have broken my car like 10 times, and how to gain power</p>
+      
+
+      
+        <div class="overflow-hidden rounded-md h-full">
           
-            <div class="shrink-0 w-24 h-24 overflow-hidden rounded-md">
-              
-                <img
-                  src="/posts/02-gti-mk7-build/images/gti.jpg"
-                  alt="GTI MK7 Build"
-                  class="w-full h-full object-cover"
-                />
-              
-            </div>
+            <img
+              src="/posts/02-gti-mk7-build/images/gti.jpg"
+              alt="GTI MK7 Build"
+              class="w-full h-full object-cover"
+            />
           
-
-
-          <div class="flex-1 min-w-0">
-            <p class="group-hover:underline font-semibold text-4xl mb-4">
-              GTI MK7 Build
-            </p>
-            
-              Performance Upgrades APR Engine (ECU) Tune Stage 1 APR Transmission (TCU) Tune Stage 1 NGK Performance Spark Plugs Racingline R600 Closed Intake Racingline Turbo inlet pipe &amp; hoses APR Turbo muffler delete Integrated Engineering Performance Intercooler APR Engine (ECU) Tune Stage 1 The easiest way to get more power. If I could only do one mod, this would be it. The APR Engine tune takes your car from 220HP to 316HP (!
-
-            
-          </div>
         </div>
-      </div>
+      
+      <p class="opacity-45 text-[75%] pt-4 shrink-0">
+        <time class="mono" datetime="2024-03-05T00:00:00">
+          03.05.24
+        </time>
+      </p>
     </article>
   </a>
 </li>
@@ -359,44 +341,34 @@
         <li class="">
   <a href="https://jitachi.com/posts/01-styleguide/">
     <article
-      class="flex flex-col px-[8vw] hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96"
+      class="hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md min-w-96 max-w-[720px] mx-auto my-12 p-8"
     >
-      <div
-        class="flex gap-8 border-t border-[var(--color-border-light)] md:py-[2vw] py-[4vw] items-start overflow-x-hidden"
+      <p
+        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
       >
-        <p class="opacity-45 text-[75%] pb-2 shrink-0">
-          <time
-            class="mono"
-            datetime="2024-02-05T00:00:00"
-          >
-            02.05.24
-          </time>
-        </p>
+        Styleguide
+      </p>
 
-        <div class="flex gap-6 flex-1 min-w-0">
+      
+        <p class="mb-8 max-w-[65ch] mx-auto">Local styles for a happier development</p>
+      
+
+      
+        <div class="overflow-hidden rounded-md h-full">
           
-            <div class="shrink-0 w-24 h-24 overflow-hidden rounded-md">
-              
-                <img
-                  src="/posts/posts/01-styleguide/cposts/01-styleguide/oposts/01-styleguide/nposts/01-styleguide/tposts/01-styleguide/eposts/01-styleguide/nposts/01-styleguide/tposts/01-styleguide//posts/01-styleguide/pposts/01-styleguide/oposts/01-styleguide/sposts/01-styleguide/tposts/01-styleguide/sposts/01-styleguide//posts/01-styleguide/images/img-pro-engineer.jpg_"
-                  alt="Styleguide"
-                  class="w-full h-full object-cover"
-                />
-              
-            </div>
+            <img
+              src="/posts/posts/01-styleguide/cposts/01-styleguide/oposts/01-styleguide/nposts/01-styleguide/tposts/01-styleguide/eposts/01-styleguide/nposts/01-styleguide/tposts/01-styleguide//posts/01-styleguide/pposts/01-styleguide/oposts/01-styleguide/sposts/01-styleguide/tposts/01-styleguide/sposts/01-styleguide//posts/01-styleguide/images/img-pro-engineer.jpg_"
+              alt="Styleguide"
+              class="w-full h-full object-cover"
+            />
           
-
-
-          <div class="flex-1 min-w-0">
-            <p class="group-hover:underline font-semibold text-4xl mb-4">
-              Styleguide
-            </p>
-            
-              <p class="long-form">Local styles for a happier development</p>
-            
-          </div>
         </div>
-      </div>
+      
+      <p class="opacity-45 text-[75%] pt-4 shrink-0">
+        <time class="mono" datetime="2024-02-05T00:00:00">
+          02.05.24
+        </time>
+      </p>
     </article>
   </a>
 </li>
@@ -404,9 +376,31 @@
 
       
     </ul>
-
-    
   </main>
 
+      </div>
+    </div>
+    <script>
+      
+      document.addEventListener("DOMContentLoaded", function () {
+        
+        document.addEventListener("mouseover", function (e) {
+          if (
+            e.target.tagName === "A" &&
+            e.target.href &&
+            !e.target.href.includes("#")
+          ) {
+            const link = e.target.href;
+            if (!link.includes(window.location.origin)) return;
+
+            
+            const prefetchLink = document.createElement("link");
+            prefetchLink.rel = "prefetch";
+            prefetchLink.href = link;
+            document.head.appendChild(prefetchLink);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
