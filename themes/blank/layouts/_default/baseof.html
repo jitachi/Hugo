@@ -44,14 +44,17 @@
     <link rel="apple-touch-icon" href="/favicon.svg" />
   </head>
   <body>
-    {{ partial "sidebar.html" . }}
-    <div
-      class="w-full flex justify-center"
-      style="padding: clamp(32px, 4vw, 64px);"
-    >
-      {{/* {{ partial "header" . }} */}}
-      <div class="w-full">
-        {{ block "main" . }}{{ end }}
+    <div class="w-full">
+      <!-- Header Spacing: Control padding/margins here -->
+      <div class="sticky top-0 z-50 px-[8vw] pt-[4vw] bg-[var(--color-bg)]">
+        {{ partial "header.html" . }}
+      </div>
+
+      <!-- Main Content Spacing: Control max-width and padding here -->
+      <div class="w-full flex justify-center px-[8vw]">
+        <div class="w-full max-w-[1400px]">
+          {{ block "main" . }}{{ end }}
+        </div>
       </div>
     </div>
     <script>

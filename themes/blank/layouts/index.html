@@ -1,13 +1,12 @@
 {{ define "main" }}
   <main>
-    {{ partial "hero" . }}
+    <div class="my-[8vw]">
+      {{ partial "hero" . }}
+    </div>
 
-
-    <!-- <p class="text-2xl px-[8vw] pb-10 tracking-[-0.0125em] opacity-50 text-large">
-        thoughts
-      </p> -->
-
-    <ul class="gap-2">
+    <ul
+      class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-red-500 pt-8"
+    >
       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
       {{ range $paginator.Pages }}
 
