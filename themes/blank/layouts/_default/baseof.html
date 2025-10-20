@@ -44,19 +44,14 @@
     <link rel="apple-touch-icon" href="/favicon.svg" />
   </head>
   <body>
-    <div class="w-full">
-      <!-- Header Spacing: Control padding/margins here -->
-      <div class="sticky top-0 z-50 px-[8vw] pt-[4vw] bg-[var(--color-bg)]">
-        {{ partial "header.html" . }}
-      </div>
+    <header class="fixed top-0 left-0 right-0 z-50 px-[6vw] pt-[6vw]">
+      {{ partial "header.html" . }}
+    </header>
 
-      <!-- Main Content Spacing: Control max-width and padding here -->
-      <div class="w-full flex justify-center px-[8vw]">
-        <div class="w-full max-w-[1400px]">
-          {{ block "main" . }}{{ end }}
-        </div>
-      </div>
+    <div class="w-full mx-auto mt-32">
+      {{ block "main" . }}{{ end }}
     </div>
+
     <script>
       // Simple page preloading for faster navigation
       document.addEventListener("DOMContentLoaded", function () {

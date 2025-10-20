@@ -38,64 +38,32 @@
     <link rel="apple-touch-icon" href="/favicon.svg" />
   </head>
   <body>
-    <aside
-  class="fixed left-0 top-0 h-full w-64 p-6 z-50"
-  style="padding: clamp(32px, 4vw, 64px) 24px 24px clamp(32px, 4vw, 64px);"
->
-  <div class="flex flex-col h-full">
-    
-    <div class="flex items-center gap-3 mb-8">
-      <a class="logo" href="https://jitachi.com/">
-        <img
-          class="w-9 min-w-9 rounded-full border border-white"
-          src="https://jitachi.com/img/avatar.png"
-        />
-      </a>
-    </div>
-
-    
-    <nav class="flex-1">
-      <ul>
-        
-        
-          <li>
-            <a
-              class="block py-2 text-base transition ease-in-out duration-200 rounded-lg "
-              href="/about/"
-              title="About"
-            >
-              About
-            </a>
-          </li>
-        
-          <li>
-            <a
-              class="block py-2 text-base transition ease-in-out duration-200 rounded-lg "
-              href="/bookmarks/"
-              title="Bookmarks"
-            >
-              Bookmarks
-            </a>
-          </li>
-        
-          <li>
-            <a
-              class="block py-2 text-base transition ease-in-out duration-200 rounded-lg 
-                font-semibold
-              "
-              href="/posts/"
-              title="Posts"
-            >
-              Posts
-            </a>
-          </li>
-        
-      </ul>
-    </nav>
-
-    
-    <div class="mt-auto">
+    <header class="fixed top-0 left-0 right-0 z-50 px-[6vw] pt-[6vw]">
+      <header class="flex items-center justify-between">
+  <div class="flex items-center gap-3">
+    <a class="logo" href="https://jitachi.com/">
+      <img
+        class="w-9 min-w-9 rounded-full border border-white"
+        src="https://jitachi.com/img/avatar.png"
+      />
       
+    </a>
+
+    <div class="flex gap-1">
+      
+      
+        <a
+          class="p-2 px-4 text-base font-[600] transition ease-in-out duration-200 rounded-full 
+        "
+          href="/about/"
+          title="About"
+          >About</a
+        >
+      
+    </div>
+  </div>
+
+  
 <link
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -175,43 +143,42 @@
 });
 </script>
 
-    </div>
-  </div>
-</aside>
+</header>
 
-    <div
-      class="w-full flex justify-center"
-      style="padding: clamp(32px, 4vw, 64px);"
-    >
-      
-      <div class="w-full">
-        
-  <main class="relative w-full flex justify-center">
-    <div class="w-full max-w-4xl">
-      
+    </header>
 
-      <div class="page-title pb-[6vw] relative">
+    <div class="w-full mx-auto mt-32">
+      
+  <main class="relative w-full flex flex-col justify-center">
+    <div class="w-full max-w-4xl mt-32">
+      <div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
         <time
-          class="mono text-[75%] opacity-45"
+          class="mono text-base opacity-45"
           datetime="2024-10-25T00:00:00"
         >
-          Oct 25, 2024
+          10.25.24
         </time>
-
-        <h1 class="max-w-[20ch] mt-4">Railway Metal</h1>
+        <p class="text-5xl font-semibold tracking-tight mb-4 mt-2">
+          Railway Metal
+        </p>
       </div>
 
       <div
         class="long-form"
         style="margin-left: 0; margin-right: 0; max-width: none;"
       >
-        <p>For the release of our Metal regions, I decided to make a conmemorative tshirt, of course featuring a fake trash metal logo:</p>
-<figure><img src="/posts/04-railway-metal/images/img-metal.png"/>
-</figure>
-
-<p>For context, I&rsquo;ve never done a <em>lettering</em> project before and I&rsquo;m no expert making logos, BUT this was an amazing opportunity to remember my graffiti and <em>type</em> design hobbies.</p>
-<h3 id="how-to-make-a-metal-logo">How to make a Metal Logo</h3>
-<p>First, let&rsquo;s find the right branch of metal you&rsquo;re looking for. Despite my ignorance of the music genre, I needed to make an informed design, how would I reply the &ldquo;what type of logo is this&rdquo; Jitachi, question?</p>
+        <p>&ldquo;One day we will migrate off Google Cloud and build our own cloud&rdquo;<br>
+—<em>we, years ago</em>.</p>
+<p>In April of 2025, we deployed our first set of bare metal servers across 4 different regions: US-East, US-West, Singapore, and Amsterdam. Finally, we have servers; allowing us to control the entire stack: Servers, Network, Builder, Deployment Pipeline, and Control Layer (aka GUI).</p>
+<p>Being bare metal a big deal, I wanted to have fun with the metal part and told myself: It would be super cool to have a <em>metal</em> band-like t-shirt. Because yeah, we all like to look though, badass one day every month.</p>
+<p>I like letters, I like <em>typography</em>. Side story: during high school, some became emo, dark, or some other urban tribe; I used to graciously decorate city walls with spray paint. Some times appreciated, some others chased. I decided to give it a go, how hard can it be, right?</p>
+<p>I don&rsquo;t know how the greatest end result looks <em>now</em>, but I know that it needs to be readable. You have Metallica&rsquo;s sharp geometric lines in one end, and unreadable bushes with spikes in the other.</p>
+<h3 id="let-the-iterations-begin">Let the iterations begin</h3>
+<p>It started with this quick version trying to intertwine the letters, bend them, look for ways to reshape the character&rsquo;s structure</p>
+<p><img src="images/metal-01.png" alt="image metal-01">
+<img src="images/metal-02.png" alt="image metal-01"></p>
+<p>I start to understand how each stroke interacts with each other. This level of noise is not my favorite, but we&rsquo;re in the exploration phase.</p>
+<p>Pulling back on the noise and going with the organic structure, this version was somehow interesting. It could be something but it&rsquo;s not quite there yet.</p>
 
       </div>
 
@@ -219,8 +186,8 @@
     </div>
   </main>
 
-      </div>
     </div>
+
     <script>
       
       document.addEventListener("DOMContentLoaded", function () {

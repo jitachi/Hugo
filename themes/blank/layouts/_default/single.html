@@ -1,22 +1,16 @@
 {{ define "main" }}
-  <main class="relative w-full flex justify-center">
-    <div class="w-full max-w-4xl">
-      <!-- <div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
-        <time class="mono text-base opacity-45" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
-          {{ .Date.Format "01.02.06" }}
-        </time>
-        <p class="text-5xl font-semibold tracking-tight mb-4 mt-2">{{ .Title }}</p>
-      </div> -->
-
-      <div class="page-title pb-[6vw] relative">
+  <main class="relative w-full flex flex-col justify-center">
+    <div class="w-full max-w-4xl mt-32">
+      <div class="page-title pb-[2vw] mx-auto max-w-[--content-width] relative">
         <time
-          class="mono text-[75%] opacity-45"
+          class="mono text-base opacity-45"
           datetime="{{ .Date.Format "2006-01-02T15:04:05" }}"
         >
-          {{ .Date.Format "Jan 02, 2006" }}
+          {{ .Date.Format "01.02.06" }}
         </time>
-
-        <h1 class="max-w-[20ch] mt-4">{{ .Title }}</h1>
+        <p class="text-5xl font-semibold tracking-tight mb-4 mt-2">
+          {{ .Title }}
+        </p>
       </div>
 
       <div

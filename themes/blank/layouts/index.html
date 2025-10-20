@@ -1,11 +1,15 @@
 {{ define "main" }}
   <main>
-    <div class="my-[8vw]">
-      {{ partial "hero" . }}
+    <div class="h-[64vh] relative px-[6vw]">
+      <h1 class="page-title absolute bottom-24">
+        Designer at <a href="https://railway.com">Railway</a><br />
+        <span class="opacity-15">Curious and stubborn</span>
+      </h1>
     </div>
 
     <ul
-      class="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-red-500 pt-8"
+      class="grid grid-cols-1 md:grid-cols-2 border-t border-r border-black/5"
+      id="posts-container"
     >
       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}
       {{ range $paginator.Pages }}

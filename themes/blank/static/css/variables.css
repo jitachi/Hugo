@@ -1,16 +1,21 @@
 :root {
+  /* Font Sizing - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-/* Font Sizing - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  --font-base: calc(16px + 0.25vw);
 
-  --font-base: calc(16px + 0.375vw);
+  --font-size-display: calc(var(--font-base) * 4.5); /* page-title */
+  --font-size-huge: calc(var(--font-base) * 3); /* h1 */
+  --font-size-largest: calc(
+    var(--font-size-larger) * 1.1875
+  ); /* h2 - 33.84px [^ 5.34px] */
+  --font-size-larger: calc(
+    var(--font-size-large) * 1.25
+  ); /* h3 - 28.50px [^ 5.70px] */
+  --font-size-large: calc(
+    var(--font-base) * 1.125
+  ); /* h4 - 22.80px [^ 2.53px] */
 
-  --font-size-display: calc(var(--font-base) * 4.5);             /* page-title */
-  --font-size-huge: calc(var(--font-base) * 3);                  /* h1 */
-  --font-size-largest: calc(var(--font-size-larger) * 1.1875);   /* h2 - 33.84px [^ 5.34px] */
-  --font-size-larger: calc(var(--font-size-large)   * 1.25);     /* h3 - 28.50px [^ 5.70px] */
-  --font-size-large: calc(var(--font-base)          * 1.125);    /* h4 - 22.80px [^ 2.53px] */
-
-  --font-size-medium: calc(var(--font-base) * 1);                /*  p ~ 20.27px */
+  --font-size-medium: calc(var(--font-base) * 1); /*  p ~ 20.27px */
 
   --font-size-small: calc(var(--font-base) * 1.125);
 
@@ -18,14 +23,14 @@
 
   --font-size-bigtext: calc(var(--font-size-largest) * 1.75);
 
-/* Line Height - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* Line Height - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
   --line-height-xs: 1.125;
   --line-height-sm: 1.25;
   --line-height-md: 1.5;
   --line-height-lg: 1.65;
 
-/* Font -Family - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+  /* Font -Family - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
   --font-family-serif: "Recife Text", serif;
   --font-family-sans: "Messina Sans", sans-serif;

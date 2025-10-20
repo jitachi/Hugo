@@ -5,7 +5,13 @@ layout: "about"
 menu: main
 ---
 
-<p class="large">I am Jitachi, a product designer made of curiosity, stubbornness, and a hint of foolishness, per Professor Utonium's words.</p>
+## Hello! I'm Jitachi
+
+I like to study the relationship we have with the artifacts we create for ourselves, how they shape the way we think, and how they expand what we believe is possible.
+
+In simple terms, I'm a **designer**. I've been obsessed with technology, magic, and modding my surroundings since I was a kid. Creating artifacts to help others move forward is my love language.
+
+I believe that anything a human creates carries traces of its maker: the imprint of time, culture, beliefs, intention, and values. It's like an asynchronous conversation: you can sense what they considered, highlighted, and ignored.
 
 ![image alt](images/jitachi.jpg)
 {.inline-img}

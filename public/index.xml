@@ -6,21 +6,29 @@
     <description>Recent content in Home on Jitachi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://jitachi.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Spacing and Density</title>
+      <link>https://jitachi.com/posts/06-spacing-essay/</link>
+      <pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/06-spacing-essay/</guid>
+      <description>Spacing is used in visual design to create visual relationships and hierarchy. Think of space as the “empty” space you leave between one note and the next one to form rhythm.
+Have you noticed how the horizontal space between characters (tracking) is smaller than the blank space we put between “groups” of letter we call words, and how that space is smaller than the vertical space between vertical lines? So now we have lines.</description>
+    </item>
+    <item>
+      <title>Poop pods</title>
+      <link>https://jitachi.com/posts/05-poop-pods/</link>
+      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
+      <guid>https://jitachi.com/posts/05-poop-pods/</guid>
+      <description> </description>
+    </item>
     <item>
       <title>Railway Metal</title>
       <link>https://jitachi.com/posts/04-railway-metal/</link>
       <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
       <guid>https://jitachi.com/posts/04-railway-metal/</guid>
       <description>For the release of our Metal regions, I decided to make a conmemorative tshirt, of course featuring a fake trash metal logo</description>
-    </item>
-    <item>
-      <title>Ugh, my website.</title>
-      <link>https://jitachi.com/posts/05-your-website-is-great-for/</link>
-      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/05-your-website-is-great-for/</guid>
-      <description>Stupid, stupid, website.</description>
     </item>
     <item>
       <title>Video Link</title>
@@ -30,27 +38,11 @@
       <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
     </item>
     <item>
-      <title>Video Test</title>
-      <link>https://jitachi.com/posts/06-video-test/</link>
-      <pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/06-video-test/</guid>
-      <description>&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
-  &lt;iframe src=&#34;https://www.youtube.com/embed/8U-gCTEYxCA&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
-&lt;/div&gt;</description>
-    </item>
-    <item>
       <title>GTI MK7 Build</title>
       <link>https://jitachi.com/bookmarks/02-gti-mk7-build/</link>
       <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
       <guid>https://jitachi.com/bookmarks/02-gti-mk7-build/</guid>
       <description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
-    </item>
-    <item>
-      <title>GTI MK7 Build</title>
-      <link>https://jitachi.com/posts/02-gti-mk7-build/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/02-gti-mk7-build/</guid>
-      <description>The story of how I have broken my car like 10 times, and how to gain power</description>
     </item>
     <item>
       <title>Insomnia</title>
@@ -103,20 +95,13 @@ APR Engine (ECU) Tune Stage 1 APR Transmission (TCU) Tune Stage 1 NGK Performanc
       <description>Senior Product Designer ft Software QA</description>
     </item>
     <item>
-      <title>Styleguide</title>
-      <link>https://jitachi.com/posts/01-styleguide/</link>
-      <pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/posts/01-styleguide/</guid>
-      <description>Local styles for a happier development</description>
-    </item>
-    <item>
       <title>About</title>
       <link>https://jitachi.com/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://jitachi.com/about/</guid>
-      <description>I am Jitachi, a product designer made of curiosity, stubbornness, and a hint of foolishness, per Professor Utonium&#39;s words.
-Currently Founding Designer at Railway PaaS Platform 2019-2021 Since 2021, I&#39;ve been poured my heart and soul into Railway—a modern software deployment and observability platform—as the founding designer.
-Before Sr Product Designer at Rainforest Automated Software QA 2019-2021 Founding Designer at Kong Enterprise-grade API Tooling 2019-2021 Product Designer at Corpfolder Mexico-specific Accountability Software 2019-2021 Interaction Designer at Freshout RIP.</description>
+      <description>Hello! I&amp;rsquo;m Jitachi I like to study the relationship we have with the artifacts we create for ourselves, how they shape the way we think, and how they expand what we believe is possible.
+In simple terms, I&amp;rsquo;m a designer. I&amp;rsquo;ve been obsessed with technology, magic, and modding my surroundings since I was a kid. Creating artifacts to help others move forward is my love language.
+I believe that anything a human creates carries traces of its maker: the imprint of time, culture, beliefs, intention, and values.</description>
     </item>
   </channel>
 </rss>

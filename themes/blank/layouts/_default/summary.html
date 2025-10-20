@@ -1,19 +1,27 @@
-<li class="flex flex-row">
+<li
+  class="flex flex-row border-b border-l border-black/5"
+  data-category="{{ .Params.category }}"
+>
   <a href="{{ .Permalink }}" class="w-full">
     <article
-      class="hover:bg-[var(--color-bg-lightest)] transition-colors group relative rounded-md w-full p-8"
+      class="hover:bg-gray-100/50 transition-colors group relative w-full p-[6vw]"
     >
-      <p
-        class="group-hover:underline font-semibold text-4xl mb-4 tracking-tight"
-      >
+      <p class="text-xl group-hover:underline font-[600] mb-1 tracking-tight">
         {{ .Title }}
       </p>
-
-      {{ if .Params.summary }}
-        <p class="mb-8 max-w-[65ch] mx-auto">{{ .Summary }}</p>
-      {{ end }}
-
-      {{ if and .Params.featured_image .Params.summary }}
+      <div class="flex flex-row justify-between mb-6">
+        {{ if .Params.category }}
+          <p class="opacity-45 text-[80%]">
+            #{{ .Params.category }}
+          </p>
+        {{ end }}
+        <p class="opacity-45 text-[80%]">
+          <time datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
+            {{ .Date.Format "01.02.06" }}
+          </time>
+        </p>
+      </div>
+      {{ if .Params.featured_image }}
         <div class="overflow-hidden rounded-md h-full">
           {{ with .Resources.GetMatch .Params.featured_image }}
             <img
@@ -29,12 +37,19 @@
             />
           {{ end }}
         </div>
+      {{ else }}
+        <div class="overflow-hidden rounded-md h-[340px] relative">
+          <div
+            class="text-gray-700 dark:text-gray-300 h-full overflow-hidden text-[90%] content-preview"
+          >
+            {{ .Content }}
+          </div>
+          <!-- Gradient mask to fade text at bottom -->
+          <div
+            class="absolute bottom-0 left-0 right-0 h-16 bg-gradient-to-t from-[var(--color-background)] to-transparent pointer-events-none"
+          ></div>
+        </div>
       {{ end }}
-      <p class="opacity-45 text-[75%] pt-4 shrink-0">
-        <time class="mono" datetime="{{ .Date.Format "2006-01-02T15:04:05" }}">
-          {{ .Date.Format "01.02.06" }}
-        </time>
-      </p>
     </article>
   </a>
 </li>

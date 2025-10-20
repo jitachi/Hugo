@@ -1,10 +1,11 @@
 +++
 title = 'Styleguide'
 date = 2024-02-05
-draft = false
+draft = true
 summary = "Local styles for a happier development"
-featured_image = "images/img-pro-engineer.jpg_"
+featured_image = "images/img-pro-engineer.jpg"
 section = "posts"
+category = "Etc"
 +++
 
 <div class="banner">
@@ -52,7 +53,6 @@ The Earth is the only world known so far to harbor life. There is nowhere else, 
 
 ###### H6 › Small Title
 
-
 ```
 <block>
   This is how a block looks like
@@ -63,9 +63,7 @@ The Earth is the only world known so far to harbor life. There is nowhere else, 
 
 ---
 
-
 This is an `inline code` with backticks. It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.
-
 
 Ordered list:
 
