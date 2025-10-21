@@ -1,8 +1,4 @@
 {
-  "build": {
-    "builder": "NIXPACKS",
-    "buildCommand": "npm install && cd themes/blank && npm install && npm run build && cd ../.. && hugo --minify"
-  },
   "deploy": {
     "startCommand": "hugo server --bind 0.0.0.0 --port $PORT --environment production",
     "healthcheckPath": "/",

@@ -13,8 +13,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build:css": "cd themes/blank && npm run build",
-    "prebuild": "npm run build:css"
+    "build:css": "cd themes/blank && npm install && npm run build",
+    "build": "npm run build:css",
+    "start": "hugo server --bind 0.0.0.0 --port $PORT --environment production"
   },
   "keywords": [],
   "author": "",

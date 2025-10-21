@@ -36,8 +36,9 @@
     </script>
 
     <link rel="stylesheet" href="{{ "css/style.css" | relURL }}" />
-    {{ $styles := resources.Get "style.css" }}
-    <link rel="stylesheet" href="{{ $styles.RelPermalink }}" />
+    <link rel="stylesheet" href="{{ "css/type.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/variables.css" | relURL }}" />
+    <link rel="stylesheet" href="{{ "css/tailwind.css" | relURL }}" />
 
     <link rel="shortcut icon" type="image/png" href="/favicon.svg" />
     <link rel="shortcut icon" sizes="192x192" href="/favicon.svg" />
