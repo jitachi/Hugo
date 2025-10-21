@@ -1,5 +1,7 @@
 /* @tailwind base; */
 
+/* @tailwind components; */
+
 .pointer-events-none {
   pointer-events: none
 }
