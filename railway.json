@@ -1,7 +1,5 @@
 {
   "deploy": {
-    "startCommand": "hugo server --bind 0.0.0.0 --port $PORT --environment production",
-    "healthcheckPath": "/",
-    "healthcheckTimeout": 300
+    "startCommand": "hugo server --bind 0.0.0.0 --port $PORT --environment production"
   }
 }
