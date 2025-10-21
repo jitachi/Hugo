@@ -470,7 +470,7 @@ html.dark {
   --color-background: #2e2e45;
   --color-bg-lightest: hsla(0, 100%, 100%, 0.05);
   --color-bg-light: hsla(0, 100%, 100%, 0.1);
-  --color-border-light: hsla(0, 100%, 100%, 0.05);
+  --color-border-light: hsla(0, 100%, 100%, 0.08);
 }
 
 /* Add basic styles for the icons */

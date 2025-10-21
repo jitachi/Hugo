@@ -8,3 +8,5 @@ featured_image = "images/poop-pods.png"
 +++
 
 <!-- {{< youtube 8U-gCTEYxCA >}} -->
+
+![image metal-01](images/poop-pods.png)
