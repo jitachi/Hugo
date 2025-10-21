@@ -60,6 +60,7 @@ a {
 /* Override browser default link styles */
 a:-webkit-any-link {
   text-decoration: none !important;
+  color: var(--color-foreground) !important;
 }
 
 a:any-link {
