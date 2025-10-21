@@ -3,7 +3,7 @@ title = 'Spacing and Density'
 date = 2024-10-26
 draft = false
 section = "posts"
-category = "Hardware"
+category = "Lil-essays"
 featured_image = ""
 +++
 
