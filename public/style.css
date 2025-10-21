@@ -822,6 +822,10 @@ video {
   min-width: 2.25rem;
 }
 
+.min-w-96 {
+  min-width: 24rem;
+}
+
 .max-w-4xl {
   max-width: 56rem;
 }
@@ -928,6 +932,12 @@ video {
 
 .gap-8 {
   gap: 2rem;
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .overflow-hidden {
@@ -1135,6 +1145,11 @@ video {
   padding-right: 6vw;
 }
 
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
 .pb-10 {
   padding-bottom: 2.5rem;
 }
@@ -1229,6 +1244,10 @@ video {
 
 .pt-\[36vw\] {
   padding-top: 36vw;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
 }
 
 .text-2xl {
