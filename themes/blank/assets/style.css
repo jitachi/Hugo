@@ -403,6 +403,10 @@
   color: rgb(55 65 81 / var(--tw-text-opacity))
 }
 
+.no-underline {
+  text-decoration-line: none
+}
+
 .opacity-15 {
   opacity: 0.15
 }
