@@ -53,7 +53,16 @@ h6 {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
+}
+
+/* Override browser default link styles */
+a:-webkit-any-link {
+  text-decoration: none !important;
+}
+
+a:any-link {
+  text-decoration: none !important;
 }
 
 body {
