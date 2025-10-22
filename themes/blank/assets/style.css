@@ -143,6 +143,10 @@
   margin-bottom: 4rem
 }
 
+.mt-96 {
+  margin-top: 24rem
+}
+
 .block {
   display: block
 }
@@ -458,6 +462,14 @@
 
 .pr-4 {
   padding-right: 1rem
+}
+
+.pt-96 {
+  padding-top: 24rem
+}
+
+.pt-64 {
+  padding-top: 16rem
 }
 
 .text-5xl {

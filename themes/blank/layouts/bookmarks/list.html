@@ -1,23 +1,20 @@
 {{ define "main" }}
+  <ul class="gap-2 px-40 mt-64">
+    {{ $paginator := .Paginate (where .Site.RegularPages "Type" "bookmarks") }}
+    {{ range $paginator.Pages }}
 
-<ul class="gap-2 px-40">
-  {{ $paginator := .Paginate (where .Site.RegularPages "Type" "bookmarks") }}
-  {{ range $paginator.Pages }}
+      <!-- {{ .Render "summary" }} -->
+      <li class="mb-24">
+        <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+        <p class="opacity-45 mb-8 max-w-xl">
+          {{ .Summary }}
+          {{ if .Truncated }}
+            <a href="{{ .Permalink }}">Read more...</a>
+          {{ end }}
+        </p>
 
-    <!-- {{ .Render "summary" }} -->
-    <li class="mb-24">
-      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-      <p class="opacity-45 mb-8 max-w-xl">
-        {{ .Summary }} {{ if .Truncated }}
-        <a href="{{ .Permalink }}">Read more...</a>
-        {{ end }}
-      </p>
-      
-      {{ .Content }}  
-      
-    </li>
-
-  {{ end }}
-</ul>
-
+        {{ .Content }}
+      </li>
+    {{ end }}
+  </ul>
 {{ end }}
