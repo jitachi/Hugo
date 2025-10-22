@@ -8,7 +8,7 @@
     </div>
 
     <ul
-      class="grid grid-cols-1 md:grid-cols-2 border-t border-r border-black/5"
+      class="grid grid-cols-1 md:grid-cols-2 border-t border-r border-solid border-black/5"
       id="posts-container"
     >
       {{ $paginator := .Paginate (where .Site.RegularPages "Type" "posts") }}

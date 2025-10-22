@@ -7,8 +7,6 @@ category = "Illustration"
 featured_image = "images/railway-cdmx.png"
 +++
 
-New retreat, new swag:
-
-![image metal-01](images/railway-cdmx.png)
+![image Railway visits CDMX](images/railway-cdmx.png)
 
 This time, Railway visited México City.
