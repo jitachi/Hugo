@@ -60,8 +60,9 @@
         const navItems = document.querySelectorAll("[data-nav-item]");
         const pageContent = document.querySelector("#page-content");
 
-        // Cache for fetched pages
+        // Cache for fetched pages (stores both HTML and DOM elements)
         const pageCache = new Map();
+        const domCache = new Map();
 
         // Store state in sessionStorage
         const STORAGE_KEY = "nav-indicator-position";
@@ -190,6 +191,14 @@
 
           console.log("Navigating to:", url);
 
+          // Save current page to DOM cache before leaving
+          const currentUrl = window.location.pathname;
+          if (!domCache.has(currentUrl)) {
+            const currentContent = pageContent.cloneNode(true);
+            domCache.set(currentUrl, currentContent);
+            console.log("Cached current page:", currentUrl);
+          }
+
           // Determine current active item
           const currentActive =
             document.querySelector(".active") ||
@@ -218,8 +227,21 @@
 
           // Wait for slide out
           setTimeout(() => {
-            // Update content
-            pageContent.innerHTML = pageData.content;
+            // Check if we have cached DOM for this URL
+            const cachedDom = domCache.get(url);
+            if (cachedDom) {
+              console.log("Using cached DOM for:", url);
+              // Replace entire content with cached DOM
+              pageContent.innerHTML = "";
+              const newContent = cachedDom.cloneNode(true);
+              Array.from(newContent.childNodes).forEach((node) => {
+                pageContent.appendChild(node);
+              });
+            } else {
+              // Use fetched HTML
+              pageContent.innerHTML = pageData.content;
+            }
+
             document.title = pageData.title;
 
             console.log("Content updated");

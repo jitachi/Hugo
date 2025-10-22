@@ -194,6 +194,7 @@
 
         
         const pageCache = new Map();
+        const domCache = new Map();
 
         
         const STORAGE_KEY = "nav-indicator-position";
@@ -323,6 +324,14 @@
           console.log("Navigating to:", url);
 
           
+          const currentUrl = window.location.pathname;
+          if (!domCache.has(currentUrl)) {
+            const currentContent = pageContent.cloneNode(true);
+            domCache.set(currentUrl, currentContent);
+            console.log("Cached current page:", currentUrl);
+          }
+
+          
           const currentActive =
             document.querySelector(".active") ||
             (window.location.pathname === "/" || window.location.pathname === ""
@@ -351,7 +360,20 @@
           
           setTimeout(() => {
             
-            pageContent.innerHTML = pageData.content;
+            const cachedDom = domCache.get(url);
+            if (cachedDom) {
+              console.log("Using cached DOM for:", url);
+              
+              pageContent.innerHTML = "";
+              const newContent = cachedDom.cloneNode(true);
+              Array.from(newContent.childNodes).forEach((node) => {
+                pageContent.appendChild(node);
+              });
+            } else {
+              
+              pageContent.innerHTML = pageData.content;
+            }
+
             document.title = pageData.title;
 
             console.log("Content updated");
