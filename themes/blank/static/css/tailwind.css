@@ -183,6 +183,14 @@
   height: 70vh
 }
 
+.h-\[48vh\] {
+  height: 48vh
+}
+
+.h-\[56vh\] {
+  height: 56vh
+}
+
 .w-64 {
   width: 16rem
 }
@@ -396,6 +404,10 @@
   padding: 0.25rem
 }
 
+.p-\[4vw\] {
+  padding: 4vw
+}
+
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem
@@ -458,6 +470,18 @@
 
 .pt-64 {
   padding-top: 16rem
+}
+
+.pt-32 {
+  padding-top: 8rem
+}
+
+.pt-24 {
+  padding-top: 6rem
+}
+
+.font-sans {
+  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
 }
 
 .text-5xl {

@@ -206,7 +206,7 @@ header a.active {
   font-family: "Jetbrains Mono";
 }
 .sans {
-  font-family: var(--font-family-sans);
+  font-family: var(--font-family-sans) !important;
 }
 .serif {
   font-family: var(--font-family-serif);
@@ -313,6 +313,15 @@ em {
   max-width: var(--content-width);
   /* letter-spacing: -0.0125em; */
   /* margin-bottom: 1rem; */
+}
+
+.long-form h1:first-child,
+.long-form h2:first-child,
+.long-form h3:first-child,
+.long-form h4:first-child,
+.long-form h5:first-child,
+.long-form h6:first-child {
+  margin-top: 0;
 }
 
 .long-form h2 {

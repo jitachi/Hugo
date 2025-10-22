@@ -5,7 +5,7 @@ layout: "about"
 menu: main
 ---
 
-## Hello! I'm Jitachi
+<p class="text-6xl font-[600] tracking-[-0.0375em] sans">Hello, I'm Jitachi</p>
 
 I like to study the relationship we have with the artifacts we create for ourselves, how they shape the way we think, and how they expand what we believe is possible.
 
