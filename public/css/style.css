@@ -197,8 +197,9 @@ body {
   color: var(--color-foreground);
 }
 
+/* Active state handled by sliding indicator */
 header a.active {
-  background-color: var(--color-bg-light);
+  /* background-color: var(--color-bg-light); */
 }
 
 .mono {
@@ -530,4 +531,45 @@ html.dark {
 
 .content-preview p {
   margin-bottom: 0.5rem;
+}
+
+/* Apple-style glass effect */
+.glass-container {
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    rgba(255, 255, 255, 0.4) 100%
+  );
+  backdrop-filter: saturate(180%) blur(12px);
+  -webkit-backdrop-filter: saturate(180%) blur(12px);
+  box-shadow:
+    0 1px 2px 0 rgba(255, 255, 255, 0.9) inset,
+    0 -1px 2px 0 rgba(0, 0, 0, 0.02) inset;
+}
+
+/* Dark mode glass effect */
+html.dark .glass-container {
+  background: linear-gradient(
+    135deg,
+    rgba(60, 60, 80, 0.4) 0%,
+    rgba(40, 40, 60, 0.3) 100%
+  );
+  box-shadow:
+    0 1px 2px 0 rgba(255, 255, 255, 0.2) inset,
+    0 -1px 2px 0 rgba(0, 0, 0, 0.3) inset;
+}
+
+/* Sliding navigation indicator */
+.nav-indicator {
+  position: absolute;
+  background: var(--color-bg-light);
+  border-radius: 9999px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  top: 0;
+  left: 0;
 }

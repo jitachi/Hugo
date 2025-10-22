@@ -39,18 +39,23 @@
     <link rel="apple-touch-icon" href="/favicon.svg" />
   </head>
   <body>
-    <header class="sticky top-0 left-0 z-50 px-[6vw] pt-[6vw]">
+    <div class="fixed top-0 left-0 right-0 z-50 px-[4vw] py-[4vw]">
       <header class="flex items-center justify-between">
-  <div class="flex items-center gap-3">
-    <a class="logo" href="https://jitachi.com/">
+  <div
+    class="glass-container flex items-center gap-2 py-3 px-4 rounded-full relative"
+  >
+    
+    <div class="nav-indicator"></div>
+
+    <a class="logo relative z-10 p-1" href="https://jitachi.com/" data-nav-item>
       <img
-        class="w-9 min-w-9 rounded-full border border-white"
+        class="w-7 min-w-7 rounded-full border border-white"
         src="https://jitachi.com/img/avatar.png"
       />
       
     </a>
 
-    <div class="flex gap-1">
+    <div class="flex gap-0 relative z-10">
       
       
         <a
@@ -58,7 +63,17 @@
         "
           href="/about/"
           title="About"
+          data-nav-item
           >About</a
+        >
+      
+        <a
+          class="p-2 px-4 text-base font-[600] transition ease-in-out duration-200 rounded-full 
+        "
+          href="/bookmarks/"
+          title="Bookmarks"
+          data-nav-item
+          >Bookmarks</a
         >
       
     </div>
@@ -146,9 +161,10 @@
 
 </header>
 
-    </header>
+    </div>
 
-    
+    <div id="page-content">
+      
   
   <main class="relative w-full flex flex-col justify-center px-[6vw] pt-[6vw]">
     
@@ -176,29 +192,277 @@
     </div>
   </main>
 
-
+    </div>
 
     <script>
       
-      document.addEventListener("DOMContentLoaded", function () {
+      (function () {
+        const indicator = document.querySelector(".nav-indicator");
+        const navItems = document.querySelectorAll("[data-nav-item]");
+        const pageContent = document.querySelector("#page-content");
+
         
-        document.addEventListener("mouseover", function (e) {
-          if (
-            e.target.tagName === "A" &&
-            e.target.href &&
-            !e.target.href.includes("#")
-          ) {
-            const link = e.target.href;
-            if (!link.includes(window.location.origin)) return;
+        const pageCache = new Map();
+
+        
+        const STORAGE_KEY = "nav-indicator-position";
+
+        function savePosition(left, top, width, height) {
+          sessionStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify({ left, top, width, height }),
+          );
+        }
+
+        function getSavedPosition() {
+          const saved = sessionStorage.getItem(STORAGE_KEY);
+          return saved ? JSON.parse(saved) : null;
+        }
+
+        function moveIndicatorTo(targetItem, immediate = false) {
+          if (!targetItem || !indicator) return;
+
+          const rect = targetItem.getBoundingClientRect();
+          const container = targetItem.closest(".glass-container");
+          const containerRect = container.getBoundingClientRect();
+
+          const left = rect.left - containerRect.left;
+          const top = rect.top - containerRect.top;
+
+          savePosition(left, top, rect.width, rect.height);
+
+          if (immediate) {
+            indicator.style.transition = "none";
+            indicator.style.width = rect.width + "px";
+            indicator.style.height = rect.height + "px";
+            indicator.style.left = left + "px";
+            indicator.style.top = top + "px";
+            indicator.style.opacity = "1";
+            indicator.offsetHeight;
+            indicator.style.transition = "";
+          } else {
+            indicator.style.width = rect.width + "px";
+            indicator.style.height = rect.height + "px";
+            indicator.style.left = left + "px";
+            indicator.style.top = top + "px";
+            indicator.style.opacity = "1";
+          }
+        }
+
+        function initializeIndicator() {
+          let activeItem = document.querySelector(".active");
+
+          if (!activeItem) {
+            const isHome =
+              window.location.pathname === "/" ||
+              window.location.pathname === "";
+            if (isHome) {
+              activeItem = document.querySelector(".logo");
+            }
+          }
+
+          if (activeItem) {
+            const savedPosition = getSavedPosition();
+
+            if (savedPosition) {
+              indicator.style.transition = "none";
+              indicator.style.width = savedPosition.width + "px";
+              indicator.style.height = savedPosition.height + "px";
+              indicator.style.left = savedPosition.left + "px";
+              indicator.style.top = savedPosition.top + "px";
+              indicator.style.opacity = "1";
+              indicator.offsetHeight;
+              indicator.style.transition = "";
+            } else {
+              moveIndicatorTo(activeItem, true);
+            }
+          }
+        }
+
+        
+        async function fetchPage(url) {
+          if (pageCache.has(url)) {
+            console.log("Using cached page:", url);
+            return pageCache.get(url);
+          }
+
+          try {
+            console.log("Fetching page:", url);
+            const response = await fetch(url);
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+
+            const newContent = doc.querySelector("#page-content");
+            const title = doc.querySelector("title")?.textContent || "";
+
+            console.log("Fetched content:", newContent ? "found" : "not found");
+
+            const pageData = {
+              content: newContent ? newContent.innerHTML : "",
+              title: title,
+            };
+
+            pageCache.set(url, pageData);
+            return pageData;
+          } catch (error) {
+            console.error("Failed to fetch page:", error);
+            return null;
+          }
+        }
+
+        
+        function getSlideDirection(fromItem, toItem) {
+          if (!fromItem || !toItem) return "left";
+
+          const fromRect = fromItem.getBoundingClientRect();
+          const toRect = toItem.getBoundingClientRect();
+
+          
+          return toRect.left > fromRect.left ? "left" : "right";
+        }
+
+        
+        async function navigateToPage(url, link) {
+          if (!pageContent) {
+            console.error("Page content container not found");
+            return;
+          }
+
+          console.log("Navigating to:", url);
+
+          
+          const currentActive =
+            document.querySelector(".active") ||
+            (window.location.pathname === "/" || window.location.pathname === ""
+              ? document.querySelector(".logo")
+              : null);
+
+          const direction = getSlideDirection(currentActive, link);
+          console.log("Slide direction:", direction);
+
+          
+          const pageData = await fetchPage(url);
+          if (!pageData || !pageData.content) {
+            console.log("No page data, falling back to regular navigation");
+            
+            window.location.href = url;
+            return;
+          }
+
+          
+          pageContent.style.transition =
+            "transform 0.125s ease-out, opacity 0.125s ease";
+          pageContent.style.transform =
+            direction === "left" ? "translateX(-24px)" : "translateX(24px)";
+          pageContent.style.opacity = "0";
+
+          
+          setTimeout(() => {
+            
+            pageContent.innerHTML = pageData.content;
+            document.title = pageData.title;
+
+            console.log("Content updated");
 
             
-            const prefetchLink = document.createElement("link");
-            prefetchLink.rel = "prefetch";
-            prefetchLink.href = link;
-            document.head.appendChild(prefetchLink);
+            document.querySelectorAll("[data-nav-item]").forEach((item) => {
+              item.classList.remove("active");
+            });
+            link.classList.add("active");
+
+            
+            pageContent.style.transition = "none";
+            pageContent.style.transform =
+              direction === "left" ? "translateX(24px)" : "translateX(-24px)";
+            pageContent.style.opacity = "0";
+
+            
+            pageContent.offsetHeight;
+
+            
+            pageContent.style.transition =
+              "transform 0.125s ease-out, opacity 0.125s ease";
+            pageContent.style.transform = "translateX(0)";
+            pageContent.style.opacity = "1";
+
+            
+            history.pushState({ url: url }, "", url);
+
+            
+            window.scrollTo(0, 0);
+          }, 125);
+        }
+
+        
+        window.addEventListener("popstate", function (e) {
+          if (e.state && e.state.url) {
+            const link = document.querySelector(`[href="${e.state.url}"]`);
+            if (link) {
+              navigateToPage(e.state.url, link);
+              moveIndicatorTo(link, false);
+            } else {
+              window.location.href = e.state.url;
+            }
           }
         });
-      });
+
+        
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initializeIndicator);
+        } else {
+          initializeIndicator();
+        }
+
+        
+        window.addEventListener("resize", function () {
+          const activeItem =
+            document.querySelector(".active") ||
+            (window.location.pathname === "/" || window.location.pathname === ""
+              ? document.querySelector(".logo")
+              : null);
+          if (activeItem) {
+            moveIndicatorTo(activeItem, false);
+          }
+        });
+
+        
+        document.addEventListener("mouseover", function (e) {
+          const link = e.target.closest("[data-nav-item]");
+          if (link && link.href) {
+            fetchPage(link.href);
+          }
+        });
+
+        
+        document.addEventListener("click", function (e) {
+          const link = e.target.closest("[data-nav-item]");
+          if (link && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+            e.preventDefault();
+
+            
+            if (link.classList.contains("active")) {
+              return;
+            }
+
+            
+            if (link.classList.contains("logo")) {
+              const isHome =
+                window.location.pathname === "/" ||
+                window.location.pathname === "";
+              if (isHome) {
+                return;
+              }
+            }
+
+            
+            moveIndicatorTo(link, false);
+
+            
+            navigateToPage(link.href, link);
+          }
+        });
+      })();
     </script>
   </body>
 </html>

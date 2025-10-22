@@ -45,34 +45,283 @@
     <link rel="apple-touch-icon" href="/favicon.svg" />
   </head>
   <body>
-    <header class="sticky top-0 left-0 z-50 px-[6vw] pt-[6vw]">
+    <div class="fixed top-0 left-0 right-0 z-50 px-[4vw] py-[4vw]">
       {{ partial "header.html" . }}
-    </header>
+    </div>
 
-    {{ block "main" . }}{{ end }}
-
+    <div id="page-content">
+      {{ block "main" . }}{{ end }}
+    </div>
 
     <script>
-      // Simple page preloading for faster navigation
-      document.addEventListener("DOMContentLoaded", function () {
-        // Preload pages on hover
-        document.addEventListener("mouseover", function (e) {
-          if (
-            e.target.tagName === "A" &&
-            e.target.href &&
-            !e.target.href.includes("#")
-          ) {
-            const link = e.target.href;
-            if (!link.includes(window.location.origin)) return;
+      // SPA-like navigation with sliding animations
+      (function () {
+        const indicator = document.querySelector(".nav-indicator");
+        const navItems = document.querySelectorAll("[data-nav-item]");
+        const pageContent = document.querySelector("#page-content");
 
-            // Preload the page
-            const prefetchLink = document.createElement("link");
-            prefetchLink.rel = "prefetch";
-            prefetchLink.href = link;
-            document.head.appendChild(prefetchLink);
+        // Cache for fetched pages
+        const pageCache = new Map();
+
+        // Store state in sessionStorage
+        const STORAGE_KEY = "nav-indicator-position";
+
+        function savePosition(left, top, width, height) {
+          sessionStorage.setItem(
+            STORAGE_KEY,
+            JSON.stringify({ left, top, width, height }),
+          );
+        }
+
+        function getSavedPosition() {
+          const saved = sessionStorage.getItem(STORAGE_KEY);
+          return saved ? JSON.parse(saved) : null;
+        }
+
+        function moveIndicatorTo(targetItem, immediate = false) {
+          if (!targetItem || !indicator) return;
+
+          const rect = targetItem.getBoundingClientRect();
+          const container = targetItem.closest(".glass-container");
+          const containerRect = container.getBoundingClientRect();
+
+          const left = rect.left - containerRect.left;
+          const top = rect.top - containerRect.top;
+
+          savePosition(left, top, rect.width, rect.height);
+
+          if (immediate) {
+            indicator.style.transition = "none";
+            indicator.style.width = rect.width + "px";
+            indicator.style.height = rect.height + "px";
+            indicator.style.left = left + "px";
+            indicator.style.top = top + "px";
+            indicator.style.opacity = "1";
+            indicator.offsetHeight;
+            indicator.style.transition = "";
+          } else {
+            indicator.style.width = rect.width + "px";
+            indicator.style.height = rect.height + "px";
+            indicator.style.left = left + "px";
+            indicator.style.top = top + "px";
+            indicator.style.opacity = "1";
+          }
+        }
+
+        function initializeIndicator() {
+          let activeItem = document.querySelector(".active");
+
+          if (!activeItem) {
+            const isHome =
+              window.location.pathname === "/" ||
+              window.location.pathname === "";
+            if (isHome) {
+              activeItem = document.querySelector(".logo");
+            }
+          }
+
+          if (activeItem) {
+            const savedPosition = getSavedPosition();
+
+            if (savedPosition) {
+              indicator.style.transition = "none";
+              indicator.style.width = savedPosition.width + "px";
+              indicator.style.height = savedPosition.height + "px";
+              indicator.style.left = savedPosition.left + "px";
+              indicator.style.top = savedPosition.top + "px";
+              indicator.style.opacity = "1";
+              indicator.offsetHeight;
+              indicator.style.transition = "";
+            } else {
+              moveIndicatorTo(activeItem, true);
+            }
+          }
+        }
+
+        // Fetch and cache page content
+        async function fetchPage(url) {
+          if (pageCache.has(url)) {
+            console.log("Using cached page:", url);
+            return pageCache.get(url);
+          }
+
+          try {
+            console.log("Fetching page:", url);
+            const response = await fetch(url);
+            const html = await response.text();
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(html, "text/html");
+
+            const newContent = doc.querySelector("#page-content");
+            const title = doc.querySelector("title")?.textContent || "";
+
+            console.log("Fetched content:", newContent ? "found" : "not found");
+
+            const pageData = {
+              content: newContent ? newContent.innerHTML : "",
+              title: title,
+            };
+
+            pageCache.set(url, pageData);
+            return pageData;
+          } catch (error) {
+            console.error("Failed to fetch page:", error);
+            return null;
+          }
+        }
+
+        // Calculate slide direction based on navigation positions
+        function getSlideDirection(fromItem, toItem) {
+          if (!fromItem || !toItem) return "left";
+
+          const fromRect = fromItem.getBoundingClientRect();
+          const toRect = toItem.getBoundingClientRect();
+
+          // If moving right in nav, slide content left (and vice versa)
+          return toRect.left > fromRect.left ? "left" : "right";
+        }
+
+        // Navigate to new page with slide animation
+        async function navigateToPage(url, link) {
+          if (!pageContent) {
+            console.error("Page content container not found");
+            return;
+          }
+
+          console.log("Navigating to:", url);
+
+          // Determine current active item
+          const currentActive =
+            document.querySelector(".active") ||
+            (window.location.pathname === "/" || window.location.pathname === ""
+              ? document.querySelector(".logo")
+              : null);
+
+          const direction = getSlideDirection(currentActive, link);
+          console.log("Slide direction:", direction);
+
+          // Fetch new content
+          const pageData = await fetchPage(url);
+          if (!pageData || !pageData.content) {
+            console.log("No page data, falling back to regular navigation");
+            // Fallback to regular navigation
+            window.location.href = url;
+            return;
+          }
+
+          // Slide out current content
+          pageContent.style.transition =
+            "transform 0.125s ease-out, opacity 0.125s ease";
+          pageContent.style.transform =
+            direction === "left" ? "translateX(-24px)" : "translateX(24px)";
+          pageContent.style.opacity = "0";
+
+          // Wait for slide out
+          setTimeout(() => {
+            // Update content
+            pageContent.innerHTML = pageData.content;
+            document.title = pageData.title;
+
+            console.log("Content updated");
+
+            // Update active states
+            document.querySelectorAll("[data-nav-item]").forEach((item) => {
+              item.classList.remove("active");
+            });
+            link.classList.add("active");
+
+            // Position content for slide in (from opposite direction)
+            pageContent.style.transition = "none";
+            pageContent.style.transform =
+              direction === "left" ? "translateX(24px)" : "translateX(-24px)";
+            pageContent.style.opacity = "0";
+
+            // Force reflow
+            pageContent.offsetHeight;
+
+            // Slide in new content
+            pageContent.style.transition =
+              "transform 0.125s ease-out, opacity 0.125s ease";
+            pageContent.style.transform = "translateX(0)";
+            pageContent.style.opacity = "1";
+
+            // Update URL
+            history.pushState({ url: url }, "", url);
+
+            // Scroll to top
+            window.scrollTo(0, 0);
+          }, 125);
+        }
+
+        // Handle browser back/forward
+        window.addEventListener("popstate", function (e) {
+          if (e.state && e.state.url) {
+            const link = document.querySelector(`[href="${e.state.url}"]`);
+            if (link) {
+              navigateToPage(e.state.url, link);
+              moveIndicatorTo(link, false);
+            } else {
+              window.location.href = e.state.url;
+            }
           }
         });
-      });
+
+        // Initialize on load
+        if (document.readyState === "loading") {
+          document.addEventListener("DOMContentLoaded", initializeIndicator);
+        } else {
+          initializeIndicator();
+        }
+
+        // Update on resize
+        window.addEventListener("resize", function () {
+          const activeItem =
+            document.querySelector(".active") ||
+            (window.location.pathname === "/" || window.location.pathname === ""
+              ? document.querySelector(".logo")
+              : null);
+          if (activeItem) {
+            moveIndicatorTo(activeItem, false);
+          }
+        });
+
+        // Preload pages on hover
+        document.addEventListener("mouseover", function (e) {
+          const link = e.target.closest("[data-nav-item]");
+          if (link && link.href) {
+            fetchPage(link.href);
+          }
+        });
+
+        // Intercept navigation clicks
+        document.addEventListener("click", function (e) {
+          const link = e.target.closest("[data-nav-item]");
+          if (link && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+            e.preventDefault();
+
+            // Don't navigate if clicking the active item
+            if (link.classList.contains("active")) {
+              return;
+            }
+
+            // Check if clicking logo on homepage
+            if (link.classList.contains("logo")) {
+              const isHome =
+                window.location.pathname === "/" ||
+                window.location.pathname === "";
+              if (isHome) {
+                return;
+              }
+            }
+
+            // Move indicator
+            moveIndicatorTo(link, false);
+
+            // Navigate with slide animation
+            navigateToPage(link.href, link);
+          }
+        });
+      })();
     </script>
   </body>
 </html>

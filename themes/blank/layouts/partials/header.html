@@ -1,14 +1,19 @@
 <header class="flex items-center justify-between">
-  <div class="flex items-center gap-3">
-    <a class="logo" href="{{ .Site.BaseURL }}">
+  <div
+    class="glass-container flex items-center gap-2 py-3 px-4 rounded-full relative"
+  >
+    <!-- Sliding background indicator -->
+    <div class="nav-indicator"></div>
+
+    <a class="logo relative z-10 p-1" href="{{ .Site.BaseURL }}" data-nav-item>
       <img
-        class="w-9 min-w-9 rounded-full border border-white"
+        class="w-7 min-w-7 rounded-full border border-white"
         src="{{ .Site.BaseURL }}img/avatar.png"
       />
       <!-- {{ .Site.Title }} -->
     </a>
 
-    <div class="flex gap-1">
+    <div class="flex gap-0 relative z-10">
       {{ $currentPage := . }}
       {{ range .Site.Menus.main }}
         <a
@@ -18,6 +23,7 @@
         "
           href="{{ .URL }}"
           title="{{ .Title }}"
+          data-nav-item
           >{{ .Name }}</a
         >
       {{ end }}
