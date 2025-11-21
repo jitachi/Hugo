@@ -160,16 +160,17 @@
   <main class="relative w-full flex flex-col justify-center px-[6vw] pt-[6vw]">
     
     <div class="max-w-4xl mx-auto">
-      <div class=" mx-auto max-w-[--content-width] relative mb-16">
-        <p class="text-6xl font-[600] tracking-[-0.0375em] mb-4">
+      <div class=" mx-auto max-w-[--content-width] relative mb-12">
+        <time
+          class="text-base font-[600] opacity-30"
+          datetime="March 5, 2024"
+        >
+          March 5, 2024
+        </time>
+
+        <p class="text-4xl font-[600] tracking-[-0.0375em] mt-4">
           GTI MK7 Build
         </p>
-        <time
-          class="mono text-base opacity-45"
-          datetime="2024-03-05T00:00:00"
-        >
-          03.05.24
-        </time>
       </div>
 
       <div
@@ -309,6 +310,43 @@
         }
 
         
+        function rebaseRelativeUrls(container, baseHref) {
+          if (!container || !baseHref) return;
+
+          let baseUrl;
+          try {
+            baseUrl = new URL(baseHref, window.location.origin);
+          } catch (error) {
+            console.warn("Invalid base URL for rebasing:", baseHref);
+            return;
+          }
+
+          const needsRewrite = (value) =>
+            value &&
+            !value.startsWith("http://") &&
+            !value.startsWith("https://") &&
+            !value.startsWith("//") &&
+            !value.startsWith("/") &&
+            !value.startsWith("data:") &&
+            !value.startsWith("blob:") &&
+            !value.startsWith("#");
+
+          container.querySelectorAll("[src]").forEach((el) => {
+            const src = el.getAttribute("src");
+            if (needsRewrite(src)) {
+              el.src = new URL(src, baseUrl).href;
+            }
+          });
+
+          container.querySelectorAll("[href]").forEach((el) => {
+            const href = el.getAttribute("href");
+            if (needsRewrite(href)) {
+              el.href = new URL(href, baseUrl).href;
+            }
+          });
+        }
+
+        
         function getSlideDirection(fromItem, toItem) {
           if (!fromItem || !toItem) return "left";
 
@@ -378,6 +416,9 @@
               
               pageContent.innerHTML = pageData.content;
             }
+
+            
+            rebaseRelativeUrls(pageContent, url);
 
             document.title = pageData.title;
 

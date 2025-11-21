@@ -6,10 +6,6 @@
   pointer-events: none
 }
 
-.visible {
-  visibility: visible
-}
-
 .fixed {
   position: fixed
 }
@@ -54,12 +50,12 @@
   top: 0px
 }
 
-.z-50 {
-  z-index: 50
-}
-
 .z-10 {
   z-index: 10
+}
+
+.z-50 {
+  z-index: 50
 }
 
 .mx-auto {
@@ -69,6 +65,10 @@
 
 .mb-1 {
   margin-bottom: 0.25rem
+}
+
+.mb-16 {
+  margin-bottom: 4rem
 }
 
 .mb-2 {
@@ -87,6 +87,10 @@
   margin-bottom: 1rem
 }
 
+.mb-40 {
+  margin-bottom: 10rem
+}
+
 .mb-6 {
   margin-bottom: 1.5rem
 }
@@ -103,40 +107,28 @@
   margin-top: 0.75rem
 }
 
-.mt-40 {
-  margin-top: 10rem
+.mt-64 {
+  margin-top: 16rem
 }
 
 .mt-auto {
   margin-top: auto
 }
 
-.mt-48 {
-  margin-top: 12rem
+.mt-6 {
+  margin-top: 1.5rem
 }
 
-.mt-64 {
-  margin-top: 16rem
+.mt-4 {
+  margin-top: 1rem
 }
 
-.mt-60 {
-  margin-top: 15rem
-}
-
-.mt-80 {
-  margin-top: 20rem
+.mt-8 {
+  margin-top: 2rem
 }
 
 .mb-12 {
   margin-bottom: 3rem
-}
-
-.mb-16 {
-  margin-bottom: 4rem
-}
-
-.mt-96 {
-  margin-top: 24rem
 }
 
 .block {
@@ -155,10 +147,6 @@
   display: grid
 }
 
-.hidden {
-  display: none
-}
-
 .h-16 {
   height: 4rem
 }
@@ -167,32 +155,20 @@
   height: 340px
 }
 
-.h-\[64vh\] {
-  height: 64vh
+.h-\[56vh\] {
+  height: 56vh
 }
 
 .h-full {
   height: 100%
 }
 
-.h-\[72vh\] {
-  height: 72vh
-}
-
-.h-\[70vh\] {
-  height: 70vh
-}
-
-.h-\[48vh\] {
-  height: 48vh
-}
-
-.h-\[56vh\] {
-  height: 56vh
-}
-
 .w-64 {
   width: 16rem
+}
+
+.w-7 {
+  width: 1.75rem
 }
 
 .w-9 {
@@ -203,16 +179,12 @@
   width: 100%
 }
 
-.w-7 {
-  width: 1.75rem
+.min-w-7 {
+  min-width: 1.75rem
 }
 
 .min-w-9 {
   min-width: 2.25rem
-}
-
-.min-w-7 {
-  min-width: 1.75rem
 }
 
 .max-w-4xl {
@@ -275,8 +247,8 @@
   justify-content: space-between
 }
 
-.gap-1 {
-  gap: 0.25rem
+.gap-0 {
+  gap: 0px
 }
 
 .gap-2 {
@@ -289,10 +261,6 @@
 
 .gap-4 {
   gap: 1rem
-}
-
-.gap-0 {
-  gap: 0px
 }
 
 .overflow-hidden {
@@ -372,6 +340,10 @@
      object-fit: cover
 }
 
+.p-1 {
+  padding: 0.25rem
+}
+
 .p-2 {
   padding: 0.5rem
 }
@@ -388,24 +360,12 @@
   padding: 1.5rem
 }
 
-.p-\[6vw\] {
-  padding: 6vw
-}
-
-.p-\[8vw\] {
-  padding: 8vw
-}
-
-.p-3 {
-  padding: 0.75rem
-}
-
-.p-1 {
-  padding: 0.25rem
-}
-
 .p-\[4vw\] {
   padding: 4vw
+}
+
+.p-\[6vw\] {
+  padding: 6vw
 }
 
 .px-4 {
@@ -416,6 +376,11 @@
 .px-40 {
   padding-left: 10rem;
   padding-right: 10rem
+}
+
+.px-\[4vw\] {
+  padding-left: 4vw;
+  padding-right: 4vw
 }
 
 .px-\[6vw\] {
@@ -438,11 +403,6 @@
   padding-bottom: 0.75rem
 }
 
-.px-\[4vw\] {
-  padding-left: 4vw;
-  padding-right: 4vw
-}
-
 .py-\[4vw\] {
   padding-top: 4vw;
   padding-bottom: 4vw
@@ -456,36 +416,12 @@
   padding-top: 8vw
 }
 
-.pl-3 {
-  padding-left: 0.75rem
+.pb-4 {
+  padding-bottom: 1rem
 }
 
-.pr-4 {
-  padding-right: 1rem
-}
-
-.pt-96 {
-  padding-top: 24rem
-}
-
-.pt-64 {
-  padding-top: 16rem
-}
-
-.pt-32 {
-  padding-top: 8rem
-}
-
-.pt-24 {
-  padding-top: 6rem
-}
-
-.font-sans {
-  font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
-}
-
-.text-5xl {
-  font-size: 3rem;
+.text-6xl {
+  font-size: 3.75rem;
   line-height: 1
 }
 
@@ -512,23 +448,13 @@
   line-height: 1.75rem
 }
 
-.text-sm {
-  font-size: 0.875rem;
-  line-height: 1.25rem
-}
-
-.text-6xl {
-  font-size: 3.75rem;
-  line-height: 1
-}
-
 .text-4xl {
   font-size: 2.25rem;
   line-height: 2.5rem
 }
 
-.text-8xl {
-  font-size: 6rem;
+.text-5xl {
+  font-size: 3rem;
   line-height: 1
 }
 
@@ -544,24 +470,24 @@
   font-weight: 500
 }
 
-.tracking-tight {
-  letter-spacing: -0.025em
+.font-medium {
+  font-weight: 500
 }
 
-.tracking-tighter {
-  letter-spacing: -0.05em
+.font-\[800\] {
+  font-weight: 800
 }
 
-.tracking-\[-0\.05em\] {
-  letter-spacing: -0.05em
-}
-
-.tracking-\[-0\.025em\] {
-  letter-spacing: -0.025em
+.font-\[700\] {
+  font-weight: 700
 }
 
 .tracking-\[-0\.0375em\] {
   letter-spacing: -0.0375em
+}
+
+.tracking-tight {
+  letter-spacing: -0.025em
 }
 
 .text-gray-500 {
@@ -592,6 +518,10 @@
 
 .opacity-50 {
   opacity: 0.5
+}
+
+.opacity-30 {
+  opacity: 0.3
 }
 
 .transition {

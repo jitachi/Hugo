@@ -457,6 +457,43 @@
         }
 
         
+        function rebaseRelativeUrls(container, baseHref) {
+          if (!container || !baseHref) return;
+
+          let baseUrl;
+          try {
+            baseUrl = new URL(baseHref, window.location.origin);
+          } catch (error) {
+            console.warn("Invalid base URL for rebasing:", baseHref);
+            return;
+          }
+
+          const needsRewrite = (value) =>
+            value &&
+            !value.startsWith("http://") &&
+            !value.startsWith("https://") &&
+            !value.startsWith("//") &&
+            !value.startsWith("/") &&
+            !value.startsWith("data:") &&
+            !value.startsWith("blob:") &&
+            !value.startsWith("#");
+
+          container.querySelectorAll("[src]").forEach((el) => {
+            const src = el.getAttribute("src");
+            if (needsRewrite(src)) {
+              el.src = new URL(src, baseUrl).href;
+            }
+          });
+
+          container.querySelectorAll("[href]").forEach((el) => {
+            const href = el.getAttribute("href");
+            if (needsRewrite(href)) {
+              el.href = new URL(href, baseUrl).href;
+            }
+          });
+        }
+
+        
         function getSlideDirection(fromItem, toItem) {
           if (!fromItem || !toItem) return "left";
 
@@ -526,6 +563,9 @@
               
               pageContent.innerHTML = pageData.content;
             }
+
+            
+            rebaseRelativeUrls(pageContent, url);
 
             document.title = pageData.title;
 
