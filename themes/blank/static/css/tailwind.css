@@ -387,31 +387,17 @@
   padding-bottom: 0.75rem
 }
 
-.py-\[4vw\] {
-  padding-top: 4vw;
-  padding-bottom: 4vw
-}
-
-.py-\[3vw\] {
-  padding-top: 3vw;
-  padding-bottom: 3vw
-}
-
 .py-\[2vw\] {
   padding-top: 2vw;
   padding-bottom: 2vw
 }
 
-.pt-\[6vw\] {
-  padding-top: 6vw
+.pt-\[4vw\] {
+  padding-top: 4vw
 }
 
 .pt-\[8vw\] {
   padding-top: 8vw
-}
-
-.pt-\[4vw\] {
-  padding-top: 4vw
 }
 
 .text-4xl {
@@ -442,11 +428,6 @@
   line-height: 1.75rem
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem
-}
-
 .font-\[600\] {
   font-weight: 600
 }
@@ -459,16 +440,16 @@
   line-height: 1
 }
 
+.tracking-\[-0\.0250em\] {
+  letter-spacing: -0.0250em
+}
+
 .tracking-\[-0\.0375em\] {
   letter-spacing: -0.0375em
 }
 
 .tracking-tight {
   letter-spacing: -0.025em
-}
-
-.tracking-\[-0\.0250em\] {
-  letter-spacing: -0.0250em
 }
 
 .text-gray-500 {
@@ -542,22 +523,6 @@
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr))
-  }
-
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-  }
-}
-
-@media (min-width: 1024px) {
-  .lg\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr))
-  }
-}
-
-@media (min-width: 1280px) {
-  .xl\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr))
   }
 }
 
