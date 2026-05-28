@@ -2,7 +2,6 @@ baseURL = 'https://jitachi.com/'
 languageCode = 'en-us'
 title = 'Jitachi'
 theme = 'blank'
-minify = true
 
 [markup.goldmark.parser]
   wrapStandAloneImageWithinParagraph = false
