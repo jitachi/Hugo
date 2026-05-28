@@ -9,6 +9,7 @@
     "ulid": "^2.3.0"
   },
   "devDependencies": {
+    "hugo-extended": "^0.128.0",
     "tailwindcss": "^4.0.3"
   },
   "scripts": {
