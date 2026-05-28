@@ -2,6 +2,7 @@ baseURL = 'https://jitachi.com/'
 languageCode = 'en-us'
 title = 'Jitachi'
 theme = 'blank'
+minify = true
 
 [markup.goldmark.parser]
   wrapStandAloneImageWithinParagraph = false
@@ -12,4 +13,30 @@ theme = 'blank'
 
 [markup.goldmark.renderer]
   unsafe = true
-  
+
+[minify]
+  minifyOutput = true
+
+[minify.tdewolff.css]
+  precision = 0
+
+[minify.tdewolff.html]
+  keepConditionals = true
+  keepDefaultAttrVals = true
+  keepDocumentTags = true
+  keepEndTags = true
+  keepQuotes = false
+  keepWhitespace = false
+
+[minify.tdewolff.js]
+  precision = 0
+
+[minify.tdewolff.json]
+  precision = 0
+
+[minify.tdewolff.svg]
+  precision = 0
+
+[minify.tdewolff.xml]
+  keepWhitespace = false
+
