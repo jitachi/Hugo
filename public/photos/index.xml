@@ -1,41 +1,45 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Photos on Jitachi</title>
-    <link>https://jitachi.com/photos/</link>
-    <description>Recent content in Photos on Jitachi</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://jitachi.com/photos/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Photo 02</title>
-      <link>https://jitachi.com/photos/01-photo/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/photos/01-photo/</guid>
-      <description>The only decent API Tool</description>
-    </item>
-    <item>
-      <title>Rainforest</title>
-      <link>https://jitachi.com/photos/02-photo/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/photos/02-photo/</guid>
-      <description>Senior Product Designer ft Software QA</description>
-    </item>
-    <item>
-      <title>testy test</title>
-      <link>https://jitachi.com/photos/03-photo-copy/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/photos/03-photo-copy/</guid>
-      <description>Performance Upgrades It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.
-APR Engine (ECU) Tune Stage 1 APR Transmission (TCU) Tune Stage 1 NGK Performance Spark Plugs Racingline R600 Closed Intake Racingline Turbo inlet pipe &amp;amp; hoses APR Turbo muffler delete Integrated Engineering Performance Intercooler </description>
-    </item>
-    <item>
-      <title>testy test</title>
-      <link>https://jitachi.com/photos/03-photo/</link>
-      <pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-      <guid>https://jitachi.com/photos/03-photo/</guid>
-      <description>Senior Product Designer ft Software QA</description>
-    </item>
-  </channel>
+	<channel>
+		<title>Photos on Jitachi</title>
+		<link>https://jitachi.com/photos/</link>
+		<description>Recent content in Photos on Jitachi</description>
+		<generator>Hugo</generator>
+		<language>en-us</language>
+		
+		
+		
+		
+			<lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
+		
+			<atom:link href="https://jitachi.com/photos/index.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>Photo 02</title>
+				<link>https://jitachi.com/photos/01-photo/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>https://jitachi.com/photos/01-photo/</guid>
+				<description>The only decent API Tool</description>
+			</item>
+			<item>
+				<title>Rainforest</title>
+				<link>https://jitachi.com/photos/02-photo/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>https://jitachi.com/photos/02-photo/</guid>
+				<description>Senior Product Designer ft Software QA</description>
+			</item>
+			<item>
+				<title>testy test</title>
+				<link>https://jitachi.com/photos/03-photo-copy/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>https://jitachi.com/photos/03-photo-copy/</guid>
+				<description>&lt;img src=&#34;images/L1020795.JPG&#34; alt=&#34;image alt test&#34;&gt;&lt;h4 id=&#34;performance-upgrades&#34;&gt;Performance Upgrades&lt;/h4&gt;&#xA;&lt;p&gt;It is for these reasons that I regard the decision last year to shift our efforts in space from low to high gear as among the most important decisions that will be made during my incumbency in the office of the Presidency.&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;APR Engine (ECU) Tune Stage 1&lt;/li&gt;&#xA;&lt;li&gt;APR Transmission (TCU) Tune Stage 1&lt;/li&gt;&#xA;&lt;li&gt;NGK Performance Spark Plugs&lt;/li&gt;&#xA;&lt;li&gt;Racingline R600 Closed Intake&lt;/li&gt;&#xA;&lt;li&gt;Racingline Turbo inlet pipe &amp;amp; hoses&lt;/li&gt;&#xA;&lt;li&gt;APR Turbo muffler delete&lt;/li&gt;&#xA;&lt;li&gt;Integrated Engineering Performance Intercooler&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+			</item>
+			<item>
+				<title>testy test</title>
+				<link>https://jitachi.com/photos/03-photo/</link>
+				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
+				<guid>https://jitachi.com/photos/03-photo/</guid>
+				<description>Senior Product Designer ft Software QA</description>
+			</item>
+	</channel>
 </rss>
