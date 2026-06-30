@@ -6,6 +6,7 @@
   "dependencies": {
     "prettier": "^3.3.3",
     "prettier-plugin-go-template": "^0.0.15",
+    "serve": "^14.2.4",
     "ulid": "^2.3.0"
   },
   "devDependencies": {
@@ -14,7 +15,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "cd themes/blank && npm install && npm run build",
-    "build": "npm run build:css"
+    "build": "npm run build:css && hugo --minify",
+    "start": "serve public -s -l $PORT"
   },
   "keywords": [],
   "author": "",
