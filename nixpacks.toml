@@ -1,4 +1,2 @@
-# nixpacks.toml
-
 [phases.setup]
 nixPkgs = ["nodejs", "hugo"]
