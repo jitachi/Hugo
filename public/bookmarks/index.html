@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en-us">
-  <head>
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1314&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>
@@ -47,10 +47,10 @@
     
     <div class="nav-indicator"></div>
 
-    <a class="logo relative z-10 p-1" href="https://jitachi.com/" data-nav-item>
+    <a class="logo relative z-10 p-1" href="/" data-nav-item>
       <img
         class="w-7 min-w-7 rounded-full border border-white"
-        src="https://jitachi.com/img/avatar.png"
+        src="/img/avatar.png"
       />
       
     </a>
@@ -208,6 +208,29 @@
 
         
         const STORAGE_KEY = "nav-indicator-position";
+        const siteBasePath = new URL(
+          "\/",
+          window.location.origin,
+        ).pathname;
+
+        function getNavigationPath(url) {
+          const parsedUrl = new URL(url, window.location.origin);
+          if (parsedUrl.origin !== window.location.origin) {
+            return null;
+          }
+
+          return parsedUrl.pathname + parsedUrl.search + parsedUrl.hash;
+        }
+
+        function isHomePath(pathname = window.location.pathname) {
+          const normalizedBasePath = siteBasePath.replace(/\/$/, "") || "/";
+          return (
+            pathname === "/" ||
+            pathname === "" ||
+            pathname === siteBasePath ||
+            pathname === normalizedBasePath
+          );
+        }
 
         function savePosition(left, top, width, height) {
           sessionStorage.setItem(
@@ -255,10 +278,7 @@
           let activeItem = document.querySelector(".active");
 
           if (!activeItem) {
-            const isHome =
-              window.location.pathname === "/" ||
-              window.location.pathname === "";
-            if (isHome) {
+            if (isHomePath()) {
               activeItem = document.querySelector(".logo");
             }
           }
@@ -283,14 +303,19 @@
 
         
         async function fetchPage(url) {
-          if (pageCache.has(url)) {
-            console.log("Using cached page:", url);
-            return pageCache.get(url);
+          const navigationPath = getNavigationPath(url);
+          if (!navigationPath) {
+            return null;
+          }
+
+          if (pageCache.has(navigationPath)) {
+            console.log("Using cached page:", navigationPath);
+            return pageCache.get(navigationPath);
           }
 
           try {
-            console.log("Fetching page:", url);
-            const response = await fetch(url);
+            console.log("Fetching page:", navigationPath);
+            const response = await fetch(navigationPath);
             const html = await response.text();
             const parser = new DOMParser();
             const doc = parser.parseFromString(html, "text/html");
@@ -305,7 +330,7 @@
               title: title,
             };
 
-            pageCache.set(url, pageData);
+            pageCache.set(navigationPath, pageData);
             return pageData;
           } catch (error) {
             console.error("Failed to fetch page:", error);
@@ -368,28 +393,33 @@
             return;
           }
 
-          console.log("Navigating to:", url);
+          const navigationPath = getNavigationPath(url);
+          if (!navigationPath) {
+            window.location.href = url;
+            return;
+          }
+
+          console.log("Navigating to:", navigationPath);
 
           
-          const currentUrl = window.location.pathname;
-          if (!domCache.has(currentUrl)) {
+          const currentPath =
+            window.location.pathname + window.location.search + window.location.hash;
+          if (!domCache.has(currentPath)) {
             const currentContent = pageContent.cloneNode(true);
-            domCache.set(currentUrl, currentContent);
-            console.log("Cached current page:", currentUrl);
+            domCache.set(currentPath, currentContent);
+            console.log("Cached current page:", currentPath);
           }
 
           
           const currentActive =
             document.querySelector(".active") ||
-            (window.location.pathname === "/" || window.location.pathname === ""
-              ? document.querySelector(".logo")
-              : null);
+            (isHomePath() ? document.querySelector(".logo") : null);
 
           const direction = getSlideDirection(currentActive, link);
           console.log("Slide direction:", direction);
 
           
-          const pageData = await fetchPage(url);
+          const pageData = await fetchPage(navigationPath);
           if (!pageData || !pageData.content) {
             console.log("No page data, falling back to regular navigation");
             
@@ -407,9 +437,9 @@
           
           setTimeout(() => {
             
-            const cachedDom = domCache.get(url);
+            const cachedDom = domCache.get(navigationPath);
             if (cachedDom) {
-              console.log("Using cached DOM for:", url);
+              console.log("Using cached DOM for:", navigationPath);
               
               pageContent.innerHTML = "";
               const newContent = cachedDom.cloneNode(true);
@@ -422,7 +452,7 @@
             }
 
             
-            rebaseRelativeUrls(pageContent, url);
+            rebaseRelativeUrls(pageContent, navigationPath);
 
             document.title = pageData.title;
 
@@ -450,7 +480,7 @@
             pageContent.style.opacity = "1";
 
             
-            history.pushState({ url: url }, "", url);
+            history.pushState({ url: navigationPath }, "", navigationPath);
 
             
             window.scrollTo(0, 0);
@@ -481,9 +511,7 @@
         window.addEventListener("resize", function () {
           const activeItem =
             document.querySelector(".active") ||
-            (window.location.pathname === "/" || window.location.pathname === ""
-              ? document.querySelector(".logo")
-              : null);
+            (isHomePath() ? document.querySelector(".logo") : null);
           if (activeItem) {
             moveIndicatorTo(activeItem, false);
           }
@@ -493,7 +521,10 @@
         document.addEventListener("mouseover", function (e) {
           const link = e.target.closest("[data-nav-item]");
           if (link && link.href) {
-            fetchPage(link.href);
+            const navigationPath = getNavigationPath(link.href);
+            if (navigationPath) {
+              fetchPage(navigationPath);
+            }
           }
         });
 
@@ -501,6 +532,11 @@
         document.addEventListener("click", function (e) {
           const link = e.target.closest("[data-nav-item]");
           if (link && !e.ctrlKey && !e.metaKey && !e.shiftKey) {
+            const navigationPath = getNavigationPath(link.href);
+            if (!navigationPath) {
+              return;
+            }
+
             e.preventDefault();
 
             
@@ -510,10 +546,7 @@
 
             
             if (link.classList.contains("logo")) {
-              const isHome =
-                window.location.pathname === "/" ||
-                window.location.pathname === "";
-              if (isHome) {
+              if (isHomePath()) {
                 return;
               }
             }
@@ -522,7 +555,7 @@
             moveIndicatorTo(link, false);
 
             
-            navigateToPage(link.href, link);
+            navigateToPage(navigationPath, link);
           }
         });
       })();

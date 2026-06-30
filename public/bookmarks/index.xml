@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Bookmarks on Jitachi</title>
-		<link>https://jitachi.com/bookmarks/</link>
+		<link>http://localhost:1314/bookmarks/</link>
 		<description>Recent content in Bookmarks on Jitachi</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,19 +12,19 @@
 		
 			<lastBuildDate>Fri, 25 Oct 2024 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://jitachi.com/bookmarks/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1314/bookmarks/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Video Link</title>
-				<link>https://jitachi.com/bookmarks/03-routine/</link>
+				<link>http://localhost:1314/bookmarks/03-routine/</link>
 				<pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/bookmarks/03-routine/</guid>
+				<guid>http://localhost:1314/bookmarks/03-routine/</guid>
 				<description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
 			</item>
 			<item>
 				<title>GTI MK7 Build</title>
-				<link>https://jitachi.com/bookmarks/02-gti-mk7-build/</link>
+				<link>http://localhost:1314/bookmarks/02-gti-mk7-build/</link>
 				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/bookmarks/02-gti-mk7-build/</guid>
+				<guid>http://localhost:1314/bookmarks/02-gti-mk7-build/</guid>
 				<description>One time I decided to build my &lt;em&gt;dream&lt;/em&gt; car</description>
 			</item>
 	</channel>

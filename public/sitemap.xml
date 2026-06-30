@@ -2,67 +2,67 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://jitachi.com/</loc>
+    <loc>http://localhost:1314/</loc>
     <lastmod>2024-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/posts/</loc>
+    <loc>http://localhost:1314/posts/</loc>
     <lastmod>2024-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/posts/07-railway-cdmx/</loc>
+    <loc>http://localhost:1314/posts/07-railway-cdmx/</loc>
     <lastmod>2024-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/posts/06-spacing-essay/</loc>
+    <loc>http://localhost:1314/posts/06-spacing-essay/</loc>
     <lastmod>2024-10-26T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/bookmarks/</loc>
+    <loc>http://localhost:1314/bookmarks/</loc>
     <lastmod>2024-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/posts/05-poop-pods/</loc>
+    <loc>http://localhost:1314/posts/05-poop-pods/</loc>
     <lastmod>2024-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/posts/04-railway-metal/</loc>
+    <loc>http://localhost:1314/posts/04-railway-metal/</loc>
     <lastmod>2024-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/bookmarks/03-routine/</loc>
+    <loc>http://localhost:1314/bookmarks/03-routine/</loc>
     <lastmod>2024-10-25T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/bookmarks/02-gti-mk7-build/</loc>
+    <loc>http://localhost:1314/bookmarks/02-gti-mk7-build/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/work/01-insomnia/</loc>
+    <loc>http://localhost:1314/work/01-insomnia/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/photos/01-photo/</loc>
+    <loc>http://localhost:1314/photos/01-photo/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/photos/</loc>
+    <loc>http://localhost:1314/photos/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/work/03-railway/</loc>
+    <loc>http://localhost:1314/work/03-railway/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/photos/02-photo/</loc>
+    <loc>http://localhost:1314/photos/02-photo/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/work/02-rainforest/</loc>
+    <loc>http://localhost:1314/work/02-rainforest/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/photos/03-photo-copy/</loc>
+    <loc>http://localhost:1314/photos/03-photo-copy/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/photos/03-photo/</loc>
+    <loc>http://localhost:1314/photos/03-photo/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/work/</loc>
+    <loc>http://localhost:1314/work/</loc>
     <lastmod>2024-03-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/posts/01-styleguide--xx/</loc>
+    <loc>http://localhost:1314/posts/01-styleguide--xx/</loc>
     <lastmod>2024-02-05T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://jitachi.com/about/</loc>
+    <loc>http://localhost:1314/about/</loc>
   </url><url>
-    <loc>https://jitachi.com/categories/</loc>
+    <loc>http://localhost:1314/categories/</loc>
   </url><url>
-    <loc>https://jitachi.com/tags/</loc>
+    <loc>http://localhost:1314/tags/</loc>
   </url>
 </urlset>

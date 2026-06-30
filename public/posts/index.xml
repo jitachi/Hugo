@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Posts on Jitachi</title>
-		<link>https://jitachi.com/posts/</link>
+		<link>http://localhost:1314/posts/</link>
 		<description>Recent content in Posts on Jitachi</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,40 +12,40 @@
 		
 			<lastBuildDate>Sat, 26 Oct 2024 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://jitachi.com/posts/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1314/posts/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Railway → México City</title>
-				<link>https://jitachi.com/posts/07-railway-cdmx/</link>
+				<link>http://localhost:1314/posts/07-railway-cdmx/</link>
 				<pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/posts/07-railway-cdmx/</guid>
+				<guid>http://localhost:1314/posts/07-railway-cdmx/</guid>
 				<description>&lt;img src=&#34;images/cdmx-2x-cover.png&#34; alt=&#34;image Railway visits CDMX&#34;&gt;&lt;p&gt;At Railway, we have the tradition of making a location-specific artwork for every trip. In the past, we have visited Hawaii, Dubai, Bali, New Orleans, New Buffalo, La Palma (Spain), Lisbon, and for this last edition, we visited Mexico City.&lt;/p&gt;&#xA;&lt;p&gt;The artwork formula is simple, picture the Railway train arriving to the retreat location. Ideally, use a recognizable monument and shove a train.&lt;/p&gt;&#xA;&lt;p&gt;For Mexico City, I chose the Angel de la Independencia as the center piece of the artwork. Not all places have a relevant piece of architecture, some of them are just normal buildings.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Spacing and Density</title>
-				<link>https://jitachi.com/posts/06-spacing-essay/</link>
+				<link>http://localhost:1314/posts/06-spacing-essay/</link>
 				<pubDate>Sat, 26 Oct 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/posts/06-spacing-essay/</guid>
+				<guid>http://localhost:1314/posts/06-spacing-essay/</guid>
 				<description>&lt;p&gt;Spacing is used in visual design to create visual relationships and hierarchy. Think of space as the “empty” space you leave between one note and the next one to form rhythm.&lt;/p&gt;&#xA;&lt;p&gt;Have you noticed how the horizontal space between characters (tracking) is smaller than the blank space we put between “groups” of letter we call words, and how that space is smaller than the vertical space between vertical lines? So now we have lines.&lt;/p&gt;</description>
 			</item>
 			<item>
 				<title>Poop pods</title>
-				<link>https://jitachi.com/posts/05-poop-pods/</link>
+				<link>http://localhost:1314/posts/05-poop-pods/</link>
 				<pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/posts/05-poop-pods/</guid>
+				<guid>http://localhost:1314/posts/05-poop-pods/</guid>
 				<description>&lt;!-- &lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;&#xA;&#x9;&#x9;&#x9;&lt;iframe allow=&#34;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen&#34; loading=&#34;eager&#34; referrerpolicy=&#34;strict-origin-when-cross-origin&#34; src=&#34;https://www.youtube.com/embed/8U-gCTEYxCA?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;YouTube video&#34;&gt;&lt;/iframe&gt;&#xA;&#x9;&#x9;&lt;/div&gt;&#xA; --&gt;&#xA;&lt;img src=&#34;images/poop-pods.png&#34; alt=&#34;image metal-01&#34;&gt;</description>
 			</item>
 			<item>
 				<title>Railway Metal</title>
-				<link>https://jitachi.com/posts/04-railway-metal/</link>
+				<link>http://localhost:1314/posts/04-railway-metal/</link>
 				<pubDate>Fri, 25 Oct 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/posts/04-railway-metal/</guid>
+				<guid>http://localhost:1314/posts/04-railway-metal/</guid>
 				<description>For the release of our Metal regions, I decided to make a conmemorative tshirt, of course featuring a fake trash metal logo</description>
 			</item>
 			<item>
 				<title>Styleguide</title>
-				<link>https://jitachi.com/posts/01-styleguide--xx/</link>
+				<link>http://localhost:1314/posts/01-styleguide--xx/</link>
 				<pubDate>Mon, 05 Feb 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/posts/01-styleguide--xx/</guid>
+				<guid>http://localhost:1314/posts/01-styleguide--xx/</guid>
 				<description>Local styles for a happier development</description>
 			</item>
 	</channel>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Work on Jitachi</title>
-		<link>https://jitachi.com/work/</link>
+		<link>http://localhost:1314/work/</link>
 		<description>Recent content in Work on Jitachi</description>
 		<generator>Hugo</generator>
 		<language>en-us</language>
@@ -12,26 +12,26 @@
 		
 			<lastBuildDate>Tue, 05 Mar 2024 00:00:00 +0000</lastBuildDate>
 		
-			<atom:link href="https://jitachi.com/work/index.xml" rel="self" type="application/rss+xml" />
+			<atom:link href="http://localhost:1314/work/index.xml" rel="self" type="application/rss+xml" />
 			<item>
 				<title>Insomnia</title>
-				<link>https://jitachi.com/work/01-insomnia/</link>
+				<link>http://localhost:1314/work/01-insomnia/</link>
 				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/work/01-insomnia/</guid>
+				<guid>http://localhost:1314/work/01-insomnia/</guid>
 				<description>The only decent API Tool</description>
 			</item>
 			<item>
 				<title>Railway</title>
-				<link>https://jitachi.com/work/03-railway/</link>
+				<link>http://localhost:1314/work/03-railway/</link>
 				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/work/03-railway/</guid>
+				<guid>http://localhost:1314/work/03-railway/</guid>
 				<description>Choo choo</description>
 			</item>
 			<item>
 				<title>Rainforest</title>
-				<link>https://jitachi.com/work/02-rainforest/</link>
+				<link>http://localhost:1314/work/02-rainforest/</link>
 				<pubDate>Tue, 05 Mar 2024 00:00:00 +0000</pubDate>
-				<guid>https://jitachi.com/work/02-rainforest/</guid>
+				<guid>http://localhost:1314/work/02-rainforest/</guid>
 				<description>Senior Product Designer ft Software QA</description>
 			</item>
 	</channel>

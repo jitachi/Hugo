@@ -5,10 +5,10 @@
   <div class="flex flex-col h-full">
     <!-- Logo -->
     <div class="flex items-center gap-3 mb-8">
-      <a class="logo" href="{{ .Site.BaseURL }}">
+      <a class="logo" href="{{ "/" | relURL }}">
         <img
           class="w-9 min-w-9 rounded-full border border-white"
-          src="{{ .Site.BaseURL }}img/avatar.png"
+          src="{{ "img/avatar.png" | relURL }}"
         />
       </a>
     </div>
@@ -23,7 +23,7 @@
               class="block py-2 text-base transition ease-in-out duration-200 rounded-lg {{ if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}
                 font-semibold
               {{ end }}"
-              href="{{ .URL }}"
+              href="{{ .URL | relURL }}"
               title="{{ .Title }}"
             >
               {{ .Name }}
