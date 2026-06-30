@@ -16,7 +16,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "cd themes/blank && npm install && npm run build",
     "build": "npm run build:css && hugo --minify",
-    "start": "serve public -s -l $PORT"
+    "start": "serve public -l $PORT"
   },
   "keywords": [],
   "author": "",
